@@ -3,6 +3,7 @@ import "./App.css";
 import NavBar from "./components/NavBar";
 import AboutUs from "./components/AboutUs";
 import Divider from "./components/Divider";
+import Service from "./components/Service";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <NavBar></NavBar>
       <AboutUs></AboutUs>
       <Divider></Divider>
+      <Service></Service>
     </div>
   );
 }
