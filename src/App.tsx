@@ -12,6 +12,7 @@ function App() {
       <AboutUs></AboutUs>
       <Divider></Divider>
       <Service></Service>
+      <Divider></Divider>
     </div>
   );
 }
