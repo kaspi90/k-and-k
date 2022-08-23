@@ -10,8 +10,11 @@ import javascript from "../img/javascript.svg";
 
 function AboutUs() {
   return (
-    <div className="flex flex-nowrap p-2 w-4/5 m-auto ">
-      <div className="flex w-1/2 flex-col rounded-xl	 border-2 p-4 m-4 shadow-lg">
+    <div className="flex flex-wrap p-2 w-4/5 m-auto ">
+      <div
+        className="flex w-1/2 flex-col rounded-xl	shrink grow
+ border-2 p-4 m-4 shadow-lg basis-64		"
+      >
         <h3 className=" flex justify-center">Heike</h3>
         <img src={logo} className="h-40"></img>
         <div className="flex justify-center">
@@ -60,8 +63,20 @@ function AboutUs() {
             className="h-8 m-1 grayscale hover:grayscale-0"
           ></img>
         </div>
+        <h3 className="m-2">Curriculum Vitae</h3>
+        <ul className="flex flex-col justify-center m-auto">
+          <li>
+            <span className="flex justify-center items-center w-5 h-5 bg-sky-800 rounded-full border-4 "></span>
+            Geschäftsführerin
+          </li>
+          <li>Master of Science</li>
+          <li>Bachelor of Science</li>
+        </ul>
       </div>
-      <div className="flex w-1/2 flex-col	flex-wrap rounded-xl	 border-2	p-4 m-4 shadow-lg">
+      <div
+        className="flex w-1/2 flex-col	flex-wrap rounded-xl
+ border-2	p-4 m-4 shadow-lg basis-64	 grow	shrink"
+      >
         <h3 className="flex justify-center">Erik</h3>
         <img src={logo} className="h-40"></img>
         <div className="flex justify-center">
@@ -110,6 +125,12 @@ function AboutUs() {
             className="h-8 m-1 grayscale hover:grayscale-0"
           ></img>
         </div>
+        <h3 className="m-2">Curriculum Vitae</h3>
+        <ul className="flex flex-col justify-center m-auto list-disc">
+          <li>Geschäftsführerin</li>
+          <li>Master of Science</li>
+          <li>Bachelor of Science</li>
+        </ul>
       </div>
     </div>
   );
