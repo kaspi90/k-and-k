@@ -7,6 +7,8 @@ import react from "../img/react.svg";
 import tailwind from "../img/tailwind.svg";
 import typescript from "../img/typescript.svg";
 import javascript from "../img/javascript.svg";
+import jana from "../img/jana.png";
+import stix from "../img/stix.png";
 
 function AboutUs() {
   return (
@@ -16,7 +18,7 @@ function AboutUs() {
  border-2 p-4 m-4 shadow-lg basis-64		"
       >
         <h3 className=" flex justify-center">Heike</h3>
-        <img src={logo} className="h-40"></img>
+        <img src={jana} className="h-40"></img>
         <div className="flex justify-center">
           <img
             src={github}
@@ -78,7 +80,7 @@ function AboutUs() {
  border-2	p-4 m-4 shadow-lg basis-64	 grow	shrink"
       >
         <h3 className="flex justify-center">Erik</h3>
-        <img src={logo} className="h-40"></img>
+        <img src={stix} className="h-40"></img>
         <div className="flex justify-center">
           <img
             src={github}
