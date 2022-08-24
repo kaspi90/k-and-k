@@ -18,7 +18,9 @@ function AboutUs() {
  border-2 p-4 m-4 shadow-lg basis-64		"
       >
         <h3 className=" flex justify-center">Heike</h3>
-        <img src={jana} className="h-40"></img>
+        <div className="flex justify-center">
+          <img src={jana} className="h-40 w-40 rounded-full mb-4 mt-4"></img>
+        </div>
         <div className="flex justify-center">
           <img
             src={github}
@@ -80,7 +82,9 @@ function AboutUs() {
  border-2	p-4 m-4 shadow-lg basis-64	 grow	shrink"
       >
         <h3 className="flex justify-center">Erik</h3>
-        <img src={stix} className="h-40"></img>
+        <div className="flex justify-center">
+          <img src={stix} className="h-40 w-40 rounded-full mb-4 mt-4"></img>
+        </div>
         <div className="flex justify-center">
           <img
             src={github}
