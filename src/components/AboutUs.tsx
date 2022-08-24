@@ -10,8 +10,8 @@ import javascript from "../img/javascript.svg";
 import jana from "../img/jana.png";
 import stix from "../img/stix.png";
 import wuppertal from "../img/wuppertal.svg";
-import dortmund from "../img/logo_tu.png";
-import essen from "../img/Uni-duisburg-essen-logo-2022.jpg";
+import dortmund from "../img/tu_dortmund.svg";
+import essen from "../img/uni_essen.svg";
 import csueb from "../img/csueb.svg";
 
 function AboutUs() {
@@ -73,15 +73,12 @@ function AboutUs() {
         </div>
         <h3 className="m-2">Curriculum Vitae</h3>
         <ul className="flex flex-col justify-center m-auto ">
-          <li className="text-red-500">
-            <span className="text-black">Geschäftsführerin</span>
-          </li>
-
-          <li>TU-Dortmund - Master of Science</li>
           <img src={dortmund} className="h-10 flex justify-center"></img>
 
-          <li>Unversität Wuppertal - Bachelor of Science</li>
+          <li>TU-Dortmund - Master of Science</li>
           <img src={wuppertal} className="h-10 flex justify-center"></img>
+
+          <li>Unversität Wuppertal - Bachelor of Science</li>
         </ul>
       </div>
       <div
@@ -139,13 +136,10 @@ function AboutUs() {
           ></img>
         </div>
         <h3 className="m-2">Curriculum Vitae</h3>
-        <ul className="flex flex-col justify-center m-auto list-disc">
-          <li className="text-red-500">
-            <span className="text-black">Geschäftsführerin</span>
-          </li>
+        <ul className="flex flex-col justify-center m-auto  ">
           <img src={csueb} className="h-20"></img>
           <li>California State University, East Bay - Marketing Management</li>
-          <img src={essen} className="h-20 "></img>
+          <img src={essen} className="h-10 "></img>
           <li>Universität Duisburg-Essen - Bachelor of Science</li>
         </ul>
       </div>
