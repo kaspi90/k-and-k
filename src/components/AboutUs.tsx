@@ -13,6 +13,10 @@ import wuppertal from "../img/wuppertal.svg";
 import dortmund from "../img/tu_dortmund.svg";
 import essen from "../img/uni_essen.svg";
 import csueb from "../img/csueb.svg";
+import kadelo from "../img/kadelo_logo.png";
+import seeders from "../img/seeders_logo.png";
+import brettspielguru from "../img/brettspielguru_logo.jpeg";
+import adesso from "../img/adesso_logo.svg";
 
 function AboutUs() {
   return (
@@ -71,22 +75,59 @@ function AboutUs() {
             className="h-8 m-1 grayscale hover:grayscale-0"
           ></img>
         </div>
-        <h3 className="m-2">Curriculum Vitae</h3>
-        <ul className="flex flex-col justify-center m-auto ">
-          <img src={dortmund} className="h-10 flex justify-center"></img>
+        <h3 className="m-2 flex justify-center">Curriculum Vitae</h3>
+        <div className="flex flex-col justify-center m-auto  ">
+          <div className="m-4">
+            <img
+              src={brettspielguru}
+              className="w-28 justify-center flex  m-auto "
+            ></img>
+            p
+          </div>
+          <p className="flex  m-auto justify-center">Brettspielguru</p>
+          <div className="m-4">
+            <img
+              src={kadelo}
+              className="w-28  flex  m-auto justify-center"
+            ></img>
+          </div>
+          <p className="flex  m-auto justify-center">Kadelo</p>
+          <div className="m-4">
+            <img
+              src={csueb}
+              className="w-28   flex  m-auto justify-center"
+            ></img>
+          </div>
+          <p className="flex  m-auto justify-center">
+            California State University, East Bay - Marketing Management
+          </p>
+          <div className="m-4">
+            <img
+              src={dortmund}
+              className="w-28  m-auto flex justify-center"
+            ></img>
+          </div>
 
-          <li>TU-Dortmund - Master of Science</li>
-          <img src={wuppertal} className="h-10 flex justify-center"></img>
-
-          <li>Unversität Wuppertal - Bachelor of Science</li>
-        </ul>
+          <p className="flex  m-auto justify-center">
+            TU-Dortmund - Master of Science - Architektur
+          </p>
+          <div className="m-4">
+            <img
+              src={wuppertal}
+              className="w-28   m-auto flex justify-center"
+            ></img>
+          </div>
+          <p className="flex m-auto justify-center">
+            Unversität Wuppertal - Bachelor of Science - Architektur
+          </p>
+        </div>
       </div>
       <div
         className="flex w-1/2 flex-col	flex-wrap rounded-xl
  border-2	p-4 m-4 shadow-lg basis-64	 grow	shrink"
       >
         <h3 className="flex justify-center">Erik</h3>
-        <div className="flex justify-center">
+        <div className="flex flex-col justify-center m-auto">
           <img src={stix} className="h-40 w-40 rounded-full mb-4 mt-4"></img>
         </div>
         <div className="flex justify-center">
@@ -135,13 +176,50 @@ function AboutUs() {
             className="h-8 m-1 grayscale hover:grayscale-0"
           ></img>
         </div>
-        <h3 className="m-2">Curriculum Vitae</h3>
-        <ul className="flex flex-col justify-center m-auto  ">
-          <img src={csueb} className="h-20"></img>
-          <li>California State University, East Bay - Marketing Management</li>
-          <img src={essen} className="h-10 "></img>
-          <li>Universität Duisburg-Essen - Bachelor of Science</li>
-        </ul>
+        <h3 className="m-2 flex justify-center">Curriculum Vitae</h3>
+
+        <div className="flex flex-col justify-center m-auto  ">
+          <div className="m-4">
+            <img
+              src={brettspielguru}
+              className="w-28 justify-center flex  m-auto "
+            ></img>
+          </div>
+          <p className="flex  m-auto justify-center">Brettspielguru</p>
+          <div className="m-4">
+            <img
+              src={seeders}
+              className="w-28  flex  m-auto  justify-center"
+            ></img>
+          </div>
+          <p className="flex  m-auto justify-center">Seeders</p>
+          <div className="m-4">
+            <img
+              src={kadelo}
+              className="w-28 justify-center flex  m-auto"
+            ></img>
+          </div>
+          <p className="flex  m-auto justify-center">Kadelo</p>
+          <div className="m-4">
+            <img src={csueb} className="w-28  m-auto"></img>
+          </div>
+          <p className="flex  m-auto justify-center">
+            California State University, East Bay - Marketing Management
+          </p>
+          <div className="m-4">
+            <img src={adesso} className="w-28 m-auto"></img>
+          </div>
+          <p className="flex  m-auto justify-center">
+            Werkstudent - Softwareentwicklung
+          </p>
+          <div className="m-4">
+            <img src={essen} className="w-28 m-auto"></img>
+          </div>
+          <p className="flex  m-auto justify-center">
+            Universität Duisburg-Essen - Bachelor of Science -
+            Wirtschaftsinformatik
+          </p>
+        </div>
       </div>
     </div>
   );
