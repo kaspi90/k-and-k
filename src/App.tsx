@@ -7,6 +7,7 @@ import Projects from "./components/Projects";
 import Footer from "./components/Footer";
 import Imprint from "./components/Imprint";
 import PrivacyProtection from "./components/PrivacyProtection";
+import Contact from "./components/Contact";
 
 import {
   BrowserRouter as Router,
@@ -21,6 +22,8 @@ const Home = () => {
       <AboutUs />
       <Divider></Divider>
       <Projects />
+      <Divider></Divider>
+      <Contact></Contact>
     </>
   );
 };

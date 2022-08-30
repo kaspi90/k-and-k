@@ -1,6 +1,6 @@
 function PrivacyProtection() {
   return (
-    <div>
+    <div className="p-4">
       <h1>Datenschutzerklärung</h1>
       <br />
       <h2>1. Datenschutz auf einen Blick</h2>
