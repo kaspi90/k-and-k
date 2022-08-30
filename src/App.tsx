@@ -3,7 +3,7 @@ import "./App.css";
 import NavBar from "./components/NavBar";
 import AboutUs from "./components/AboutUs";
 import Divider from "./components/Divider";
-import Service from "./components/Service";
+import Projects from "./components/Projects";
 import Footer from "./components/Footer";
 import Imprint from "./components/Imprint";
 import PrivacyProtection from "./components/PrivacyProtection";
@@ -20,22 +20,23 @@ const Home = () => {
     <>
       <AboutUs />
       <Divider></Divider>
-      <Service />
-      <Divider></Divider>
+      <Projects />
     </>
   );
 };
 
 function App() {
   return (
-    <div className="w-4/5	m-auto">
-      <NavBar />
+    <div>
       <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/impressum" element={<Imprint />} />
-          <Route path="/datenschutz" element={<PrivacyProtection />} />
-        </Routes>
+        <div className="w-4/5	m-auto">
+          <NavBar />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/impressum" element={<Imprint />} />
+            <Route path="/datenschutz" element={<PrivacyProtection />} />
+          </Routes>
+        </div>
         <Footer />
       </BrowserRouter>
     </div>

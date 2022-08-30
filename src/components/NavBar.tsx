@@ -9,8 +9,8 @@ function NavBar() {
       </a>
       <div className="flex gap-5">
         <a href="#">Über Uns</a>
-        <a href="#">Leistungen</a>
         <a href="#">Projekte</a>
+        <a href="#">Kontakt</a>
       </div>
     </nav>
   );

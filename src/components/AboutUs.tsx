@@ -24,7 +24,7 @@ function AboutUs() {
     <div className="flex flex-wrap p-2 w-4/5 m-auto ">
       <div
         className="flex w-1/2 flex-col	flex-wrap rounded-xl
- border-2	p-4 m-4 shadow-lg basis-64	 grow	shrink"
+ border-2	p-4 m-4 shadow-lg basis-5/12		 grow	shrink"
       >
         <h3 className="flex justify-center">Erik</h3>
         <div className="flex flex-col justify-center mx-auto">
@@ -154,7 +154,7 @@ function AboutUs() {
 
       <div
         className="flex w-1/2 flex-col rounded-xl	shrink grow
- border-2 p-4 m-4 shadow-lg basis-64		"
+ border-2 p-4 m-4 shadow-lg basis-5/12			"
       >
         <h3 className=" flex justify-center">Heike</h3>
         <div className="flex justify-center">
