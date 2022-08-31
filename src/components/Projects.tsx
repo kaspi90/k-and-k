@@ -8,10 +8,10 @@ function Projects() {
       <h3 className="justify-center m-auto flex p-4">Projekte</h3>
       <Slide direction="up" triggerOnce>
         <div className="flex flex-wrap  mx-auto w-full	mb-16		 justify-center">
-          <div className="flex flex-col p-2 rounded-xl  basis-5/12	 mx-2">
+          <div className="flex  p-2 rounded-xl  basis-5/12	 mx-2">
             <img src={brettspielguru} className="w-30 rounded-xl"></img>
           </div>
-          <div className="flex  flex-col px-12 rounded-xl basis-5/12 mx-4 ">
+          <div className="flex flex-col   px-12 rounded-xl basis-5/12 mx-4 ">
             <div className="mb-6">
               <h3 className="mb-7 justify-center flex text-2xl font-semibold text-center text-gray-900 font-header  ">
                 Brettspielguru
@@ -22,7 +22,7 @@ function Projects() {
               dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
               sanctus est Lorem ipsum dolor sit amet.
             </div>
-            <div className="justify-center flex">
+            <div className="justify-center flex ">
               <a
                 href="https://www.brettspielguru.de"
                 target="_blank"
@@ -137,7 +137,7 @@ function Projects() {
               </a>
             </div>
           </div>
-          <div className="flex flex-col p-2 rounded-xl  basis-5/12		 m-2">
+          <div className="flex p-2 rounded-xl  basis-5/12		 m-2">
             <img src={brettspielguru} className="w-30 rounded-xl"></img>
           </div>
         </div>
