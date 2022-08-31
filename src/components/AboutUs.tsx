@@ -21,40 +21,49 @@ import Divider from "./Divider";
 
 function AboutUs() {
   return (
-    <div className="flex flex-wrap p-2 w-4/5 m-auto ">
-      <div
-        className="flex w-1/2 flex-col	flex-wrap rounded-xl
- border-2	p-4 m-4 shadow-lg basis-5/12		 grow	shrink"
-      >
-        <h3 className="flex justify-center">Erik</h3>
-        <div className="flex flex-col justify-center mx-auto">
-          <img src={stix} className="h-40 w-40 rounded-full mb-4 mt-4"></img>
+    <div className="flex flex-wrap content-center justify-center">
+      <div className="flex content-center justify-center ">
+        <div className="items-center flex w-full justify-center gap-20 mb-16">
+          <div>
+            <h3>Erik</h3>
+            <div>
+              <img src={stix} className="h-40 w-40 rounded-full "></img>
+            </div>
+            <div className="flex">
+              <img
+                src={github}
+                className="h-8 m-1 grayscale hover:grayscale-0"
+              ></img>
+              <img
+                src={linkedin}
+                className="h-8 m-1 grayscale hover:grayscale-0"
+              ></img>
+              <img
+                src={xing}
+                className="h-8 m-1 grayscale hover:grayscale-0"
+              ></img>
+            </div>
+          </div>
+          <div className="w-1/2">
+            <h3 className="mb-4">Über mich</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+              erat, sed diam voluptua. At vero eos et accusam et justo duo
+              dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+              sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
+              amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+              invidunt ut labore et dolore magna aliquyam erat, sed diam
+              voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+              Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
+              dolor sit amet.
+            </p>
+          </div>
         </div>
-        <div className="flex justify-center">
-          <img
-            src={github}
-            className="h-8 m-1 grayscale hover:grayscale-0"
-          ></img>
-          <img
-            src={linkedin}
-            className="h-8 m-1 grayscale hover:grayscale-0"
-          ></img>
-          <img src={xing} className="h-8 m-1 grayscale hover:grayscale-0"></img>
-        </div>
-        <h3>Über mich</h3>
-        <p className="p-4 justify-center flex">
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-          sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
-          rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
-          ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
-          sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-          dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
-          et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
-          takimata sanctus est Lorem ipsum dolor sit amet.
-        </p>
-        <h3>Technologien</h3>
-        <div className="flex justify-center">
+      </div>
+      <div className="mb-16  items-center flex flex-col">
+        <h3 className="mb-4">Technologien</h3>
+        <div className="flex">
           <img
             src={typescript}
             className="h-8 m-1 grayscale hover:grayscale-0"
@@ -76,60 +85,56 @@ function AboutUs() {
             className="h-8 m-1 grayscale hover:grayscale-0"
           ></img>
         </div>
-        <h3 className="m-2 flex justify-center">Curriculum Vitae</h3>
+      </div>
 
-        <div className="flex flex-col justify-center mx-auto  ">
-          <div className="m-4">
-            <img
-              src={brettspielguru}
-              className="w-28 justify-center flex  mx-auto "
-            ></img>
+      <div className="flex content-center justify-center  ">
+        <div className="items-center w-full ">
+          <div>
+            <h3>Projekte</h3>
+            <div className="m-4 w-28 mx-auto">
+              <img src={brettspielguru}></img>
+            </div>
+            <b>Brettspielguru</b>
+            <p className="p-4 ">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+              erat, sed diam voluptua. At vero eos et accusam et justo duo
+              dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+              sanctus est Lorem ipsum dolor sit amet.
+            </p>
+            <div className="m-4">
+              <img src={seeders} className="w-28  mx-auto   "></img>
+            </div>
+            <b className=" ">Seeders</b>
+            <p className="p-4 ">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+              erat, sed diam voluptua. At vero eos et accusam et justo duo
+              dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+              sanctus est Lorem ipsum dolor sit amet.
+            </p>
+            <div className="m-4">
+              <img src={kadelo} className="w-28 mx-auto"></img>
+            </div>
+            <b className="  m-auto ">Kadelo</b>
+            <p className="p-4 ">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+              erat, sed diam voluptua. At vero eos et accusam et justo duo
+              dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+              sanctus est Lorem ipsum dolor sit amet.
+            </p>
           </div>
-          <b className="flex  mx-auto justify-center">Brettspielguru</b>
-          <p className="p-4 justify-center flex">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
-            Lorem ipsum dolor sit amet.
-          </p>
-          <div className="m-4">
-            <img
-              src={seeders}
-              className="w-28  flex  m-auto  justify-center"
-            ></img>
-          </div>
-          <b className="flex  m-auto justify-center">Seeders</b>
-          <p className="p-4 justify-center flex">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
-            Lorem ipsum dolor sit amet.
-          </p>
-          <div className="m-4">
-            <img
-              src={kadelo}
-              className="w-28 justify-center flex  m-auto"
-            ></img>
-          </div>
-          <b className="flex  m-auto justify-center">Kadelo</b>
-          <p className="p-4 justify-center flex">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
-            Lorem ipsum dolor sit amet.
-          </p>
-          <h3 className="flex  m-auto justify-center">Studium</h3>
+        </div>
+
+        <div className="items-center w-full ">
+          <h3>Studium</h3>
 
           <div className="m-4">
-            <img src={csueb} className="w-28  m-auto"></img>
+            <img src={csueb} className="w-28 mx-auto "></img>
           </div>
-          <b className="flex  m-auto justify-center">
-            California State University, East Bay - Marketing Management
-          </b>
-          <p className="p-4 justify-center flex">
+          <b>California State University, East Bay - Marketing Management</b>
+          <p className="p-4  ">
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
             nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
             erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
@@ -137,24 +142,22 @@ function AboutUs() {
             Lorem ipsum dolor sit amet.
           </p>
           <div className="m-4">
-            <img src={adesso} className="w-28 m-auto"></img>
+            <img src={adesso} className="w-28 mx-auto"></img>
           </div>
-          <p className="flex  m-auto justify-center">
-            Werkstudent - Softwareentwicklung
-          </p>
+          <b>Werkstudent - Softwareentwicklung</b>
           <div className="m-4">
-            <img src={essen} className="w-28 m-auto"></img>
+            <img src={essen} className="w-28 mx-auto"></img>
           </div>
-          <p className="flex  m-auto justify-center">
+          <b>
             Universität Duisburg-Essen - Bachelor of Science -
             Wirtschaftsinformatik
-          </p>
+          </b>
         </div>
       </div>
 
       <div
-        className="flex w-1/2 flex-col rounded-xl	shrink grow
- border-2 p-4 m-4 shadow-lg basis-5/12			"
+        className="flex  w-full flex-col rounded-xl	shrink grow
+ border-2 p-4 m-4 shadow-lg "
       >
         <h3 className=" flex justify-center">Heike</h3>
         <div className="flex justify-center">
