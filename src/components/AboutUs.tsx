@@ -18,8 +18,8 @@ import {
   SiLinkedin,
   SiGithub,
 } from "react-icons/si";
-import "flowbite";
-
+import Flowbite from "flowbite-react";
+import Accordion from "./Accordion";
 function AboutUs() {
   return (
     <div className="flex flex-wrap content-center justify-center">
