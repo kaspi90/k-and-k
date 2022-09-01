@@ -18,11 +18,13 @@ import {
   SiLinkedin,
   SiGithub,
 } from "react-icons/si";
-import Flowbite from "flowbite-react";
-import Accordion from "./Accordion";
+
+import { Accordion } from "./Accordion";
+
 function AboutUs() {
   return (
     <div className="flex flex-wrap content-center justify-center">
+      <Accordion title="blub" content="bluber" />
       <div className="flex content-center justify-center ">
         <div className="items-center flex w-full justify-center gap-20 mb-16">
           <div>
