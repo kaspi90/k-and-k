@@ -236,7 +236,7 @@ function AboutUs() {
       <div className="flex content-center justify-center  ">
         <div className="items-center w-3/4 ">
           <div>
-            <Accordion title="Projekte" content={projekte} open={false} />
+            <Accordion title="Projekte" content={projekte} open={true} />
             <Accordion title="Studium" content={studium} open={false} />
           </div>
         </div>
