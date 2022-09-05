@@ -13,29 +13,29 @@ export const Accordion: React.FC<AccordionProps> = ({
   open,
 }) => {
   const [active, setActive] = useState(open);
-  const [opener, setOpener] = useState(open);
   const [height, setHeight] = useState("0px");
   const [rotate, setRotate] = useState("transform duration-700 ease");
   const targetRef = useRef();
 
   const contentSpace = useRef(null);
 
+  const initialHeight = async () => {
+    // @ts-ignore
+
+    setHeight(`100%`);
+
+    setRotate("transform duration-700 ease");
+  };
+
   useEffect(() => {
     // Update the document title using the browser API
-    if (active) {
-      setHeight(`100%`);
 
-      setRotate(
-        active
-          ? "transform duration-700 ease"
-          : "transform duration-700 ease rotate-180"
-      );
-      setOpener(false);
+    if (active) {
+      initialHeight();
     }
   }, []);
 
   function toggleAccordion() {
-    // @ts-ignore
     setActive((prevState) => !prevState);
     // @ts-ignore
     setHeight(active ? "0px" : `${contentSpace.current.scrollHeight}px`);
