@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { FiChevronUp } from "react-icons/fi";
 
 interface AccordionProps {
@@ -12,20 +12,19 @@ export const Accordion: React.FC<AccordionProps> = ({
   content,
   open,
 }) => {
-  const [active, setActive] = useState(false);
+  const [active, setActive] = useState(open);
   const [opener, setOpener] = useState(open);
   const [height, setHeight] = useState("0px");
   const [rotate, setRotate] = useState("transform duration-700 ease");
+  const targetRef = useRef();
 
   const contentSpace = useRef(null);
 
   useEffect(() => {
     // Update the document title using the browser API
-    if (opener) {
-      // @ts-ignore
-      setHeight(`${contentSpace.current.scrollHeight}px`);
+    if (active) {
+      setHeight(`100%`);
 
-      // @ts-ignore
       setRotate(
         active
           ? "transform duration-700 ease"
@@ -33,9 +32,10 @@ export const Accordion: React.FC<AccordionProps> = ({
       );
       setOpener(false);
     }
-  });
+  }, []);
 
   function toggleAccordion() {
+    // @ts-ignore
     setActive((prevState) => !prevState);
     // @ts-ignore
     setHeight(active ? "0px" : `${contentSpace.current.scrollHeight}px`);
@@ -49,7 +49,7 @@ export const Accordion: React.FC<AccordionProps> = ({
   return (
     <div className="flex flex-col border-2 rounded-xl px-16">
       <button
-        className="py-6 box-border appearance-none cursor-pointer focus:outline-none flex items-center justify-between"
+        className="py-6 box-border appearance-none cursor-pointer  focus:outline-none flex items-center justify-between"
         onClick={toggleAccordion}
       >
         <p className="inline-block text-footnote light">{title}</p>

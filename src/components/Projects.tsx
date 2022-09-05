@@ -4,7 +4,7 @@ import { Slide } from "react-awesome-reveal";
 
 function Projects() {
   return (
-    <div>
+    <div id="projects">
       <h3 className="justify-center m-auto flex p-4">Projekte</h3>
       <Slide direction="up" triggerOnce>
         <div className="flex flex-wrap  mx-auto w-full	mb-16		 justify-center">
