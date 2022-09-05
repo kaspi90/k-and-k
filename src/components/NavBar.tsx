@@ -8,9 +8,9 @@ function NavBar() {
         <img className="max-h-24 p-4	" src={logo}></img>
       </a>
       <div className="flex gap-5">
-        <a href="#">Über Uns</a>
-        <a href="#">Projekte</a>
-        <a href="#">Kontakt</a>
+        <a href="#aboutUs">Über Uns</a>
+        <a href="#projects">Projekte</a>
+        <a href="#contact">Kontakt</a>
       </div>
     </nav>
   );

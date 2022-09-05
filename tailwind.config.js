@@ -6,9 +6,13 @@ module.exports = {
   ],
 
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        "text-primary-blue": "#224CA6",
+      },
+    },
     fontFamily: {
-      sans: ["Quicksand"],
+      sans: ["SignikaNegative"],
     },
   },
 
