@@ -24,6 +24,7 @@ import { Accordion } from "./Accordion";
 function AboutUs() {
   const projekte = (
     <div>
+      test
       <ol className="relative border-l border-[#224CA6] dark:border-gray-700 mx-2">
         <li className="mb-10 ml-4">
           <div className="absolute w-3 h-3 bg-[#224CA6] rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
