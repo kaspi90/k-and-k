@@ -23,7 +23,7 @@ import { Accordion } from "./Accordion";
 
 function AboutUs() {
   const projekte = (
-    <ol className="relative border-l border-[#224CA6] dark:border-gray-700">
+    <ol className="relative border-l border-[#224CA6] dark:border-gray-700 mx-2">
       <li className="mb-10 ml-4">
         <div className="absolute w-3 h-3 bg-[#224CA6] rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
         <time className="mb-1 text-sm font-normal leading-none text-[#224CA6] dark:text-gray-500">
@@ -97,7 +97,7 @@ function AboutUs() {
   );
 
   const studium = (
-    <ol className="relative border-l border-[#224CA6] dark:border-gray-700">
+    <ol className="relative border-l border-[#224CA6] dark:border-gray-700 mx-2">
       <li className="mb-10 ml-4">
         <div className="absolute w-3 h-3 bg-[#224CA6] rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
         <time className="mb-1 text-sm font-normal leading-none text-[#224CA6] dark:text-gray-500">
@@ -183,7 +183,7 @@ function AboutUs() {
                 className="h-40 w-40 rounded-full border-4  border-[#224CA6] mb-4 "
               ></img>
             </div>
-            <div className="flex justify-center gap-2">
+            <div className="flex overflow-visible justify-center gap-2">
               <IconContext.Provider
                 value={{
                   color: "#224CA6",
@@ -191,9 +191,24 @@ function AboutUs() {
                   size: "2em",
                 }}
               >
-                <SiGithub></SiGithub>
-                <SiLinkedin></SiLinkedin>
-                <SiXing></SiXing>
+                <div className="group relative shrink-0 overflow-visible flex flex-col items-center	">
+                  <SiGithub></SiGithub>
+                  <p className="invisible group-hover:visible absolute top-10 bg-gray-700 text-white rounded-lg min-w-full	p-2 flex items-center justify-center min-h-12 text-lg text-center">
+                    GitHub
+                  </p>
+                </div>
+                <div className="group relative shrink-0 overflow-visible flex flex-col items-center	">
+                  <SiLinkedin></SiLinkedin>
+                  <p className="invisible group-hover:visible absolute top-10 bg-gray-700 text-white rounded-lg min-w-full	p-2 flex items-center justify-center min-h-12 text-lg text-center">
+                    LinkedIn
+                  </p>
+                </div>
+                <div className="group relative shrink-0 overflow-visible flex flex-col items-center	">
+                  <SiXing></SiXing>
+                  <p className="invisible group-hover:visible absolute top-10 bg-gray-700 text-white rounded-lg min-w-full	p-2 flex items-center justify-center min-h-12 text-lg text-center">
+                    Xing
+                  </p>
+                </div>
               </IconContext.Provider>
             </div>
           </div>
@@ -224,11 +239,36 @@ function AboutUs() {
               size: "2em",
             }}
           >
-            <SiTypescript></SiTypescript>
-            <SiJavascript></SiJavascript>
-            <SiReact></SiReact>
-            <SiTailwindcss></SiTailwindcss>
-            <SiMaterialui></SiMaterialui>
+            <div className="group relative shrink-0 overflow-visible flex flex-col items-center	">
+              <SiTypescript></SiTypescript>
+              <p className="invisible group-hover:visible absolute top-10 bg-gray-700 text-white rounded-lg min-w-full	p-2 flex items-center justify-center min-h-12 text-lg text-center">
+                Typescript
+              </p>
+            </div>
+            <div className="group relative shrink-0 overflow-visible flex flex-col items-center	">
+              <SiJavascript></SiJavascript>
+              <p className="invisible group-hover:visible absolute top-10 bg-gray-700 text-white rounded-lg min-w-full	p-2 flex items-center justify-center min-h-12 text-lg text-center">
+                Javascript
+              </p>
+            </div>
+            <div className="group relative shrink-0 overflow-visible flex flex-col items-center	">
+              <SiReact></SiReact>
+              <p className="invisible group-hover:visible absolute top-10 bg-gray-700 text-white rounded-lg min-w-full	p-2 flex items-center justify-center min-h-12 text-lg text-center">
+                React
+              </p>
+            </div>
+            <div className="group relative shrink-0 overflow-visible flex flex-col items-center	">
+              <SiTailwindcss></SiTailwindcss>
+              <p className="invisible group-hover:visible absolute top-10 bg-gray-700 text-white rounded-lg min-w-full	p-2 flex items-center justify-center min-h-12 text-lg text-center">
+                Tailwind
+              </p>
+            </div>
+            <div className="group relative shrink-0 overflow-visible flex flex-col items-center	">
+              <SiMaterialui></SiMaterialui>
+              <p className="invisible group-hover:visible absolute top-10 bg-gray-700 text-white rounded-lg min-w-full	p-2 flex items-center justify-center min-h-12 text-lg text-center">
+                MateterialUI
+              </p>
+            </div>
           </IconContext.Provider>
         </div>
       </div>
@@ -236,7 +276,8 @@ function AboutUs() {
       <div className="flex content-center justify-center  ">
         <div className="items-center w-3/4 ">
           <div>
-            <Accordion title="Projekte" content={projekte} open={false} />
+            <Accordion title="Projekte" content={projekte} open={true} />
+            <br />
             <Accordion title="Studium" content={studium} open={false} />
           </div>
         </div>
