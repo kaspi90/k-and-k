@@ -1,5 +1,5 @@
 import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
-import { FiChevronUp } from "react-icons/fi";
+import { FiChevronDown, FiChevronUp } from "react-icons/fi";
 
 interface AccordionProps {
   title: React.ReactNode;
@@ -47,13 +47,13 @@ export const Accordion: React.FC<AccordionProps> = ({
   }
 
   return (
-    <div className="flex flex-col border-2 rounded-xl px-16">
+    <div className="flex flex-col border-2 rounded-xl px-16 border-gray-700 ">
       <button
         className="py-6 box-border appearance-none cursor-pointer  focus:outline-none flex items-center justify-between"
         onClick={toggleAccordion}
       >
         <p className="inline-block text-footnote light">{title}</p>
-        <FiChevronUp></FiChevronUp>
+        <FiChevronDown></FiChevronDown>
       </button>
       <div
         ref={contentSpace}

@@ -8,7 +8,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "text-primary-blue": "#224CA6",
+        blue: "#224CA6",
+        violet: "#671595",
       },
     },
     fontFamily: {
