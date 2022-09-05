@@ -1,4 +1,6 @@
 import stix from "../img/stix.png";
+import jana from "../img/jana.png";
+
 import wuppertal from "../img/wuppertal.svg";
 import dortmund from "../img/tu_dortmund.svg";
 import essen from "../img/uni_essen.svg";
@@ -450,7 +452,7 @@ function AboutUs() {
             <h3 className="flex justify-center mt-4 mb-4">Heike</h3>
             <div>
               <img
-                src={stix}
+                src={jana}
                 className="h-40 w-40 rounded-full border-4  border-violet mb-4 "
               ></img>
             </div>
