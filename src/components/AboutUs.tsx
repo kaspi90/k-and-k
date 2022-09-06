@@ -331,11 +331,11 @@ function AboutUs() {
 
   return (
     <div
-      className="flex flex-wrap content-center justify-center mb-16"
+      className="flex flex-wrap content-center justify-center mb-16 "
       id="aboutUs"
     >
       <div className="flex content-center justify-center ">
-        <div className="items-center flex w-full justify-center gap-20 mb-16">
+        <div className="items-center flex w-full justify-center gap-20 mb-16 flex-wrap">
           <div>
             <h3 className="flex justify-center mt-4 mb-4">Erik</h3>
             <div>
@@ -373,8 +373,8 @@ function AboutUs() {
               </IconContext.Provider>
             </div>
           </div>
-          <div className="w-1/2">
-            <h3 className="mb-4 ">Über mich</h3>
+          <div className="w-1/2 sm:w-full">
+            <h3 className="mb-4 sm:text-center ">Über mich</h3>
             <p>
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
               nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
@@ -436,7 +436,7 @@ function AboutUs() {
 
       <div className="flex content-center justify-center  ">
         <div className="flex-col flex items-center">
-          <div className="w-3/4">
+          <div className="w-3/4 sm:w-full">
             <div>
               <Accordion title="Projekte" content={projekte} open={true} />
               <br />
@@ -445,9 +445,10 @@ function AboutUs() {
           </div>
         </div>
       </div>
+
       <Divider></Divider>
       <div className="flex content-center justify-center ">
-        <div className="items-center flex flex-row-reverse w-full justify-center gap-20 mb-16">
+        <div className="items-center flex flex-row-reverse w-full flex-wrap justify-center gap-20 mb-16">
           <div className="flex flex-col ">
             <h3 className="flex justify-center mt-4 mb-4">Heike</h3>
             <div>
@@ -485,8 +486,8 @@ function AboutUs() {
               </IconContext.Provider>
             </div>
           </div>
-          <div className="w-1/2">
-            <h3 className="mb-4 ">Über mich</h3>
+          <div className="w-1/2 sm:w-full">
+            <h3 className="mb-4 sm:text-center">Über mich</h3>
             <p>
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
               nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
@@ -502,7 +503,7 @@ function AboutUs() {
           </div>
         </div>
       </div>
-      <div className="mb-16  items-center flex flex-col">
+      <div className="mb-16  items-center flex flex-col ">
         <h3 className="mb-4">Technologien</h3>
         <div className="flex gap-2">
           <IconContext.Provider
@@ -544,12 +545,20 @@ function AboutUs() {
             </div>
           </IconContext.Provider>
         </div>
-        <br />
-        <div className="w-3/4">
-          <br />
-          <Accordion title="Projekte" content={workHeike} open={false} />
-          <br />
-          <Accordion title="Studium" content={unversityHeike} open={false} />
+      </div>
+      <div className="flex content-center justify-center">
+        <div className="flex-col flex items-center">
+          <div className="w-3/4 sm:w-full">
+            <div>
+              <Accordion title="Projekte" content={workHeike} open={false} />
+              <br />
+              <Accordion
+                title="Studium"
+                content={unversityHeike}
+                open={false}
+              />
+            </div>
+          </div>
         </div>
       </div>
     </div>
