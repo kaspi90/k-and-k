@@ -20,9 +20,8 @@ const Home = () => {
   return (
     <>
       <AboutUs />
-      <Divider></Divider>
+
       <Projects />
-      <Divider></Divider>
       <Contact></Contact>
     </>
   );
@@ -32,7 +31,7 @@ function App() {
   return (
     <div>
       <BrowserRouter>
-        <div className="w-4/5	m-auto">
+        <div className="w-full m-auto dark:bg-slate-800 dark:text-white">
           <NavBar />
           <Routes>
             <Route path="/" element={<Home />} />

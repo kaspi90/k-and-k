@@ -1,6 +1,6 @@
 function Imprint() {
   return (
-    <div className="p-4">
+    <div className="p-4 w-4/5 mx-auto">
       <h2>Impressum</h2>
       <br />
       <p>Angaben gemäß § 5 TMG:</p>
