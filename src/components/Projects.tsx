@@ -32,7 +32,7 @@ function Projects(props: any) {
               className="rounded-xl shrink-0 shadow-md"
             ></img>
           </div>
-          <div className="rounded-xl w-1/2 sm:w-4/5 ">
+          <div className="rounded-xl w-1/2 sm:w-4/5 pt-12">
             <div className="mb-6">
               <h3 className="mb-7 justify-center flex text-2xl font-semibold text-center text-gray-900 font-header dark:text-white ">
                 Brettspielguru
@@ -241,7 +241,7 @@ function Projects(props: any) {
           <div className=" rounded-xl p-12 w-1/2 sm:basis-96 ">
             <img src={pokemon} className="rounded-xl shrink-0 shadow-md"></img>
           </div>
-          <div className="rounded-xl w-1/2 sm:w-4/5 ">
+          <div className="rounded-xl w-1/2 sm:w-4/5 pt-12 ">
             <div className="mb-6">
               <h3 className="mb-7 justify-center flex text-2xl font-semibold text-center text-gray-900 font-header dark:text-white ">
                 Pokémon
