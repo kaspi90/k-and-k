@@ -16,25 +16,35 @@ import {
   BrowserRouter,
 } from "react-router-dom";
 
-const Home = () => {
+const Home = (props:any) => {
   return (
     <>
       <AboutUs />
 
-      <Projects />
+      <Projects mode={props.mode}/>
       <Contact></Contact>
     </>
   );
 };
 
 function App() {
+  const [mode, setMode] = React.useState(false);
+  const el = document.getElementById("modeSwitch");
+
+  React.useEffect(() => {
+    el?.classList.toggle("dark", mode);
+  }, [mode]);
+
+  function toggleMode() {
+    setMode((prevState) => !prevState);
+  }
   return (
     <div>
       <BrowserRouter>
         <div className="w-full m-auto dark:bg-slate-800 dark:text-white">
-          <NavBar />
+          <NavBar toggleMode={toggleMode} mode={mode}/>
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/" element={<Home mode={mode}/>} />
             <Route path="/impressum" element={<Imprint />} />
             <Route path="/datenschutz" element={<PrivacyProtection />} />
           </Routes>

@@ -5,12 +5,14 @@ interface AccordionProps {
   title: React.ReactNode;
   content: React.ReactNode;
   open: boolean;
+  color:string;
 }
 
 export const Accordion: React.FC<AccordionProps> = ({
   title,
   content,
   open,
+  color,
 }) => {
   const [active, setActive] = useState(open);
   const [height, setHeight] = useState("0px");
@@ -47,12 +49,12 @@ export const Accordion: React.FC<AccordionProps> = ({
   }
 
   return (
-    <div className="flex flex-col border-2 rounded-xl px-16 border-gray-700 bg-white dark:bg-gray-600 ">
+    <div className={`flex flex-col border rounded-xl px-16 border-gray-700 ${color} dark:bg-gray-600 `}>
       <button
-        className="py-6 box-border appearance-none cursor-pointer  focus:outline-none flex items-center justify-between"
+        className="py-4 box-border appearance-none cursor-pointer  focus:outline-none flex items-center justify-between"
         onClick={toggleAccordion}
       >
-        <p className="inline-block text-footnote light">{title}</p>
+        <p className="inline-block text-xl text-footnote m-auto light">{title}</p>
         <FiChevronDown></FiChevronDown>
       </button>
       <div

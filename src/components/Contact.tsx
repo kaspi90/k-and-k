@@ -2,7 +2,7 @@ import { GrMail } from "react-icons/gr";
 
 function Contact() {
   return (
-    <div className=" bg-neutral-100 dark:bg-gray-700" id="contact">
+    <div className=" bg-neutral-100 dark:bg-gray-900" id="contact">
       <div className="w-3/4 mx-auto pb-10 pt-8">
         <h3 className="text-center mb-4">Kontakt</h3>
         <p className="text-center mb-4">
