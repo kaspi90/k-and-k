@@ -5,7 +5,7 @@ interface AccordionProps {
   title: React.ReactNode;
   content: React.ReactNode;
   open: boolean;
-  color:string;
+  color: string;
 }
 
 export const Accordion: React.FC<AccordionProps> = ({
@@ -49,12 +49,16 @@ export const Accordion: React.FC<AccordionProps> = ({
   }
 
   return (
-    <div className={`flex flex-col border rounded-xl px-16 border-gray-700 ${color} dark:bg-gray-600 `}>
+    <div
+      className={`flex flex-col border rounded-xl px-16 border-gray-700 ${color} dark:bg-gray-600 `}
+    >
       <button
         className="py-4 box-border appearance-none cursor-pointer  focus:outline-none flex items-center justify-between"
         onClick={toggleAccordion}
       >
-        <p className="inline-block text-xl text-footnote m-auto light">{title}</p>
+        <p className="inline-block text-xl text-footnote m-auto light">
+          {title}
+        </p>
         <FiChevronDown></FiChevronDown>
       </button>
       <div

@@ -10,7 +10,7 @@ import adesso from "../img/adesso_logo.svg";
 import dortmund from "../img/Technische_Universität_Dortmund_Logo Kopie.png";
 import wuppertal from "../img/BUW_Logo.svg";
 import mimo from "../img/Mimo_Logo.png";
-import sramek from "../img/SRAMEK+LOGO+NEU+ohne+Hintergrund+2017-640w.png"
+import sramek from "../img/SRAMEK+LOGO+NEU+ohne+Hintergrund+2017-640w.png";
 import { IconContext } from "react-icons";
 import {
   SiTypescript,
@@ -21,6 +21,8 @@ import {
   SiXing,
   SiLinkedin,
   SiGithub,
+  SiFirebase,
+  SiNodedotjs,
 } from "react-icons/si";
 
 import { Accordion } from "./Accordion";
@@ -29,9 +31,9 @@ import Divider from "./Divider";
 function AboutUs() {
   const workHeike = (
     <div>
-      <ol className="relative border-l border-violet dark:border-gray-700 mx-2">
+      <ol className="relative border-l border-violet dark:border-gray-400 mx-2">
         <li className="mb-10 ml-4">
-          <div className="absolute w-4 h-4 bg-violet rounded-full mt-1 -left-2  dark:border-gray-900 dark:bg-gray-700"></div>
+          <div className="absolute w-4 h-4 bg-violet rounded-full mt-1 -left-2  dark:border-gray-900 dark:bg-gray-400"></div>
           <time className="mb-1 text-sm font-normal leading-none text-violet dark:text-gray-400">
             February 2022
           </time>
@@ -48,10 +50,9 @@ function AboutUs() {
             et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
             Lorem ipsum dolor sit amet.
           </p>
-       
         </li>
         <li className="mb-10 ml-4">
-          <div className="absolute w-4 h-4 bg-violet rounded-full mt-1 -left-2  dark:border-gray-900 dark:bg-gray-700"></div>
+          <div className="absolute w-4 h-4 bg-violet rounded-full mt-1 -left-2  dark:border-gray-900 dark:bg-gray-400"></div>
           <time className="mb-1 text-sm font-normal leading-none text-violet dark:text-gray-400">
             March 2022
           </time>
@@ -68,7 +69,7 @@ function AboutUs() {
           </p>
         </li>
         <li className="ml-4">
-          <div className="absolute w-4 h-4 bg-violet rounded-full mt-1  -left-2  dark:border-gray-900 dark:bg-gray-700"></div>
+          <div className="absolute w-4 h-4 bg-violet rounded-full mt-1  -left-2  dark:border-gray-900 dark:bg-gray-400"></div>
           <time className="mb-1 text-sm font-normal leading-none text-violet dark:text-gray-400">
             April 2022
           </time>
@@ -88,9 +89,9 @@ function AboutUs() {
   );
 
   const unversityHeike = (
-    <ol className="relative border-l border-violet dark:border-gray-700 mx-2">
+    <ol className="relative border-l border-violet dark:border-gray-400 mx-2">
       <li className="mb-10 ml-4">
-        <div className="absolute w-4 h-4 bg-violet rounded-full mt-1  -left-2  dark:border-gray-900 dark:bg-gray-700"></div>
+        <div className="absolute w-4 h-4 bg-violet rounded-full mt-1  -left-2  dark:border-gray-900 dark:bg-gray-400"></div>
         <time className="mb-1 text-sm font-normal leading-none text-violet dark:text-gray-400">
           März 2022 - Oktober 2022
         </time>
@@ -103,10 +104,9 @@ function AboutUs() {
         <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
           Webentwicklung mit HTML, CSS, JavaScript, React, Node.js
         </p>
-      
       </li>
       <li className="mb-10 ml-4">
-        <div className="absolute w-4 h-4 bg-violet rounded-full mt-1  -left-2  dark:border-gray-900 dark:bg-gray-700"></div>
+        <div className="absolute w-4 h-4 bg-violet rounded-full mt-1  -left-2  dark:border-gray-900 dark:bg-gray-400"></div>
         <time className="mb-1 text-sm font-normal leading-none text-violet dark:text-gray-400">
           2015
         </time>
@@ -114,15 +114,16 @@ function AboutUs() {
           <img src={csueb} className="w-28 mx-auto "></img>
         </div>
         <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
-          <b>California State University, East Bay - Design und angewandte Kunst</b>
+          <b>
+            California State University, East Bay - Design und angewandte Kunst
+          </b>
         </h3>
         <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
           Drawing, Creative Photography und Creative Process
         </p>
-      
       </li>
       <li className="mb-10 ml-4">
-        <div className="absolute w-4 h-4 bg-violet rounded-full mt-1  -left-2  dark:border-gray-900 dark:bg-gray-700"></div>
+        <div className="absolute w-4 h-4 bg-violet rounded-full mt-1  -left-2  dark:border-gray-900 dark:bg-gray-400"></div>
         <time className="mb-1 text-sm font-normal leading-none text-violet dark:text-gray-400">
           2014 - 2018
         </time>
@@ -133,11 +134,11 @@ function AboutUs() {
           Technische Universität Dortmund - Master of Science - Architektur
         </h3>
         <p className="text-base font-normal text-gray-500 dark:text-gray-400">
-           Abschlussarbeit: Vakuumdämmung in der Baupraxis
+          Abschlussarbeit: Vakuumdämmung in der Baupraxis
         </p>
       </li>
       <li className="mb-10 ml-4">
-        <div className="absolute w-4 h-4 bg-violet rounded-full mt-1  -left-2  dark:border-gray-900 dark:bg-gray-700"></div>
+        <div className="absolute w-4 h-4 bg-violet rounded-full mt-1  -left-2  dark:border-gray-900 dark:bg-gray-400"></div>
         <time className="mb-1 text-sm font-normal leading-none text-violet dark:text-gray-400">
           2013 - 2016
         </time>
@@ -148,12 +149,12 @@ function AboutUs() {
           <b>Werkstudent - Architektur</b>
         </h3>
         <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
-          Entwurfs- und Ausführungsplanung von verschiedenen Projekten mit Spirit und SketchUp
+          Entwurfs- und Ausführungsplanung von verschiedenen Projekten mit
+          Spirit und SketchUp
         </p>
-      
       </li>
       <li className="ml-4">
-        <div className="absolute w-4 h-4 bg-violet rounded-full mt-1 -left-2  dark:border-gray-900 dark:bg-gray-700"></div>
+        <div className="absolute w-4 h-4 bg-violet rounded-full mt-1 -left-2  dark:border-gray-900 dark:bg-gray-400"></div>
         <time className="mb-1 text-sm font-normal leading-none text-violet dark:text-gray-400">
           2010 - 2013
         </time>
@@ -172,9 +173,9 @@ function AboutUs() {
 
   const work = (
     <div>
-      <ol className="relative border-l border-blue dark:border-gray-700 mx-2">
+      <ol className="relative border-l border-blue dark:border-gray-400 mx-2">
         <li className="mb-10 ml-4">
-          <div className="absolute w-4 h-4 bg-blue rounded-full mt-1 -left-2 dark:border-gray-900 dark:bg-gray-700"></div>
+          <div className="absolute w-4 h-4 bg-blue rounded-full mt-1 -left-2 dark:border-gray-900 dark:bg-gray-400"></div>
           <time className="mb-1 text-sm font-normal leading-none text-blue dark:text-gray-400">
             November 2020 - Dezember 2021
           </time>
@@ -220,7 +221,7 @@ function AboutUs() {
         </li>
 
         <li className="ml-4">
-          <div className="absolute w-4 h-4 bg-blue rounded-full mt-1 -left-2  dark:border-gray-900 dark:bg-gray-700 "></div>
+          <div className="absolute w-4 h-4 bg-blue rounded-full mt-1 -left-2  dark:border-gray-900 dark:bg-gray-400 "></div>
           <time className="mb-1 text-sm font-normal leading-none text-blue dark:text-gray-400">
             Februar 2015 - heute
           </time>
@@ -247,9 +248,9 @@ function AboutUs() {
   );
 
   const studium = (
-    <ol className="relative border-l border-blue dark:border-gray-700 mx-2">
+    <ol className="relative border-l border-blue dark:border-gray-400 mx-2">
       <li className="mb-10 ml-4">
-        <div className="absolute w-4 h-4 bg-blue rounded-full mt-1  -left-2  dark:border-gray-900 dark:bg-gray-700"></div>
+        <div className="absolute w-4 h-4 bg-blue rounded-full mt-1  -left-2  dark:border-gray-900 dark:bg-gray-400"></div>
         <time className="mb-1 text-sm font-normal leading-none text-blue dark:text-gray-400">
           2015
         </time>
@@ -265,7 +266,7 @@ function AboutUs() {
         </p>
       </li>
       <li className="mb-10 ml-4">
-        <div className="absolute w-4 h-4 bg-blue rounded-full mt-1 -left-2  dark:border-gray-900 dark:bg-gray-700"></div>
+        <div className="absolute w-4 h-4 bg-blue rounded-full mt-1 -left-2  dark:border-gray-900 dark:bg-gray-400"></div>
         <time className="mb-1 text-sm font-normal leading-none text-blue dark:text-gray-400">
           2011 - 2015
         </time>
@@ -280,7 +281,7 @@ function AboutUs() {
         </p>
       </li>
       <li className="ml-4">
-        <div className="absolute w-4 h-4 bg-blue rounded-full mt-1 -left-2  dark:border-gray-900 dark:bg-gray-700"></div>
+        <div className="absolute w-4 h-4 bg-blue rounded-full mt-1 -left-2  dark:border-gray-900 dark:bg-gray-400"></div>
         <time className="mb-1 text-sm font-normal leading-none text-blue dark:text-gray-400">
           2010-2014
         </time>
@@ -348,19 +349,15 @@ function AboutUs() {
               Hallo, ich bin Erik, <br />
               <br />
               Ich bin Wirtschaftsinformatiker und habe über zehn Jahre Erfahrung
-              in der IT.
-              <br /> Ich arbeite als Software Engineer mit Schwerpunkt: React &
-              TypeScript. Zusätzlich habe ich viel Erfahrung im Bereich
+              in der IT. Ich arbeite als Software Engineer mit Schwerpunkt:
+              React & TypeScript. Zusätzlich habe ich viel Erfahrung im Bereich
               Unternehmensführung, Wachstum und Projektmanagement. Ich achte in
               allen Projekten darauf immer das Geschäftsziel im Auge zu behalten
-              und eine dementsprechende Umsetzung anzustreben. <br /> Ich bin
-              ein Fan von pragmatischen Lösungen, sofern diese nachhaltig sind
-              und lege viel Wert auf eine gute Kommunikation zwischen allen
-              Stakeholdern.
-              <br />
-              <br />
-              Persönliche Interessen abseits der Arbeit: Radsport, Ski &
-              Brettspiele
+              und eine dementsprechende Umsetzung anzustreben. <br />
+              <br /> Ich bin ein Fan von pragmatischen Lösungen, sofern diese
+              nachhaltig sind und lege viel Wert auf eine gute Kommunikation
+              zwischen allen Stakeholdern. Persönliche Interessen abseits der
+              Arbeit: Radsport, Ski & Brettspiele
             </p>
           </div>
         </div>
@@ -404,6 +401,12 @@ function AboutUs() {
               <p className="invisible group-hover:visible absolute top-10 bg-gray-700 text-white rounded-lg min-w-full	p-2 flex items-center justify-center min-h-12 text-lg text-center">
                 MateterialUI
               </p>
+            </div>{" "}
+            <div className="group relative shrink-0 overflow-visible flex flex-col items-center	">
+              <SiFirebase></SiFirebase>
+              <p className="invisible group-hover:visible absolute top-10 bg-gray-700 text-white rounded-lg min-w-full	p-2 flex items-center justify-center min-h-12 text-lg text-center">
+                Firebase
+              </p>
             </div>
           </IconContext.Provider>
         </div>
@@ -413,9 +416,19 @@ function AboutUs() {
         <div className="flex-col flex items-center">
           <div className="w-3/4 ">
             <div>
-              <Accordion title="Arbeit" color="bg-white" content={work} open={false} />
+              <Accordion
+                title="Arbeit"
+                color="bg-white"
+                content={work}
+                open={false}
+              />
               <div className="h-10"></div>
-              <Accordion title="Studium"  color="bg-white" content={studium} open={false} />
+              <Accordion
+                title="Studium"
+                color="bg-white"
+                content={studium}
+                open={false}
+              />
             </div>
           </div>
         </div>
@@ -513,9 +526,9 @@ function AboutUs() {
                 </p>
               </div>
               <div className="group relative shrink-0 overflow-visible flex flex-col items-center	">
-                <SiMaterialui></SiMaterialui>
+                <SiNodedotjs></SiNodedotjs>
                 <p className="invisible group-hover:visible absolute top-10 bg-gray-700 text-white rounded-lg min-w-full	p-2 flex items-center justify-center min-h-12 text-lg text-center">
-                  MateterialUI
+                  Node.js
                 </p>
               </div>
             </IconContext.Provider>
@@ -525,7 +538,12 @@ function AboutUs() {
           <div className="flex-col flex items-center">
             <div className="w-3/4  ">
               <div className="bg-neutral-100 dark:bg-gray-900">
-                <Accordion title="Arbeit" color="bg-neutral-100" content={workHeike} open={false} />
+                <Accordion
+                  title="Arbeit"
+                  color="bg-neutral-100"
+                  content={workHeike}
+                  open={false}
+                />
                 <div className="bg-neutral-100 h-10 dark:bg-gray-900"></div>
                 <Accordion
                   title="Studium"

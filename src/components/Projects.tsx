@@ -20,7 +20,7 @@ import {
   SiCss3,
 } from "react-icons/si";
 
-function Projects(props:any) {
+function Projects(props: any) {
   return (
     <div id="projects" className="w-4/5 mx-auto pt-12">
       <h3 className="justify-center m-auto flex p-4">Projekte</h3>
@@ -37,12 +37,12 @@ function Projects(props:any) {
               <h3 className="mb-7 justify-center flex text-2xl font-semibold text-center text-gray-900 font-header dark:text-white ">
                 Brettspielguru
               </h3>
-                <p className="text-justify">
-              Die Webseite von Brettspielguru sollte einerseits die Produkte
-              präsentieren, andererseits eine Möglichkeit bereitstellen, um die
-              passgenauen Kartenhüllen für verschiedene Brettspiele zu finden.
-              Außerdem sollte es ermöglicht werden auch eigenständig neue Spiele
-              mit den passenden Kartenhüllen einzupflegen.
+              <p className="text-justify">
+                Die Webseite von Brettspielguru sollte einerseits die Produkte
+                präsentieren, andererseits eine Möglichkeit bereitstellen, um
+                die passgenauen Kartenhüllen für verschiedene Brettspiele zu
+                finden. Außerdem sollte es ermöglicht werden auch eigenständig
+                neue Spiele mit den passenden Kartenhüllen einzupflegen.
               </p>
             </div>
             <div className="flex overflow-visible justify-center gap-2 mb-7">
@@ -77,14 +77,14 @@ function Projects(props:any) {
                     Firebase
                   </p>
                 </div>
-                 </IconContext.Provider>
-                </div>
+              </IconContext.Provider>
+            </div>
             <div className="justify-center flex ">
               <a
                 href="https://www.brettspielguru.de"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mr-4 inline-flex items-center px-6 py-4 space-x-2 text-sm font-bold text-white uppercase bg-gray-700 rounded-lg hover:bg-gray-900 dark:bg-gray-500"
+                className="mr-4 inline-flex items-center px-6 py-4 space-x-2 text-sm font-bold text-white uppercase bg-gray-700 rounded-lg hover:bg-gray-900 dark:bg-gray-500 dark:hover:bg-gray-400"
               >
                 <span>
                   <svg
@@ -109,7 +109,7 @@ function Projects(props:any) {
                 href="https://github.com/kaspi90/brettspielguru"
                 target="_blank"
                 rel="noopener noreferrer"
-                className=" inline-flex items-center px-6 py-4 space-x-2 text-sm font-bold text-gray-700 uppercase border border-gray-700 rounded-lg hover:border-gray-900 hover:text-gray-900  dark:text-white dark:border-gray-500"
+                className=" inline-flex items-center px-6 py-4 space-x-2 text-sm font-bold text-gray-700 uppercase border border-gray-700 rounded-lg hover:border-gray-900 hover:text-gray-900  dark:text-white dark:border-gray-500 dark:hover:bg-gray-400"
               >
                 <span>
                   <svg
@@ -139,53 +139,53 @@ function Projects(props:any) {
                 <h3 className="mb-7 justify-center flex text-2xl font-semibold text-center text-gray-900 font-header dark:text-white ">
                   Manga-Anime
                 </h3>
-                 <p className="text-justify">
-                Ein Manga- und Animeportal, welches die derzeit beliebtesten
-                Manga's und Anime's, inkl. Beschreibung und Bewertungen, von
-                Myanimelist anzeigt. Zusätzlich können eigene Sammlungen
-                erstellt und verwaltet werden.
+                <p className="text-justify">
+                  Ein Manga- und Animeportal, welches die derzeit beliebtesten
+                  Manga's und Anime's, inkl. Beschreibung und Bewertungen, von
+                  Myanimelist anzeigt. Zusätzlich können eigene Sammlungen
+                  erstellt und verwaltet werden.
                 </p>
               </div>
               <div className="flex overflow-visible justify-center gap-2 mb-7">
-              <IconContext.Provider
-                value={{
-                  color: props.mode ? "#9E9E9E" : "#374151",
-                  className: "hover:grayscale",
-                  size: "2em",
-                }}
-              >
-                <div className="group relative shrink-0 overflow-visible flex flex-col items-center	">
-                  <SiTypescript></SiTypescript>
-                  <p className="invisible group-hover:visible absolute top-10 bg-gray-700 text-white rounded-lg min-w-full	p-2 flex items-center justify-center min-h-12 text-lg text-center">
-                    Typescript
-                  </p>
-                </div>
-                <div className="group relative shrink-0 overflow-visible flex flex-col items-center	">
-                  <SiReact></SiReact>
-                  <p className="invisible group-hover:visible absolute top-10 bg-gray-700 text-white rounded-lg min-w-full	p-2 flex items-center justify-center min-h-12 text-lg text-center">
-                    React
-                  </p>
-                </div>
-                <div className="group relative shrink-0 overflow-visible flex flex-col items-center	">
-                  <SiTailwindcss></SiTailwindcss>
-                  <p className="invisible group-hover:visible absolute top-10 bg-gray-700 text-white rounded-lg min-w-full	p-2 flex items-center justify-center min-h-12 text-lg text-center">
-                    Tailwind
-                  </p>
-                </div>
-                <div className="group relative shrink-0 overflow-visible flex flex-col items-center	">
-                  <SiNodedotjs></SiNodedotjs>
-                  <p className="invisible group-hover:visible absolute top-10 bg-gray-700 text-white rounded-lg min-w-full	p-2 flex items-center justify-center min-h-12 text-lg text-center">
-                    Node.js
-                  </p>
-                </div>
-                 </IconContext.Provider>
-                </div>
+                <IconContext.Provider
+                  value={{
+                    color: props.mode ? "#9E9E9E" : "#374151",
+                    className: "hover:grayscale",
+                    size: "2em",
+                  }}
+                >
+                  <div className="group relative shrink-0 overflow-visible flex flex-col items-center	">
+                    <SiTypescript></SiTypescript>
+                    <p className="invisible group-hover:visible absolute top-10 bg-gray-700 text-white rounded-lg min-w-full	p-2 flex items-center justify-center min-h-12 text-lg text-center">
+                      Typescript
+                    </p>
+                  </div>
+                  <div className="group relative shrink-0 overflow-visible flex flex-col items-center	">
+                    <SiReact></SiReact>
+                    <p className="invisible group-hover:visible absolute top-10 bg-gray-700 text-white rounded-lg min-w-full	p-2 flex items-center justify-center min-h-12 text-lg text-center">
+                      React
+                    </p>
+                  </div>
+                  <div className="group relative shrink-0 overflow-visible flex flex-col items-center	">
+                    <SiTailwindcss></SiTailwindcss>
+                    <p className="invisible group-hover:visible absolute top-10 bg-gray-700 text-white rounded-lg min-w-full	p-2 flex items-center justify-center min-h-12 text-lg text-center">
+                      Tailwind
+                    </p>
+                  </div>
+                  <div className="group relative shrink-0 overflow-visible flex flex-col items-center	">
+                    <SiNodedotjs></SiNodedotjs>
+                    <p className="invisible group-hover:visible absolute top-10 bg-gray-700 text-white rounded-lg min-w-full	p-2 flex items-center justify-center min-h-12 text-lg text-center">
+                      Node.js
+                    </p>
+                  </div>
+                </IconContext.Provider>
+              </div>
               <div className="justify-center flex ">
                 <a
                   href="https://manga-wheat.vercel.app/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mr-4 inline-flex items-center px-6 py-4 space-x-2 text-sm font-bold text-white uppercase bg-gray-700 rounded-lg hover:bg-gray-900 dark:bg-gray-500"
+                  className="mr-4 inline-flex items-center px-6 py-4 space-x-2 text-sm font-bold text-white uppercase bg-gray-700 rounded-lg hover:bg-gray-900 dark:bg-gray-500 dark:hover:bg-gray-400 "
                 >
                   <span>
                     <svg
@@ -210,7 +210,7 @@ function Projects(props:any) {
                   href="https://github.com/Heikchen/Manga"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className=" inline-flex items-center px-6 py-4 space-x-2 text-sm font-bold text-gray-700 uppercase border border-gray-700 rounded-lg hover:border-gray-900 hover:text-gray-900  dark:text-white dark:border-gray-500"
+                  className=" inline-flex items-center px-6 py-4 space-x-2 text-sm font-bold text-gray-700 uppercase border border-gray-700 rounded-lg hover:border-gray-900 hover:text-gray-900  dark:text-white dark:border-gray-500 "
                 >
                   <span>
                     <svg
@@ -247,10 +247,10 @@ function Projects(props:any) {
                 Pokémon
               </h3>
               <p className="text-justify">
-              Das Pokémon Projekt ermöglicht eine Übersicht über alle derzeit
-              offiziel am Markt erhältlichen Pokémon Karten. Für jede Karten
-              wird entsprechende Verkaufswert von TCG-Player anzeigt. Es ist
-              möglich eigene Sammlungen anzulegen und zu verwalten.
+                Das Pokémon Projekt ermöglicht eine Übersicht über alle derzeit
+                offiziel am Markt erhältlichen Pokémon Karten. Für jede Karten
+                wird entsprechende Verkaufswert von TCG-Player anzeigt. Es ist
+                möglich eigene Sammlungen anzulegen und zu verwalten.
               </p>
             </div>
             <div className="flex overflow-visible justify-center gap-2 mb-7">
@@ -279,14 +279,14 @@ function Projects(props:any) {
                     CSS
                   </p>
                 </div>
-                 </IconContext.Provider>
-                </div>
+              </IconContext.Provider>
+            </div>
             <div className="justify-center flex ">
               <a
                 href="https://pokemon-cards-cyan.vercel.app/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mr-4 inline-flex items-center px-6 py-4 space-x-2 text-sm font-bold text-white uppercase bg-gray-700 rounded-lg hover:bg-gray-900 dark:bg-gray-500"
+                className="mr-4 inline-flex items-center px-6 py-4 space-x-2 text-sm font-bold text-white uppercase bg-gray-700 rounded-lg hover:bg-gray-900 dark:bg-gray-500 dark:hover:bg-gray-400"
               >
                 <span>
                   <svg
@@ -342,46 +342,46 @@ function Projects(props:any) {
                   Boardgames
                 </h3>
                 <p className="text-justify">
-                Projekt für die Übersicht über die derzeit gefragtesten
-                Brettspiele am Markt. Weiterhin wurde eine Brettspielsuche
-                implementiert, die eine genaue Brettspielbeschreibung inkl.
-                Spieleranzahl, Altersempfehlung und Spielzeit ausgibt.
+                  Projekt für die Übersicht über die derzeit gefragtesten
+                  Brettspiele am Markt. Weiterhin wurde eine Brettspielsuche
+                  implementiert, die eine genaue Brettspielbeschreibung inkl.
+                  Spieleranzahl, Altersempfehlung und Spielzeit ausgibt.
                 </p>
               </div>
               <div className="flex overflow-visible justify-center gap-2 mb-7">
-              <IconContext.Provider
-                value={{
-                  color: props.mode ? "#9E9E9E" : "#374151",
-                  className: "hover:grayscale",
-                  size: "2em",
-                }}
-              >
-                <div className="group relative shrink-0 overflow-visible flex flex-col items-center	">
-                  <SiJavascript></SiJavascript>
-                  <p className="invisible group-hover:visible absolute top-10 bg-gray-700 text-white rounded-lg min-w-full	p-2 flex items-center justify-center min-h-12 text-lg text-center">
-                    Javascript
-                  </p>
-                </div>
-                <div className="group relative shrink-0 overflow-visible flex flex-col items-center	">
-                  <SiReact></SiReact>
-                  <p className="invisible group-hover:visible absolute top-10 bg-gray-700 text-white rounded-lg min-w-full	p-2 flex items-center justify-center min-h-12 text-lg text-center">
-                    React
-                  </p>
-                </div>
-                <div className="group relative shrink-0 overflow-visible flex flex-col items-center	">
-                  <SiCss3></SiCss3>
-                  <p className="invisible group-hover:visible absolute top-10 bg-gray-700 text-white rounded-lg min-w-full	p-2 flex items-center justify-center min-h-12 text-lg text-center">
-                    CSS
-                  </p>
-                </div>
-                 </IconContext.Provider>
-                </div>
+                <IconContext.Provider
+                  value={{
+                    color: props.mode ? "#9E9E9E" : "#374151",
+                    className: "hover:grayscale",
+                    size: "2em",
+                  }}
+                >
+                  <div className="group relative shrink-0 overflow-visible flex flex-col items-center	">
+                    <SiJavascript></SiJavascript>
+                    <p className="invisible group-hover:visible absolute top-10 bg-gray-700 text-white rounded-lg min-w-full	p-2 flex items-center justify-center min-h-12 text-lg text-center">
+                      Javascript
+                    </p>
+                  </div>
+                  <div className="group relative shrink-0 overflow-visible flex flex-col items-center	">
+                    <SiReact></SiReact>
+                    <p className="invisible group-hover:visible absolute top-10 bg-gray-700 text-white rounded-lg min-w-full	p-2 flex items-center justify-center min-h-12 text-lg text-center">
+                      React
+                    </p>
+                  </div>
+                  <div className="group relative shrink-0 overflow-visible flex flex-col items-center	">
+                    <SiCss3></SiCss3>
+                    <p className="invisible group-hover:visible absolute top-10 bg-gray-700 text-white rounded-lg min-w-full	p-2 flex items-center justify-center min-h-12 text-lg text-center">
+                      CSS
+                    </p>
+                  </div>
+                </IconContext.Provider>
+              </div>
               <div className="justify-center flex ">
                 <a
                   href="https://board-games-eosin.vercel.app/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mr-4 inline-flex items-center px-6 py-4 space-x-2 text-sm font-bold text-white uppercase bg-gray-700 rounded-lg hover:bg-gray-900 dark:bg-gray-500"
+                  className="mr-4 inline-flex items-center px-6 py-4 space-x-2 text-sm font-bold text-white uppercase bg-gray-700 rounded-lg hover:bg-gray-900 dark:bg-gray-500 dark:hover:bg-gray-400"
                 >
                   <span>
                     <svg
