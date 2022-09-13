@@ -344,7 +344,7 @@ function AboutUs() {
 
   return (
     <div
-      className="flex flex-wrap content-center justify-center  dark:bg-slate-800 dark:text-white"
+      className="flex flex-wrap content-center justify-center  dark:bg-gray-800 dark:text-white"
       id="aboutUs"
     >
       <div className="flex content-center justify-center mb-16  ">
@@ -465,8 +465,8 @@ function AboutUs() {
         </div>
       </div>
 
-      <div className="bg-neutral-100 pt-12 dark:bg-slate-700 dark:text-white">
-        <div className="flex content-center justify-center bg-neutral-100 dark:bg-slate-700 mx-auto	 ">
+      <div className="bg-neutral-100 pt-12 dark:bg-gray-700 dark:text-white">
+        <div className="flex content-center justify-center bg-neutral-100 dark:bg-gray-700 mx-auto	 ">
           <div className="items-center flex flex-row-reverse w-full flex-wrap justify-center gap-20 ">
             <div className="flex flex-col ">
               <h3 className="flex justify-center mt-4 mb-4">Heike Kasper</h3>
@@ -522,7 +522,7 @@ function AboutUs() {
             </div>
           </div>
         </div>
-        <div className="mb-16 bg-neutral-100	 items-center flex flex-col dark:bg-slate-700">
+        <div className="mb-16 bg-neutral-100	 items-center flex flex-col dark:bg-gray-700">
           <h3 className="mb-4">Technologien</h3>
           <div className="flex gap-2">
             <IconContext.Provider
@@ -565,12 +565,12 @@ function AboutUs() {
             </IconContext.Provider>
           </div>
         </div>
-        <div className="flex content-center justify-center bg-neutral-100 mb-16 dark:bg-slate-700">
+        <div className="flex content-center justify-center bg-neutral-100 mb-16 dark:bg-gray-700">
           <div className="flex-col flex items-center">
             <div className="w-3/4  ">
-              <div className="bg-neutral-100 dark:bg-slate-700">
+              <div className="bg-neutral-100 dark:bg-gray-700">
                 <Accordion title="Projekte" content={workHeike} open={false} />
-                <div className="bg-neutral-100 h-10 dark:bg-slate-700"></div>
+                <div className="bg-neutral-100 h-10 dark:bg-gray-700"></div>
                 <Accordion
                   title="Studium"
                   content={unversityHeike}

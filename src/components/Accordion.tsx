@@ -47,7 +47,7 @@ export const Accordion: React.FC<AccordionProps> = ({
   }
 
   return (
-    <div className="flex flex-col border-2 rounded-xl px-16 border-gray-700 bg-white dark:bg-slate-600 ">
+    <div className="flex flex-col border-2 rounded-xl px-16 border-gray-700 bg-white dark:bg-gray-600 ">
       <button
         className="py-6 box-border appearance-none cursor-pointer  focus:outline-none flex items-center justify-between"
         onClick={toggleAccordion}
