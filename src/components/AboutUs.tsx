@@ -291,6 +291,7 @@ function AboutUs() {
       className="flex flex-wrap content-center justify-center  dark:bg-gray-800 dark:text-white"
       id="aboutUs"
     >
+      <div className="w-full">
       <div className="flex content-center justify-center mb-16  ">
         <div className="items-center flex w-full justify-center gap-20  flex-wrap">
           <div>
@@ -349,7 +350,7 @@ function AboutUs() {
           </div>
         </div>
       </div>
-      <div className="mb-16 mt-4 items-center flex flex-col">
+      <div className="mb-16 w-full mt-4 items-center flex flex-col">
         <h3 className="mb-4">Technologien</h3>
         <div className="flex gap-2">
           <IconContext.Provider
@@ -399,8 +400,8 @@ function AboutUs() {
         </div>
       </div>
 
-      <div className="flex content-center justify-center mb-16  ">
-        <div className="flex-col flex items-center">
+      <div className="flex content-center justify-center mb-16 ">
+        <div className="flex-col flex items-center w-3/4">
           <div className="w-3/4 ">
             <div>
               <Accordion
@@ -420,9 +421,10 @@ function AboutUs() {
           </div>
         </div>
       </div>
+      </div>
 
-      <div className="bg-neutral-100 pt-12 dark:bg-gray-900 dark:text-white">
-        <div className="flex content-center justify-center bg-neutral-100 dark:bg-gray-900 mx-auto	 ">
+      <div className="bg-neutral-100 pt-12 w-full dark:bg-gray-900 dark:text-white">
+        <div className="flex content-center justify-center bg-neutral-100 dark:bg-gray-900 ">
           <div className="items-center flex flex-row-reverse w-full flex-wrap justify-center gap-20 ">
             <div className="flex flex-col ">
               <h3 className="flex justify-center mt-4 mb-4">Heike Kasper</h3>
@@ -473,7 +475,7 @@ function AboutUs() {
             </div>
           </div>
         </div>
-        <div className="mb-16 mt-4 bg-neutral-100	 items-center flex flex-col dark:bg-gray-900">
+        <div className="mb-16 mt-4 bg-neutral-100	w-full items-center flex flex-col dark:bg-gray-900">
           <h3 className="mb-4">Technologien</h3>
           <div className="flex gap-2">
             <IconContext.Provider
@@ -522,9 +524,9 @@ function AboutUs() {
             </IconContext.Provider>
           </div>
         </div>
-        <div className="flex content-center justify-center bg-neutral-100 mb-16 dark:bg-gray-900">
-          <div className="flex-col flex items-center">
-            <div className="w-3/4  ">
+        <div className="flex content-center justify-center mb-16 bg-neutral-100  dark:bg-gray-900">
+          <div className="flex-col flex items-center w-3/4">
+            <div className="w-3/4">
               <div className="bg-neutral-100 dark:bg-gray-900">
                 <Accordion
                   title="Arbeit"
