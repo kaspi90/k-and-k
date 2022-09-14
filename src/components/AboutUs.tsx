@@ -23,6 +23,7 @@ import {
   SiGithub,
   SiFirebase,
   SiNodedotjs,
+  SiStorybook,
 } from "react-icons/si";
 
 import { Accordion } from "./Accordion";
@@ -510,6 +511,12 @@ function AboutUs() {
                 <SiNodedotjs></SiNodedotjs>
                 <p className="invisible group-hover:visible absolute top-10 bg-gray-700 text-white rounded-lg min-w-full	p-2 flex items-center justify-center min-h-12 text-lg text-center">
                   Node.js
+                </p>
+              </div>
+              <div className="group relative shrink-0 overflow-visible flex flex-col items-center	">
+                <SiStorybook></SiStorybook>
+                <p className="invisible group-hover:visible absolute top-10 bg-gray-700 text-white rounded-lg min-w-full	p-2 flex items-center justify-center min-h-12 text-lg text-center">
+                  Storybook
                 </p>
               </div>
             </IconContext.Provider>
