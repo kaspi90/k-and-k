@@ -35,7 +35,7 @@ function AboutUs() {
         <li className="mb-10 ml-4">
           <div className="absolute w-4 h-4 bg-violet rounded-full mt-1 -left-2  dark:border-gray-900 dark:bg-gray-400"></div>
           <time className="mb-1 text-sm font-normal leading-none text-violet dark:text-gray-400">
-            February 2022
+            Oktober 2020 - heute
           </time>
           <div className="m-4">
             <img src={brettspielguru} className="w-28 mx-auto "></img>
@@ -44,34 +44,16 @@ function AboutUs() {
             Brettspielguru
           </h3>
           <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
-            Lorem ipsum dolor sit amet.
-          </p>
-        </li>
-        <li className="mb-10 ml-4">
-          <div className="absolute w-4 h-4 bg-violet rounded-full mt-1 -left-2  dark:border-gray-900 dark:bg-gray-400"></div>
-          <time className="mb-1 text-sm font-normal leading-none text-violet dark:text-gray-400">
-            March 2022
-          </time>
-          <div className="m-4">
-            <img src={seeders} className="w-28 mx-auto"></img>
-          </div>
-          <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
-            Seeders
-          </h3>
-          <p className="text-base font-normal text-gray-500 dark:text-gray-400">
-            All of the pages and components are first designed in Figma and we
-            keep a parity between the two versions even as we update the
-            project.
+            Geschäftführung der Kasperlino GmbH zum Vertrieb von Brettspielen und
+            Brettspielzubehör.
+            <br /> <br />- Aufgabenfelder: Geschäftsführung, Produktentwicklung,
+            Amazon-Management
           </p>
         </li>
         <li className="ml-4">
           <div className="absolute w-4 h-4 bg-violet rounded-full mt-1  -left-2  dark:border-gray-900 dark:bg-gray-400"></div>
           <time className="mb-1 text-sm font-normal leading-none text-violet dark:text-gray-400">
-            April 2022
+            September 2016 - heute
           </time>
           <div className="m-4">
             <img src={kadelo} className="w-28 mx-auto"></img>
@@ -80,8 +62,12 @@ function AboutUs() {
             Kadelo
           </h3>
           <p className="text-base font-normal text-gray-500 dark:text-gray-400">
-            Get started with dozens of web components and interactive elements
-            built on top of Tailwind CSS.
+            Geschäftsführung der Kadelo GmbH mit acht Mitarbeitern als Online-Marketing Agentur mit Schwerpunkt SEO & Amazon SEO.
+            Erfolgreicher Bereichsverkauf an die Seeders Group.
+            <br />
+            <br />- Aufgabenfelder: Geschäftsführung, Buchführung,
+            Kundenbetreuung, Amazon SEO & Ads, Webentwicklung (Schwerpunkt:
+            Wordpress)
           </p>
         </li>
       </ol>
@@ -477,16 +463,11 @@ function AboutUs() {
             <div className=" w-1/2 sm:w-full ">
               <h3 className="mb-4 sm:text-center">Über mich</h3>
               <p className="sm:w-4/5 sm:mx-auto text-justify">
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                aliquyam erat, sed diam voluptua. At vero eos et accusam et
-                justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
-                takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum
-                dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-                eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-                sed diam voluptua. At vero eos et accusam et justo duo dolores
-                et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus
-                est Lorem ipsum dolor sit amet.
+               Hallo, ich bin Heike,<br />
+                  <br/>
+              ich bin eine Quereinsteigerin im Bereich der IT. Nach meinem Architekturstudium habe ich als Geschäftsführerin der Kadelo GmbH gearbeitet 
+              und bin da mit Web Development in Kontakt gekommen, es hat mir so viel Spaß gemacht, dass ich daraufhin ein Coding Bootcamp bei Mimo angefangen haben.
+              <br /><br />Ich liebe die Herausforderungen beim Coding und zugleich die Kreativität beim Design. Abseits der Arbeit mag ich: Brettspiele, Ski fahren, wandern, Mangas lesen und malen.
               </p>
             </div>
           </div>

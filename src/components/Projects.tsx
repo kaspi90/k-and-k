@@ -25,14 +25,15 @@ function Projects(props: any) {
     <div id="projects" className="w-4/5 mx-auto pt-12">
       <h3 className="justify-center m-auto flex p-4">Projekte</h3>
       <Slide direction="up" triggerOnce>
-        <div className="flex  justify-center mb-12 flex-wrap w-full  ">
+        <div className="flex justify-center mb-12 flex-wrap w-full  ">
+          <div className="items-center flex w-full justify-center mb-12 flex-wrap">
           <div className=" rounded-xl p-12 w-1/2 sm:basis-96 ">
             <img
               src={brettspielguru}
               className="rounded-xl shrink-0 shadow-md"
             ></img>
           </div>
-          <div className="rounded-xl w-1/2 sm:w-4/5 pt-12">
+          <div className="rounded-xl w-1/2 sm:w-4/5">
             <div className="mb-6">
               <h3 className="mb-7 justify-center flex text-2xl font-semibold text-center text-gray-900 font-header dark:text-white ">
                 Brettspielguru
@@ -48,7 +49,7 @@ function Projects(props: any) {
             <div className="flex overflow-visible justify-center gap-2 mb-7">
               <IconContext.Provider
                 value={{
-                  color: props.mode ? "#9E9E9E" : "#374151",
+                  color: props.mode ? "#6B7280" : "#374151",
                   className: "hover:grayscale",
                   size: "2em",
                 }}
@@ -129,6 +130,7 @@ function Projects(props: any) {
               </a>
             </div>
           </div>
+          </div>
         </div>
       </Slide>
       <Slide direction="up" triggerOnce>
@@ -149,7 +151,7 @@ function Projects(props: any) {
               <div className="flex overflow-visible justify-center gap-2 mb-7">
                 <IconContext.Provider
                   value={{
-                    color: props.mode ? "#9E9E9E" : "#374151",
+                    color: props.mode ? "#6B7280" : "#374151",
                     className: "hover:grayscale",
                     size: "2em",
                   }}
@@ -230,18 +232,19 @@ function Projects(props: any) {
                 </a>
               </div>
             </div>
-            <div className=" rounded-xl p-12 sm:basis-96 w-1/2 mx-auto">
-              <img src={mangaAnime} className="rounded-xl shadow-md"></img>
+            <div className=" rounded-xl p-12 w-1/2 sm:basis-96">
+              <img src={mangaAnime} className="rounded-xl shrink-0 shadow-md"></img>
             </div>
           </div>
         </div>
       </Slide>
       <Slide direction="up" triggerOnce>
         <div className="flex  justify-center mb-12 flex-wrap w-full  ">
+            <div className="items-center flex w-full justify-center  mb-12 flex-wrap">
           <div className=" rounded-xl p-12 w-1/2 sm:basis-96 ">
             <img src={pokemon} className="rounded-xl shrink-0 shadow-md"></img>
           </div>
-          <div className="rounded-xl w-1/2 sm:w-4/5 pt-12 ">
+          <div className="rounded-xl w-1/2 sm:w-4/5 ">
             <div className="mb-6">
               <h3 className="mb-7 justify-center flex text-2xl font-semibold text-center text-gray-900 font-header dark:text-white ">
                 Pokémon
@@ -256,7 +259,7 @@ function Projects(props: any) {
             <div className="flex overflow-visible justify-center gap-2 mb-7">
               <IconContext.Provider
                 value={{
-                  color: props.mode ? "#9E9E9E" : "#374151",
+                  color: props.mode ? "#6B7280" : "#374151",
                   className: "hover:grayscale",
                   size: "2em",
                 }}
@@ -331,6 +334,7 @@ function Projects(props: any) {
               </a>
             </div>
           </div>
+          </div>
         </div>
       </Slide>
       <Slide direction="up" triggerOnce>
@@ -351,7 +355,7 @@ function Projects(props: any) {
               <div className="flex overflow-visible justify-center gap-2 mb-7">
                 <IconContext.Provider
                   value={{
-                    color: props.mode ? "#9E9E9E" : "#374151",
+                    color: props.mode ? "#6B7280" : "#374151",
                     className: "hover:grayscale",
                     size: "2em",
                   }}
