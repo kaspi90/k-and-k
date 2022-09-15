@@ -45,8 +45,8 @@ function AboutUs() {
             Brettspielguru
           </h3>
           <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
-            Geschäftführung der Kasperlino GmbH zum Vertrieb von Brettspielen und
-            Brettspielzubehör.
+            Geschäftführung der Kasperlino GmbH zum Vertrieb von Brettspielen
+            und Brettspielzubehör.
             <br /> <br />- Aufgabenfelder: Geschäftsführung, Produktentwicklung,
             Amazon-Management
           </p>
@@ -63,7 +63,8 @@ function AboutUs() {
             Kadelo
           </h3>
           <p className="text-base font-normal text-gray-500 dark:text-gray-400">
-            Geschäftsführung der Kadelo GmbH mit acht Mitarbeitern als Online-Marketing Agentur mit Schwerpunkt SEO & Amazon SEO.
+            Geschäftsführung der Kadelo GmbH mit acht Mitarbeitern als
+            Online-Marketing Agentur mit Schwerpunkt SEO & Amazon SEO.
             Erfolgreicher Bereichsverkauf an die Seeders Group.
             <br />
             <br />- Aufgabenfelder: Geschäftsführung, Buchführung,
@@ -292,135 +293,136 @@ function AboutUs() {
       id="aboutUs"
     >
       <div className="w-full">
-      <div className="flex content-center justify-center mb-16  ">
-        <div className="items-center flex w-full justify-center gap-20  flex-wrap">
-          <div>
-            <h3 className="flex justify-center mt-4 mb-4">Erik Kasper</h3>
+        <div className="flex content-center justify-center mb-16  ">
+          <div className="items-center flex w-full justify-center gap-20  flex-wrap">
             <div>
-              <img
-                src={stix}
-                className="h-40 w-40 rounded-full border-4  border-blue mb-4 "
-              ></img>
+              <h3 className="flex justify-center mt-4 mb-4">Erik Kasper</h3>
+              <div>
+                <img
+                  src={stix}
+                  className="h-40 w-40 rounded-full border-4  border-blue mb-4 "
+                ></img>
+              </div>
+              <div className="flex overflow-visible justify-center gap-2">
+                <IconContext.Provider
+                  value={{
+                    color: "#224CA6",
+                    className: "hover:grayscale",
+                    size: "2em",
+                  }}
+                >
+                  <div className="group relative shrink-0 overflow-visible flex flex-col items-center	">
+                    <SiGithub></SiGithub>
+                    <p className="invisible group-hover:visible absolute top-10 bg-gray-700 text-white rounded-lg min-w-full	p-2 flex items-center justify-center min-h-12 text-lg text-center">
+                      GitHub
+                    </p>
+                  </div>
+                  <div className="group relative shrink-0 overflow-visible flex flex-col items-center	">
+                    <SiLinkedin></SiLinkedin>
+                    <p className="invisible group-hover:visible absolute top-10 bg-gray-700 text-white rounded-lg min-w-full	p-2 flex items-center justify-center min-h-12 text-lg text-center">
+                      LinkedIn
+                    </p>
+                  </div>
+                  <div className="group relative shrink-0 overflow-visible flex flex-col items-center	">
+                    <SiXing></SiXing>
+                    <p className="invisible group-hover:visible absolute top-10 bg-gray-700 text-white rounded-lg min-w-full	p-2 flex items-center justify-center min-h-12 text-lg text-center">
+                      Xing
+                    </p>
+                  </div>
+                </IconContext.Provider>
+              </div>
             </div>
-            <div className="flex overflow-visible justify-center gap-2">
-              <IconContext.Provider
-                value={{
-                  color: "#224CA6",
-                  className: "hover:grayscale",
-                  size: "2em",
-                }}
-              >
-                <div className="group relative shrink-0 overflow-visible flex flex-col items-center	">
-                  <SiGithub></SiGithub>
-                  <p className="invisible group-hover:visible absolute top-10 bg-gray-700 text-white rounded-lg min-w-full	p-2 flex items-center justify-center min-h-12 text-lg text-center">
-                    GitHub
-                  </p>
-                </div>
-                <div className="group relative shrink-0 overflow-visible flex flex-col items-center	">
-                  <SiLinkedin></SiLinkedin>
-                  <p className="invisible group-hover:visible absolute top-10 bg-gray-700 text-white rounded-lg min-w-full	p-2 flex items-center justify-center min-h-12 text-lg text-center">
-                    LinkedIn
-                  </p>
-                </div>
-                <div className="group relative shrink-0 overflow-visible flex flex-col items-center	">
-                  <SiXing></SiXing>
-                  <p className="invisible group-hover:visible absolute top-10 bg-gray-700 text-white rounded-lg min-w-full	p-2 flex items-center justify-center min-h-12 text-lg text-center">
-                    Xing
-                  </p>
-                </div>
-              </IconContext.Provider>
+            <div className="w-1/2 sm:w-full">
+              <h3 className="mb-4 sm:text-center ">Über mich</h3>
+              <p className="sm:w-4/5 sm:mx-auto text-justify">
+                Hallo, ich bin Erik, <br />
+                <br />
+                Ich bin Wirtschaftsinformatiker und habe über zehn Jahre
+                Erfahrung in der IT. Ich arbeite als Software Engineer mit
+                Schwerpunkt: React & TypeScript. Zusätzlich habe ich viel
+                Erfahrung im Bereich Unternehmensführung, Wachstum und
+                Projektmanagement. Ich achte in allen Projekten darauf immer das
+                Geschäftsziel im Auge zu behalten und eine dementsprechende
+                Umsetzung anzustreben. <br />
+                <br /> Ich bin ein Fan von pragmatischen Lösungen, sofern diese
+                nachhaltig sind und lege viel Wert auf eine gute Kommunikation
+                zwischen allen Stakeholdern. Persönliche Interessen abseits der
+                Arbeit: Radsport, Ski & Brettspiele
+              </p>
             </div>
           </div>
-          <div className="w-1/2 sm:w-full">
-            <h3 className="mb-4 sm:text-center ">Über mich</h3>
-            <p className="sm:w-4/5 sm:mx-auto text-justify">
-              Hallo, ich bin Erik, <br />
-              <br />
-              Ich bin Wirtschaftsinformatiker und habe über zehn Jahre Erfahrung
-              in der IT. Ich arbeite als Software Engineer mit Schwerpunkt:
-              React & TypeScript. Zusätzlich habe ich viel Erfahrung im Bereich
-              Unternehmensführung, Wachstum und Projektmanagement. Ich achte in
-              allen Projekten darauf immer das Geschäftsziel im Auge zu behalten
-              und eine dementsprechende Umsetzung anzustreben. <br />
-              <br /> Ich bin ein Fan von pragmatischen Lösungen, sofern diese
-              nachhaltig sind und lege viel Wert auf eine gute Kommunikation
-              zwischen allen Stakeholdern. Persönliche Interessen abseits der
-              Arbeit: Radsport, Ski & Brettspiele
-            </p>
+        </div>
+        <div className="mb-16 w-full mt-4 items-center flex flex-col">
+          <h3 className="mb-4">Technologien</h3>
+          <div className="flex gap-2">
+            <IconContext.Provider
+              value={{
+                color: "#224CA6",
+                className: "hover:grayscale",
+                size: "2em",
+              }}
+            >
+              <div className="group relative shrink-0 overflow-visible flex flex-col items-center	">
+                <SiTypescript></SiTypescript>
+                <p className="invisible group-hover:visible absolute top-10 bg-gray-700 text-white rounded-lg min-w-full	p-2 flex items-center justify-center min-h-12 text-lg text-center">
+                  Typescript
+                </p>
+              </div>
+              <div className="group relative shrink-0 overflow-visible flex flex-col items-center	">
+                <SiJavascript></SiJavascript>
+                <p className="invisible group-hover:visible absolute top-10 bg-gray-700 text-white rounded-lg min-w-full	p-2 flex items-center justify-center min-h-12 text-lg text-center">
+                  Javascript
+                </p>
+              </div>
+              <div className="group relative shrink-0 overflow-visible flex flex-col items-center	">
+                <SiReact></SiReact>
+                <p className="invisible group-hover:visible absolute top-10 bg-gray-700 text-white rounded-lg min-w-full	p-2 flex items-center justify-center min-h-12 text-lg text-center">
+                  React
+                </p>
+              </div>
+              <div className="group relative shrink-0 overflow-visible flex flex-col items-center	">
+                <SiTailwindcss></SiTailwindcss>
+                <p className="invisible group-hover:visible absolute top-10 bg-gray-700 text-white rounded-lg min-w-full	p-2 flex items-center justify-center min-h-12 text-lg text-center">
+                  Tailwind
+                </p>
+              </div>
+              <div className="group relative shrink-0 overflow-visible flex flex-col items-center	">
+                <SiMaterialui></SiMaterialui>
+                <p className="invisible group-hover:visible absolute top-10 bg-gray-700 text-white rounded-lg min-w-full	p-2 flex items-center justify-center min-h-12 text-lg text-center">
+                  MateterialUI
+                </p>
+              </div>{" "}
+              <div className="group relative shrink-0 overflow-visible flex flex-col items-center	">
+                <SiFirebase></SiFirebase>
+                <p className="invisible group-hover:visible absolute top-10 bg-gray-700 text-white rounded-lg min-w-full	p-2 flex items-center justify-center min-h-12 text-lg text-center">
+                  Firebase
+                </p>
+              </div>
+            </IconContext.Provider>
           </div>
         </div>
-      </div>
-      <div className="mb-16 w-full mt-4 items-center flex flex-col">
-        <h3 className="mb-4">Technologien</h3>
-        <div className="flex gap-2">
-          <IconContext.Provider
-            value={{
-              color: "#224CA6",
-              className: "hover:grayscale",
-              size: "2em",
-            }}
-          >
-            <div className="group relative shrink-0 overflow-visible flex flex-col items-center	">
-              <SiTypescript></SiTypescript>
-              <p className="invisible group-hover:visible absolute top-10 bg-gray-700 text-white rounded-lg min-w-full	p-2 flex items-center justify-center min-h-12 text-lg text-center">
-                Typescript
-              </p>
-            </div>
-            <div className="group relative shrink-0 overflow-visible flex flex-col items-center	">
-              <SiJavascript></SiJavascript>
-              <p className="invisible group-hover:visible absolute top-10 bg-gray-700 text-white rounded-lg min-w-full	p-2 flex items-center justify-center min-h-12 text-lg text-center">
-                Javascript
-              </p>
-            </div>
-            <div className="group relative shrink-0 overflow-visible flex flex-col items-center	">
-              <SiReact></SiReact>
-              <p className="invisible group-hover:visible absolute top-10 bg-gray-700 text-white rounded-lg min-w-full	p-2 flex items-center justify-center min-h-12 text-lg text-center">
-                React
-              </p>
-            </div>
-            <div className="group relative shrink-0 overflow-visible flex flex-col items-center	">
-              <SiTailwindcss></SiTailwindcss>
-              <p className="invisible group-hover:visible absolute top-10 bg-gray-700 text-white rounded-lg min-w-full	p-2 flex items-center justify-center min-h-12 text-lg text-center">
-                Tailwind
-              </p>
-            </div>
-            <div className="group relative shrink-0 overflow-visible flex flex-col items-center	">
-              <SiMaterialui></SiMaterialui>
-              <p className="invisible group-hover:visible absolute top-10 bg-gray-700 text-white rounded-lg min-w-full	p-2 flex items-center justify-center min-h-12 text-lg text-center">
-                MateterialUI
-              </p>
-            </div>{" "}
-            <div className="group relative shrink-0 overflow-visible flex flex-col items-center	">
-              <SiFirebase></SiFirebase>
-              <p className="invisible group-hover:visible absolute top-10 bg-gray-700 text-white rounded-lg min-w-full	p-2 flex items-center justify-center min-h-12 text-lg text-center">
-                Firebase
-              </p>
-            </div>
-          </IconContext.Provider>
-        </div>
-      </div>
 
-      <div className="flex content-center justify-center mb-16 ">
-        <div className="flex-col flex items-center w-3/4">
-          <div className="w-3/4 ">
-            <div>
-              <Accordion
-                title="Arbeit"
-                color="bg-white"
-                content={work}
-                open={false}
-              />
-              <div className="h-10"></div>
-              <Accordion
-                title="Studium"
-                color="bg-white"
-                content={studium}
-                open={false}
-              />
+        <div className="flex content-center justify-center mb-16 ">
+          <div className="flex-col flex items-center w-3/4">
+            <div className="w-3/4  sm:w-full">
+              <div>
+                <Accordion
+                  title="Arbeit"
+                  color="bg-white"
+                  content={work}
+                  open={false}
+                />
+                <div className="h-10"></div>
+                <Accordion
+                  title="Studium"
+                  color="bg-white"
+                  content={studium}
+                  open={false}
+                />
+              </div>
             </div>
           </div>
         </div>
-      </div>
       </div>
 
       <div className="bg-neutral-100 pt-12 w-full dark:bg-gray-900 dark:text-white">
@@ -466,11 +468,19 @@ function AboutUs() {
             <div className=" w-1/2 sm:w-full ">
               <h3 className="mb-4 sm:text-center">Über mich</h3>
               <p className="sm:w-4/5 sm:mx-auto text-justify">
-               Hallo, ich bin Heike,<br />
-                  <br/>
-              ich bin eine Quereinsteigerin im Bereich der IT. Nach meinem Architekturstudium habe ich als Geschäftsführerin der Kadelo GmbH gearbeitet 
-              und bin da mit Web Development in Kontakt gekommen, es hat mir so viel Spaß gemacht, dass ich daraufhin ein Coding Bootcamp bei Mimo angefangen haben.
-              <br /><br />Ich liebe die Herausforderungen beim Coding und zugleich die Kreativität beim Design. Abseits der Arbeit mag ich: Brettspiele, Ski fahren, wandern, Mangas lesen und malen.
+                Hallo, ich bin Heike,
+                <br />
+                <br />
+                ich bin eine Quereinsteigerin im Bereich der IT. Nach meinem
+                Architekturstudium habe ich als Geschäftsführerin der Kadelo
+                GmbH gearbeitet und bin da mit Web Development in Kontakt
+                gekommen, es hat mir so viel Spaß gemacht, dass ich daraufhin
+                ein Coding Bootcamp bei Mimo angefangen haben.
+                <br />
+                <br />
+                Ich liebe die Herausforderungen beim Coding und zugleich die
+                Kreativität beim Design. Abseits der Arbeit mag ich:
+                Brettspiele, Ski fahren, wandern, Mangas lesen und malen.
               </p>
             </div>
           </div>
@@ -526,7 +536,7 @@ function AboutUs() {
         </div>
         <div className="flex content-center justify-center mb-16 bg-neutral-100  dark:bg-gray-900">
           <div className="flex-col flex items-center w-3/4">
-            <div className="w-3/4">
+            <div className="w-3/4 sm:w-full">
               <div className="bg-neutral-100 dark:bg-gray-900">
                 <Accordion
                   title="Arbeit"
