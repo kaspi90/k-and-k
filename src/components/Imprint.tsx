@@ -6,20 +6,19 @@ function Imprint() {
       <p>Angaben gemäß § 5 TMG:</p>
       <br />
       <p>
-        Kasperlino GmbH <br /> Grafenberger Allee 277-287 <br /> 40237
-        Düsseldorf
+        Kadelo GmbH <br /> Grafenberger Allee 277-287 <br /> 40237 Düsseldorf
       </p>
       <br />
       <p>
         Ust.-ID-Nr.: DE323782550 <br /> Telefon: 0211 436912303 <br /> E-Mail:
-        kontakt@kasperlino.de
+        kontakt@kadelo.de
       </p>
       <br />
       <h2>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:</h2>
       <br />
       <p>
-        Heike Kasper <br /> Kasperlino GmbH <br /> Grafenberger Allee 277-287{" "}
-        <br />
+        Heike Kasper & Erik Kasper <br /> Kadelo GmbH <br /> Grafenberger Allee
+        277-287 <br />
         40237 Düsseldorf
       </p>
       <br />

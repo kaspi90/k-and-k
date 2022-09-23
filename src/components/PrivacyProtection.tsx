@@ -69,7 +69,7 @@ function PrivacyProtection() {
       <p>
         Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website
         ist: Heike Kasper Kasperlino GmbH Grafenberger Allee 277-287 40237
-        Düsseldorf Telefon:0211-436912303 E-Mail: heike@kasperlino.de
+        Düsseldorf Telefon:0211-436912303 E-Mail: heike.kasper@kadelo.de
         Verantwortliche Stelle ist die natürliche oder juristische Person, die
         allein oder gemeinsam mit anderen über die Zwecke und Mittel der
         Verarbeitung von personenbezogenen Daten (z.B. Namen, E-Mail-Adressen o.

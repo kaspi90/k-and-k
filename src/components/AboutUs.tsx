@@ -337,14 +337,15 @@ function AboutUs() {
                 Ich bin Wirtschaftsinformatiker und habe über zehn Jahre
                 Erfahrung in der IT. Ich arbeite als Software Engineer mit
                 Schwerpunkt: React & TypeScript. Zusätzlich habe ich viel
-                Erfahrung im Bereich Unternehmensführung, Wachstum und
+                Expertise im Bereich Unternehmensführung, Wachstum und
                 Projektmanagement. Ich achte in allen Projekten darauf immer das
                 Geschäftsziel im Auge zu behalten und eine dementsprechende
                 Umsetzung anzustreben. <br />
                 <br /> Ich bin ein Fan von pragmatischen Lösungen, sofern diese
                 nachhaltig sind und lege viel Wert auf eine gute Kommunikation
-                zwischen allen Stakeholdern. Persönliche Interessen abseits der
-                Arbeit: Radsport, Ski & Brettspiele
+                zwischen allen Stakeholdern. <br /> <br />
+                Persönliche Interessen abseits der Arbeit: Radsport, Ski &
+                Brettspiele
               </p>
             </div>
           </div>
@@ -465,16 +466,18 @@ function AboutUs() {
                 Hallo, ich bin Heike,
                 <br />
                 <br />
-                ich bin eine Quereinsteigerin im Bereich der IT. Nach meinem
-                Architekturstudium habe ich als Geschäftsführerin der Kadelo
-                GmbH gearbeitet und bin da mit Web Development in Kontakt
-                gekommen, es hat mir so viel Spaß gemacht, dass ich daraufhin
-                ein Coding Bootcamp bei Mimo angefangen haben.
+                Nach meinem Architekturstudium habe ich als Geschäftsführerin
+                der Kadelo GmbH gearbeitet und bin dabei mit Web Development in
+                Kontakt gekommen. Es hat mir so viel Spaß gemacht, dass ich
+                dabei immer mehr Aufgaben übernommen und mich letztendlich dazu
+                entschieden ein Coding Bootcamp bei Mimo anzufangen.
                 <br />
                 <br />
                 Ich liebe die Herausforderungen beim Coding und zugleich die
-                Kreativität beim Design. Abseits der Arbeit mag ich:
-                Brettspiele, Ski fahren, wandern, Mangas lesen und malen.
+                Kreativität beim Design.
+                <br />
+                <br /> Abseits der Arbeit mag ich: Brettspiele, Ski fahren,
+                wandern, Mangas lesen und zeichnen.
               </p>
             </div>
           </div>
