@@ -1,5 +1,5 @@
-import stix from "../img/stix.png";
-import jana from "../img/jana.png";
+import erik from "../img/erik.jpg";
+import heike from "../img/heike.jpg";
 
 import essen from "../img/uni_essen.svg";
 import csueb from "../img/csueb.svg";
@@ -297,11 +297,8 @@ function AboutUs() {
           <div className="items-center flex w-full justify-center gap-20  flex-wrap">
             <div>
               <h3 className="flex justify-center mt-4 mb-4">Erik Kasper</h3>
-              <div>
-                <img
-                  src={stix}
-                  className="h-40 w-40 rounded-full border-4  border-blue mb-4 "
-                ></img>
+              <div className="rounded-full  border-4  border-blue mb-4 w-40 h-40 overflow-hidden">
+                <img src={erik}></img>
               </div>
               <div className="flex overflow-visible justify-center gap-2">
                 <IconContext.Provider
@@ -430,11 +427,8 @@ function AboutUs() {
           <div className="items-center flex flex-row-reverse w-full flex-wrap justify-center gap-20 ">
             <div className="flex flex-col ">
               <h3 className="flex justify-center mt-4 mb-4">Heike Kasper</h3>
-              <div>
-                <img
-                  src={jana}
-                  className="h-40 w-40 rounded-full border-4  border-violet mb-4 "
-                ></img>
+              <div className="h-40 w-40 rounded-full border-4  border-violet mb-4 overflow-hidden ">
+                <img src={heike}></img>
               </div>
               <div className="flex overflow-visible justify-center gap-2">
                 <IconContext.Provider
