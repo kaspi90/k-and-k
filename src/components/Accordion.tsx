@@ -50,7 +50,7 @@ export const Accordion: React.FC<AccordionProps> = ({
 
   return (
     <div
-      className={`flex flex-col border rounded-xl px-16 border-gray-700 ${color} dark:bg-gray-600 `}
+      className={`flex flex-col border rounded-xl px-16 sm:px-8 border-gray-700 ${color} dark:bg-gray-600 `}
     >
       <button
         className="py-4 box-border appearance-none cursor-pointer  focus:outline-none flex items-center justify-between"

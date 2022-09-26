@@ -8,7 +8,7 @@ import { useState, useEffect } from "react";
 function NavBar(props: any) {
   return (
     <div className=" bg-neutral-100 mb-12 dark:bg-gray-900 dark:text-white">
-      <nav className="flex justify-between items-center h-24  w-4/5 mx-auto mb-8">
+      <nav className="flex justify-between items-center h-24  max-w-[1280px] px-8 mx-auto mb-8">
         <a href="/">
           <img
             className="max-h-24 p-4"
