@@ -1,5 +1,7 @@
 import erik from "../img/erik.jpg";
 import heike from "../img/heike.jpg";
+import erikLightsaber from "../img/erikLightsaber.jpg";
+import heikeLightsaber from "../img/heikeLightsaber.jpg";
 
 import essen from "../img/uni_essen.svg";
 import csueb from "../img/csueb.svg";
@@ -25,11 +27,67 @@ import {
   SiNodedotjs,
   SiStorybook,
 } from "react-icons/si";
+import { useState } from "react";
 
 import { Accordion } from "./Accordion";
-import Divider from "./Divider";
 
-function AboutUs() {
+function AboutUs(props: any) {
+  const [isHovered, setIsHovered] = useState(false);
+
+  const PortraitHeike = () => {
+    if (props.mode) {
+      return (
+        <div
+          onMouseEnter={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}
+          className="h-40 w-40 rounded-full border-4  border-violet mb-4 overflow-hidden "
+        >
+          {isHovered ? (
+            <img src={heikeLightsaber}></img>
+          ) : (
+            <img src={heike}></img>
+          )}
+        </div>
+      );
+    } else
+      return (
+        <div
+          onMouseEnter={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}
+          className="h-40 w-40 rounded-full border-4  border-violet mb-4 overflow-hidden "
+        >
+          <img src={heike}></img>
+        </div>
+      );
+  };
+
+  const PortraitErik = () => {
+    if (props.mode) {
+      return (
+        <div
+          onMouseEnter={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}
+          className="h-40 w-40 rounded-full border-4  border-blue mb-4 overflow-hidden "
+        >
+          {isHovered ? (
+            <img src={erikLightsaber}></img>
+          ) : (
+            <img src={erik}></img>
+          )}
+        </div>
+      );
+    } else
+      return (
+        <div
+          onMouseEnter={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}
+          className="h-40 w-40 rounded-full border-4  border-blue mb-4 overflow-hidden "
+        >
+          <img src={erik}></img>
+        </div>
+      );
+  };
+
   const workHeike = (
     <div>
       <ol className="relative border-l border-violet dark:border-gray-400 mx-2">
@@ -297,9 +355,7 @@ function AboutUs() {
           <div className="items-center flex w-full justify-center gap-20  flex-wrap">
             <div>
               <h3 className="flex justify-center mt-4 mb-4">Erik Kasper</h3>
-              <div className="rounded-full  border-4  border-blue mb-4 w-40 h-40 overflow-hidden">
-                <img src={erik}></img>
-              </div>
+              <PortraitErik />
               <div className="flex overflow-visible justify-center gap-2">
                 <IconContext.Provider
                   value={{
@@ -428,9 +484,7 @@ function AboutUs() {
           <div className="items-center flex flex-row-reverse w-full flex-wrap justify-center gap-20 ">
             <div className="flex flex-col ">
               <h3 className="flex justify-center mt-4 mb-4">Heike Kasper</h3>
-              <div className="h-40 w-40 rounded-full border-4  border-violet mb-4 overflow-hidden ">
-                <img src={heike}></img>
-              </div>
+              <PortraitHeike />
               <div className="flex overflow-visible justify-center gap-2">
                 <IconContext.Provider
                   value={{
@@ -470,7 +524,7 @@ function AboutUs() {
                 der Kadelo GmbH gearbeitet und bin dabei mit Web Development in
                 Kontakt gekommen. Es hat mir so viel Spaß gemacht, dass ich
                 dabei immer mehr Aufgaben übernommen und mich letztendlich dazu
-                entschieden ein Coding Bootcamp bei Mimo anzufangen.
+                entschieden habe ein Coding Bootcamp bei Mimo anzufangen.
                 <br />
                 <br />
                 Ich liebe die Herausforderungen beim Coding und zugleich die

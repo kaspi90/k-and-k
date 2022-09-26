@@ -2,7 +2,6 @@ import React from "react";
 import "./App.css";
 import NavBar from "./components/NavBar";
 import AboutUs from "./components/AboutUs";
-import Divider from "./components/Divider";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
 import Imprint from "./components/Imprint";
@@ -16,12 +15,11 @@ import {
   BrowserRouter,
 } from "react-router-dom";
 
-const Home = (props:any) => {
+const Home = (props: any) => {
   return (
     <>
-      <AboutUs />
-
-      <Projects mode={props.mode}/>
+      <AboutUs mode={props.mode} />
+      <Projects mode={props.mode} />
       <Contact></Contact>
     </>
   );
@@ -42,9 +40,9 @@ function App() {
     <div>
       <BrowserRouter>
         <div className="w-full m-auto dark:bg-slate-800 dark:text-white">
-          <NavBar toggleMode={toggleMode} mode={mode}/>
+          <NavBar toggleMode={toggleMode} mode={mode} />
           <Routes>
-            <Route path="/" element={<Home mode={mode}/>} />
+            <Route path="/" element={<Home mode={mode} />} />
             <Route path="/impressum" element={<Imprint />} />
             <Route path="/datenschutz" element={<PrivacyProtection />} />
           </Routes>
