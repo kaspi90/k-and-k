@@ -67,7 +67,7 @@ function AboutUs(props: any) {
         <div
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
-          className="h-40 w-40 rounded-full border-4  border-blue mb-4 overflow-hidden "
+          className="h-40 w-40 rounded-full border-4  border-blue dark:border-lightblue mb-4 overflow-hidden "
         >
           {isHovered ? (
             <img src={erikLightsaber}></img>
@@ -359,7 +359,7 @@ function AboutUs(props: any) {
               <div className="flex overflow-visible justify-center gap-2">
                 <IconContext.Provider
                   value={{
-                    color: "#224CA6",
+                    color: props.mode ? "#88E2FB" : "#224CA6",
                     className: "hover:grayscale",
                     size: "2em",
                   }}
@@ -411,7 +411,7 @@ function AboutUs(props: any) {
           <div className="flex gap-2">
             <IconContext.Provider
               value={{
-                color: "#224CA6",
+                color: props.mode ? "#88E2FB" : "#224CA6",
                 className: "hover:grayscale",
                 size: "2em",
               }}
@@ -457,7 +457,7 @@ function AboutUs(props: any) {
         </div>
 
         <div className="flex content-center justify-center mb-16 ">
-          <div className="flex-col flex items-center w-3/4">
+          <div className="flex-col flex items-center w-3/4 sm:w-4/5">
             <div className="w-3/4  sm:w-full">
               <div>
                 <Accordion
@@ -586,7 +586,7 @@ function AboutUs(props: any) {
           </div>
         </div>
         <div className="flex content-center justify-center mb-16 bg-neutral-100  dark:bg-gray-900">
-          <div className="flex-col flex items-center w-3/4">
+          <div className="flex-col flex items-center w-3/4 sm:w-4/5">
             <div className="w-3/4 sm:w-full">
               <div className="bg-neutral-100 dark:bg-gray-900">
                 <Accordion
