@@ -3,13 +3,16 @@ import logo_dark from "../img/logo-lightsaber.png";
 
 import { IconContext } from "react-icons/lib";
 import { MdOutlineDarkMode, MdOutlineLightMode } from "react-icons/md";
-
+import { Link } from "react-router-dom";
 
 function NavBar(props: any) {
   return (
     <div className=" bg-neutral-100 mb-12 dark:bg-gray-900 dark:text-white">
-      <nav className="flex justify-between items-center min-h-24  max-w-[1280px] px-8 mx-auto mb-8 sm:flex-wrap sm:justify-center sm:pb-4 ">
-        <a href="/">
+      <nav
+        id="nav"
+        className="flex justify-between items-center min-h-24  max-w-[1280px] px-8 mx-auto mb-8 sm:flex-wrap sm:justify-center sm:pb-4 "
+      >
+        <a href="#nav">
           <img
             className="max-h-24 p-4"
             src={props.mode ? logo_dark : logo}

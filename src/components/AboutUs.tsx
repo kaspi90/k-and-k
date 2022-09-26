@@ -457,7 +457,7 @@ function AboutUs(props: any) {
         </div>
 
         <div className="flex content-center justify-center mb-16 ">
-          <div className="flex-col flex items-center w-3/4 sm:w-4/5">
+          <div className="flex-col flex items-center w-3/4 sm:w-5/6">
             <div className="w-3/4  sm:w-full">
               <div>
                 <Accordion
@@ -586,7 +586,7 @@ function AboutUs(props: any) {
           </div>
         </div>
         <div className="flex content-center justify-center mb-16 bg-neutral-100  dark:bg-gray-900">
-          <div className="flex-col flex items-center w-3/4 sm:w-4/5">
+          <div className="flex-col flex items-center w-3/4 sm:w-5/6">
             <div className="w-3/4 sm:w-full">
               <div className="bg-neutral-100 dark:bg-gray-900">
                 <Accordion
