@@ -387,7 +387,7 @@ function AboutUs(props: any) {
             </div>
             <div className="w-1/2 sm:w-full">
               <h3 className="mb-4 sm:text-center ">Über mich</h3>
-              <p className="sm:w-4/5 sm:mx-auto text-justify">
+              <p className="sm:w-5/6 sm:mx-auto text-justify">
                 Hallo, ich bin Erik, <br />
                 <br />
                 Ich bin Wirtschaftsinformatiker und habe über zehn Jahre
@@ -516,7 +516,7 @@ function AboutUs(props: any) {
             </div>
             <div className=" w-1/2 sm:w-full ">
               <h3 className="mb-4 sm:text-center">Über mich</h3>
-              <p className="sm:w-4/5 sm:mx-auto text-justify">
+              <p className="sm:w-5/6 sm:mx-auto text-justify">
                 Hallo, ich bin Heike,
                 <br />
                 <br />
