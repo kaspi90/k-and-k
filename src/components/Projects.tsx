@@ -33,7 +33,7 @@ function Projects(props: any) {
                 className="rounded-xl shrink-0 shadow-md"
               ></img>
             </div>
-            <div className="rounded-xl w-1/2 sm:w-4/5">
+            <div className="rounded-xl w-1/2 sm:w-5/6">
               <div className="mb-6">
                 <h3 className="mb-7 justify-center flex text-2xl font-semibold text-center text-gray-900 font-header dark:text-white ">
                   Brettspielguru
@@ -136,7 +136,7 @@ function Projects(props: any) {
       <Slide direction="up" triggerOnce>
         <div className="flex content-center justify-center flex-wrap-reverse">
           <div className="items-center flex w-full justify-center  mb-12 flex-wrap-reverse">
-            <div className=" flex-col  rounded-xl w-1/2  sm:w-4/5   ">
+            <div className=" flex-col  rounded-xl w-1/2  sm:w-5/6   ">
               <div className="mb-6 ">
                 <h3 className="mb-7 justify-center flex text-2xl font-semibold text-center text-gray-900 font-header dark:text-white ">
                   Manga-Anime
@@ -250,7 +250,7 @@ function Projects(props: any) {
                 className="rounded-xl shrink-0 shadow-md"
               ></img>
             </div>
-            <div className="rounded-xl w-1/2 sm:w-4/5 ">
+            <div className="rounded-xl w-1/2 sm:w-5/6 ">
               <div className="mb-6">
                 <h3 className="mb-7 justify-center flex text-2xl font-semibold text-center text-gray-900 font-header dark:text-white ">
                   Pokémon
@@ -347,7 +347,7 @@ function Projects(props: any) {
       <Slide direction="up" triggerOnce>
         <div className="flex content-center justify-center  flex-wrap-reverse">
           <div className="items-center flex w-full justify-center  mb-16 flex-wrap-reverse">
-            <div className=" flex-col   rounded-xl w-1/2  sm:w-4/5   ">
+            <div className=" flex-col   rounded-xl w-1/2  sm:w-5/6   ">
               <div className="mb-6 ">
                 <h3 className="mb-7 justify-center flex text-2xl font-semibold text-center text-gray-900 font-header dark:text-white">
                   Boardgames
