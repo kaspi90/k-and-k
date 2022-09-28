@@ -42,8 +42,8 @@ function Projects(props: any) {
                   Die Webseite von Brettspielguru sollte einerseits die Produkte
                   präsentieren, andererseits eine Möglichkeit bereitstellen, um
                   die passgenauen Kartenhüllen für verschiedene Brettspiele zu
-                  finden. Außerdem sollte es ermöglicht werden auch eigenständig
-                  neue Spiele mit den passenden Kartenhüllen einzupflegen.
+                  finden. Außerdem können im Backend eigenständig neue Spiele
+                  mit den passenden Kartenhüllen eingepflegt werden.
                 </p>
               </div>
               <div className="flex overflow-visible justify-center gap-2 mb-7">
@@ -143,7 +143,7 @@ function Projects(props: any) {
                 </h3>
                 <p className="text-justify">
                   Ein Manga- und Animeportal, welches die derzeit beliebtesten
-                  Manga's und Anime's, inkl. Beschreibung und Bewertungen, von
+                  Mangas und Animes inkl. Beschreibung und Bewertungen von
                   Myanimelist anzeigt. Zusätzlich können eigene Sammlungen
                   erstellt und verwaltet werden.
                 </p>
@@ -259,7 +259,7 @@ function Projects(props: any) {
                   Das Pokémon Projekt ermöglicht eine Übersicht über alle
                   derzeit offiziel am Markt erhältlichen Pokémon Karten. Für
                   jede Karte wird ein entsprechender Verkaufswert von TCG-Player
-                  anzeigt. Es ist möglich eigene Sammlungen anzulegen und zu
+                  anzeigt. Es ist möglich, eigene Sammlungen anzulegen und zu
                   verwalten.
                 </p>
               </div>

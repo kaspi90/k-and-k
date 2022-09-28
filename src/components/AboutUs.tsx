@@ -122,12 +122,28 @@ function AboutUs(props: any) {
           </h3>
           <p className="text-base font-normal text-gray-500 dark:text-gray-400">
             Geschäftsführung der Kadelo GmbH mit acht Mitarbeitern als
-            Online-Marketing Agentur mit Schwerpunkt SEO & Amazon SEO.
-            Erfolgreicher Bereichsverkauf an die Seeders Group.
+            Online-Marketing Agentur mit den Schwerpunkten SEO & Amazon SEO.
+            Bereichsverkauf an die Seeders Group.
             <br />
             <br />- Aufgabenfelder: Geschäftsführung, Buchführung,
             Kundenbetreuung, Amazon SEO & Ads, Webentwicklung (Schwerpunkt:
             Wordpress)
+          </p>
+        </li>
+        <li className="mb-10 ml-4">
+          <div className="absolute w-4 h-4 bg-violet rounded-full mt-1  -left-2  dark:border-gray-900 dark:bg-gray-400"></div>
+          <time className="mb-1 text-sm font-normal leading-none text-violet dark:text-gray-400">
+            2013 - 2016
+          </time>
+          <div className="m-4">
+            <img src={sramek} className="w-28 mx-auto "></img>
+          </div>
+          <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+            <b>Werkstudent - Architektur</b>
+          </h3>
+          <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+            Entwurfs- und Ausführungsplanung von verschiedenen Projekten mit
+            Spirit und SketchUp
           </p>
         </li>
       </ol>
@@ -165,7 +181,7 @@ function AboutUs(props: any) {
           </b>
         </h3>
         <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
-          Drawing, Creative Photography und Creative Process
+          Drawing, Creative Photography & Creative Process
         </p>
       </li>
       <li className="mb-10 ml-4">
@@ -183,22 +199,7 @@ function AboutUs(props: any) {
           Abschlussarbeit: Vakuumdämmung in der Baupraxis
         </p>
       </li>
-      <li className="mb-10 ml-4">
-        <div className="absolute w-4 h-4 bg-violet rounded-full mt-1  -left-2  dark:border-gray-900 dark:bg-gray-400"></div>
-        <time className="mb-1 text-sm font-normal leading-none text-violet dark:text-gray-400">
-          2013 - 2016
-        </time>
-        <div className="m-4">
-          <img src={sramek} className="w-28 mx-auto "></img>
-        </div>
-        <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
-          <b>Werkstudent - Architektur</b>
-        </h3>
-        <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
-          Entwurfs- und Ausführungsplanung von verschiedenen Projekten mit
-          Spirit und SketchUp
-        </p>
-      </li>
+
       <li className="ml-4">
         <div className="absolute w-4 h-4 bg-violet rounded-full mt-1 -left-2  dark:border-gray-900 dark:bg-gray-400"></div>
         <time className="mb-1 text-sm font-normal leading-none text-violet dark:text-gray-400">
@@ -280,13 +281,28 @@ function AboutUs(props: any) {
 
           <p className="text-base font-normal text-gray-500 dark:text-gray-400">
             Gründung und Geschäftsführung der Kadelo GmbH mit acht Mitarbeitern
-            als Online-Marketing Agentur mit Schwerpunkt SEO & Amazon SEO.
-            Erfolgreicher Bereichsverkauf an die Seeders Group.
+            als Online-Marketing Agentur mit den Schwerpunkten SEO & Amazon SEO.
+            Bereichsverkauf an die Seeders Group.
             <br />
             <br />- Aufgabenfelder: Geschäftsführung, Projektmanagement,
             Kundenbetreuung, Mitarbeiterführung, SEO-Optimierung, Google Ads
             Optimierung, Amazon SEO & Ads, Webentwicklung (Schwerpunkt:
             Wordpress)
+          </p>
+        </li>
+        <li className="mb-10 ml-4">
+          <div className="absolute w-4 h-4 bg-blue rounded-full mt-1 -left-2  dark:border-gray-900 dark:bg-gray-400"></div>
+          <time className="mb-1 text-sm font-normal leading-none text-blue dark:text-gray-400">
+            2011 - 2015
+          </time>
+          <div className="m-4">
+            <img src={adesso} className="w-28 mx-auto"></img>
+          </div>
+          <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+            Werkstudent - Softwareentwicklung
+          </h3>
+          <p className="text-base font-normal text-gray-500 dark:text-gray-400">
+            Webentwicklung mit HTML, CSS, JavaScript, JQuery, FirstSpirit & Java
           </p>
         </li>
       </ol>
@@ -311,21 +327,7 @@ function AboutUs(props: any) {
           Management
         </p>
       </li>
-      <li className="mb-10 ml-4">
-        <div className="absolute w-4 h-4 bg-blue rounded-full mt-1 -left-2  dark:border-gray-900 dark:bg-gray-400"></div>
-        <time className="mb-1 text-sm font-normal leading-none text-blue dark:text-gray-400">
-          2011 - 2015
-        </time>
-        <div className="m-4">
-          <img src={adesso} className="w-28 mx-auto"></img>
-        </div>
-        <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
-          Werkstudent - Softwareentwicklung
-        </h3>
-        <p className="text-base font-normal text-gray-500 dark:text-gray-400">
-          Webentwicklung mit HTML, CSS, JavaScript, JQuery, FirstSpirit & Java
-        </p>
-      </li>
+
       <li className="ml-4">
         <div className="absolute w-4 h-4 bg-blue rounded-full mt-1 -left-2  dark:border-gray-900 dark:bg-gray-400"></div>
         <time className="mb-1 text-sm font-normal leading-none text-blue dark:text-gray-400">
@@ -390,16 +392,16 @@ function AboutUs(props: any) {
               <p className="sm:w-5/6 sm:mx-auto text-justify">
                 Hallo, ich bin Erik, <br />
                 <br />
-                Ich bin Wirtschaftsinformatiker und habe über zehn Jahre
-                Erfahrung in der IT. Ich arbeite als Software Engineer mit
-                Schwerpunkt: React & TypeScript. Zusätzlich habe ich viel
-                Expertise im Bereich Unternehmensführung, Wachstum und
-                Projektmanagement. Ich achte in allen Projekten darauf immer das
-                Geschäftsziel im Auge zu behalten und eine dementsprechende
+                ich bin Wirtschaftsinformatiker und habe über zehn Jahre
+                Erfahrung in der IT. Ich arbeite als Software Engineer mit den
+                Schwerpunkten React & TypeScript. Zusätzlich besitze ich viel
+                Expertise in den Bereichen Unternehmensführung, Wachstum und
+                Projektmanagement. Ich achte in allen Projekten darauf, immer
+                das Geschäftsziel im Auge zu behalten und eine dementsprechende
                 Umsetzung anzustreben. <br />
-                <br /> Ich bin ein Fan von pragmatischen Lösungen, sofern diese
-                nachhaltig sind und lege viel Wert auf eine gute Kommunikation
-                zwischen allen Stakeholdern. <br /> <br />
+                <br /> Ich bin ein Fan von nachhaltigen und pragmatischen
+                Lösungen und lege viel Wert auf eine gute Kommunikation zwischen
+                allen Stakeholdern. <br /> <br />
                 Persönliche Interessen abseits der Arbeit: Radsport, Ski &
                 Brettspiele
               </p>
@@ -520,11 +522,11 @@ function AboutUs(props: any) {
                 Hallo, ich bin Heike,
                 <br />
                 <br />
-                Nach meinem Architekturstudium habe ich als Geschäftsführerin
+                nach meinem Architekturstudium habe ich als Geschäftsführerin
                 der Kadelo GmbH gearbeitet und bin dabei mit Web Development in
                 Kontakt gekommen. Es hat mir so viel Spaß gemacht, dass ich
                 dabei immer mehr Aufgaben übernommen und mich letztendlich dazu
-                entschieden habe ein Coding Bootcamp bei Mimo anzufangen.
+                entschieden habe, ein Coding Bootcamp bei Mimo anzufangen.
                 <br />
                 <br />
                 Ich liebe die Herausforderungen beim Coding und zugleich die

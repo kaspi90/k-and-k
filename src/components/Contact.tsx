@@ -7,7 +7,7 @@ function Contact() {
         <h3 className="text-center mb-4">Kontakt</h3>
         <p className="text-center mb-4">
           Wir freuen uns auf spannende Projekte. Wenn du React-Entwickler für
-          dein Projekt suchst, kannst dich gerne jederzeit bei uns melden.
+          dein Projekt suchst, kannst du dich gerne jederzeit bei uns melden.
         </p>
         <div className="flex justify-center ">
           <div className="p-1">
