@@ -1,0 +1,90 @@
+{
+    "navigation": {
+      "part1": "Über Uns",
+      "part2": "Projekte",
+      "part3": "Kontakt"
+    },
+    "description": {
+      "part1": "Um loszulegen, ändere <1>src/App(DE).js</1> und speichere um neuzuladen.",
+      "part2": "Wechsle die Sprache zwischen deutsch und englisch mit Hilfe der beiden Schalter."
+    },
+    "aboutme": {
+      "headline": "Über mich",
+      "e1": "Hallo, ich bin Erik,",
+      "e2": "ich bin Wirtschaftsinformatiker und habe über zehn Jahre Erfahrung in der IT. Ich arbeite als Software Engineer mit den Schwerpunkten React & TypeScript. Zusätzlich besitze ich viel Expertise in den Bereichen Unternehmensführung, Wachstum und Projektmanagement. Ich achte in allen Projekten darauf, immer das Geschäftsziel im Auge zu behalten und eine dementsprechende Umsetzung anzustreben.",
+      "e3": "Ich bin ein Fan von nachhaltigen und pragmatischen Lösungen und lege viel Wert auf eine gute Kommunikation zwischen allen Stakeholdern.",
+      "e4": "Persönliche Interessen abseits der Arbeit: Radsport, Ski & Brettspiele"
+    },
+    "aboutmeheike": {
+      "headline": "Über mich",
+      "h1": "Hallo, ich bin Heike,",
+      "h2": "nach meinem Architekturstudium habe ich als Geschäftsführerin der Kadelo GmbH gearbeitet und bin dabei mit Web Development in Kontakt gekommen. Es hat mir so viel Spaß gemacht, dass ich dabei immer mehr Aufgaben übernommen und mich letztendlich dazu entschieden habe, ein Coding Bootcamp bei Mimo anzufangen.",
+      "h3": "Ich liebe die Herausforderungen beim Coding und zugleich die Kreativität beim Design.",
+      "h4": "Abseits der Arbeit mag ich: Brettspiele, Ski fahren, wandern, Mangas lesen und zeichnen."
+    },
+    "workerik": {
+      "seeders1": "Seeders GmbH",
+      "seeders2": "Gründung der Seeders GmbH als internationale SEO Agentur im Joint Venture mit der Seeders Group.",
+      "seeders3": "Nach einem rasanten Wachstum: Verkauf der Seeders GmbH an die Seeders Group.",
+      "seeders4": "- Aufgabenfelder: Investor, Strategisches Management, Mitarbeitergewinnung",
+      "kasperlino1": "Kasperlino GmbH - Brettspielguru",
+      "kasperlino2": "Gründung der Kasperlino GmbH zum Vertrieb von Brettspielen und Brettspielzubehör.",
+      "kasperlino3": "- Aufgabenfelder: Investor, Produktentwicklung, Amazon-Management, Webentwicklung (Javascript, React, MUI, Firebase)",
+      "kadelo1": "Kadelo GmbH",
+      "kadelo2": "Gründung und Geschäftsführung der Kadelo GmbH mit acht Mitarbeitern als Online-Marketing Agentur mit den Schwerpunkten SEO & Amazon SEO. Bereichsverkauf an die Seeders Group.",
+      "kadelo3": "- Aufgabenfelder: Geschäftsführung, Projektmanagement, Kundenbetreuung, Mitarbeiterführung, SEO-Optimierung, Google Ads Optimierung, Amazon SEO & Ads, Webentwicklung (Schwerpunkt: Wordpress)",
+      "adesso1": "Werkstudent - Softwareentwicklung",
+      "adesso2": "Webentwicklung mit HTML, CSS, JavaScript, JQuery, FirstSpirit & Java",
+      "seedersdate": "November 2020 - Dezember 2021",
+      "kasperlinodate": "Oktober 2020 - heute",
+      "kadelodate": "Februar 2015 - heute"
+
+    },
+    "universityerik": {
+      "semester": "Auslandssemster",
+      "uniessen": "Universität Duisburg-Essen - Bachelor of Science - Wirtschaftsinformatik",
+      "thesis": "Abschlussarbeit: End-User Programming für Wissensarbeiter"
+    },
+    "workheike": {
+      "kasperlino1": "Brettspielguru",
+      "kasperlino2": "Geschäftführung der Kasperlino GmbH zum Vertrieb von Brettspielen und Brettspielzubehör.",
+      "kasperlino3": "- Aufgabenfelder: Geschäftsführung, Produktentwicklung, Amazon-Management",
+      "kadelo1": "Kadelo",
+      "kadelo2": "Geschäftsführung der Kadelo GmbH mit acht Mitarbeitern als Online-Marketing Agentur mit den Schwerpunkten SEO & Amazon SEO.",
+      "kadelo3": "Bereichsverkauf an die Seeders Group.",
+      "kadelo4": "- Aufgabenfelder: Geschäftsführung, Buchführung, Kundenbetreuung, Amazon SEO & Ads, Webentwicklung (Schwerpunkt: Wordpress)",
+      "sramek1": "Werkstudent - Architektur",
+      "sramek2": "Entwurfs- und Ausführungsplanung von verschiedenen Projekten mit Spirit und SketchUp",
+      "kasperlinodate": "Oktober 2020 - heute",
+      "kadelodate": "September 2016 - heute"
+    },
+    "universityheike": {
+      "mimo1": "Webentwicklung mit HTML, CSS, JavaScript, React, Node.js",
+      "semester": "Design und angewandte Kunst",
+      "tudortmund1": "Technische Universität Dortmund - Master of Science - Architektur",
+      "tudortmund2": "Abschlussarbeit: Vakuumdämmung in der Baupraxis",
+      "uniwuppertal1": "Bergische Universität Wuppertal - Bachelor of Science - Architektur",
+      "uniwuppertal2": "Abschlussprojekt: Bauen im Bestand - Ehrenfeld Hybrids",
+      "mimodate": "März 2022 - Oktober 2022"
+    },
+
+    "projects": {
+      "brettspielguru1":"Brettspielguru",
+      "brettspielguru2":"Die Webseite von Brettspielguru sollte einerseits die Produkte präsentieren, andererseits eine Möglichkeit bereitstellen, um die passgenauen Kartenhüllen für verschiedene Brettspiele zu finden. Außerdem können im Backend eigenständig neue Spiele mit den passenden Kartenhüllen eingepflegt werden.",
+      "manga-anime1":"Manga-Anime",
+      "manga-anime2":"Ein Manga- und Animeportal, welches die derzeit beliebtesten Mangas und Animes inkl. Beschreibung und Bewertungen von Myanimelist anzeigt. Zusätzlich können eigene Sammlungen erstellt und verwaltet werden.",
+      "pokemon1":"Pokémon",
+      "pokemon2":"Das Pokémon Projekt ermöglicht eine Übersicht über alle derzeit offiziel am Markt erhältlichen Pokémon Karten. Für jede Karte wird ein entsprechender Verkaufswert von TCG-Player anzeigt. Es ist möglich, eigene Sammlungen anzulegen und zu verwalten.",
+      "boardgames1":"Boardgames",
+      "boardgames2":"Projekt für die Übersicht über die derzeit gefragtesten Brettspiele am Markt. Weiterhin wurde eine Brettspielsuche implementiert, die eine genaue Brettspielbeschreibung inkl. Spieleranzahl, Altersempfehlung und Spielzeit ausgibt."
+    },
+    "contact": {
+      "headline":"Kontakt",
+      "contactText":"Wir freuen uns auf spannende Projekte. Wenn du React-Entwickler für dein Projekt suchst, kannst du dich gerne jederzeit bei uns melden."
+    },
+
+    "footer": {
+      "imprint":"Impressum",
+      "privacy":"Datenschutz"
+    }
+  }

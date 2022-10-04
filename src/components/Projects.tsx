@@ -3,6 +3,7 @@ import brettspielguru from "../img/brettspielguru_de.png";
 import mangaAnime from "../img/manga-anime.png";
 import pokemon from "../img/pokemon.png";
 import boardgame from "../img/boardgame.png";
+import { useTranslation } from "react-i18next";
 
 import { Slide } from "react-awesome-reveal";
 import { IconContext } from "react-icons";
@@ -21,6 +22,8 @@ import {
 } from "react-icons/si";
 
 function Projects(props: any) {
+  const { t } = useTranslation();
+
   return (
     <div id="projects" className="w-5/6 mx-auto pt-12">
       <h3 className="justify-center m-auto flex p-4">Projekte</h3>
@@ -36,15 +39,9 @@ function Projects(props: any) {
             <div className="rounded-xl w-1/2 sm:w-full">
               <div className="mb-6">
                 <h3 className="mb-7 justify-center flex text-2xl font-semibold text-center text-gray-900 font-header dark:text-white ">
-                  Brettspielguru
+                  {t("projects.brettspielguru1")}
                 </h3>
-                <p className="text-justify">
-                  Die Webseite von Brettspielguru sollte einerseits die Produkte
-                  präsentieren, andererseits eine Möglichkeit bereitstellen, um
-                  die passgenauen Kartenhüllen für verschiedene Brettspiele zu
-                  finden. Außerdem können im Backend eigenständig neue Spiele
-                  mit den passenden Kartenhüllen eingepflegt werden.
-                </p>
+                <p className="text-justify">{t("projects.brettspielguru2")}</p>
               </div>
               <div className="flex overflow-visible justify-center gap-2 mb-7">
                 <IconContext.Provider
@@ -139,14 +136,9 @@ function Projects(props: any) {
             <div className=" flex-col  rounded-xl w-1/2  sm:w-full   ">
               <div className="mb-6 ">
                 <h3 className="mb-7 justify-center flex text-2xl font-semibold text-center text-gray-900 font-header dark:text-white ">
-                  Manga-Anime
+                  {t("projects.manga-anime1")}
                 </h3>
-                <p className="text-justify">
-                  Ein Manga- und Animeportal, welches die derzeit beliebtesten
-                  Mangas und Animes inkl. Beschreibung und Bewertungen von
-                  Myanimelist anzeigt. Zusätzlich können eigene Sammlungen
-                  erstellt und verwaltet werden.
-                </p>
+                <p className="text-justify">{t("projects.manga-anime2")}</p>
               </div>
               <div className="flex overflow-visible justify-center gap-2 mb-7">
                 <IconContext.Provider
@@ -253,15 +245,9 @@ function Projects(props: any) {
             <div className="rounded-xl w-1/2 sm:w-full ">
               <div className="mb-6">
                 <h3 className="mb-7 justify-center flex text-2xl font-semibold text-center text-gray-900 font-header dark:text-white ">
-                  Pokémon
+                  {t("projects.pokemon1")}
                 </h3>
-                <p className="text-justify">
-                  Das Pokémon Projekt ermöglicht eine Übersicht über alle
-                  derzeit offiziel am Markt erhältlichen Pokémon Karten. Für
-                  jede Karte wird ein entsprechender Verkaufswert von TCG-Player
-                  anzeigt. Es ist möglich, eigene Sammlungen anzulegen und zu
-                  verwalten.
-                </p>
+                <p className="text-justify">{t("projects.pokemon2")}</p>
               </div>
               <div className="flex overflow-visible justify-center gap-2 mb-7">
                 <IconContext.Provider
@@ -350,14 +336,9 @@ function Projects(props: any) {
             <div className=" flex-col   rounded-xl w-1/2  sm:w-full  ">
               <div className="mb-6 ">
                 <h3 className="mb-7 justify-center flex text-2xl font-semibold text-center text-gray-900 font-header dark:text-white">
-                  Boardgames
+                  {t("projects.boardgames1")}
                 </h3>
-                <p className="text-justify">
-                  Projekt für die Übersicht über die derzeit gefragtesten
-                  Brettspiele am Markt. Weiterhin wurde eine Brettspielsuche
-                  implementiert, die eine genaue Brettspielbeschreibung inkl.
-                  Spieleranzahl, Altersempfehlung und Spielzeit ausgibt.
-                </p>
+                <p className="text-justify">{t("projects.boardgames2")}</p>
               </div>
               <div className="flex overflow-visible justify-center gap-2 mb-7">
                 <IconContext.Provider

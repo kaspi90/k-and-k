@@ -28,10 +28,13 @@ import {
   SiStorybook,
 } from "react-icons/si";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 import { Accordion } from "./Accordion";
 
 function AboutUs(props: any) {
+  const { t } = useTranslation();
+
   const [isHovered, setIsHovered] = useState(false);
 
   const PortraitHeike = () => {
@@ -94,40 +97,37 @@ function AboutUs(props: any) {
         <li className="mb-10 ml-4">
           <div className="absolute w-4 h-4 bg-violet rounded-full mt-1 -left-2  dark:border-gray-900 dark:bg-gray-400"></div>
           <time className="mb-1 text-sm font-normal leading-none text-violet dark:text-gray-400">
-            Oktober 2020 - heute
+            {t("workheike.kasperlinodate")}
           </time>
           <div className="m-4">
             <img src={brettspielguru} className="w-28 mx-auto "></img>
           </div>
           <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
-            Brettspielguru
+            {t("workheike.kasperlino1")}
           </h3>
           <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
-            Geschäftführung der Kasperlino GmbH zum Vertrieb von Brettspielen
-            und Brettspielzubehör.
-            <br /> <br />- Aufgabenfelder: Geschäftsführung, Produktentwicklung,
-            Amazon-Management
+            {t("workheike.kasperlino2")}
+            <br /> <br />
+            {t("workheike.kasperlino3")}
           </p>
         </li>
         <li className="ml-4">
           <div className="absolute w-4 h-4 bg-violet rounded-full mt-1  -left-2  dark:border-gray-900 dark:bg-gray-400"></div>
           <time className="mb-1 text-sm font-normal leading-none text-violet dark:text-gray-400">
-            September 2016 - heute
+            {t("workheike.kadelodate")}
           </time>
           <div className="m-4">
             <img src={kadelo} className="w-28 mx-auto"></img>
           </div>
           <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
-            Kadelo
+            {t("workheike.kadelo1")}
           </h3>
           <p className="text-base font-normal text-gray-500 dark:text-gray-400">
-            Geschäftsführung der Kadelo GmbH mit acht Mitarbeitern als
-            Online-Marketing Agentur mit den Schwerpunkten SEO & Amazon SEO.
-            Bereichsverkauf an die Seeders Group.
+            {t("workheike.kadelo2")}
+            {t("workheike.kadelo3")}
             <br />
-            <br />- Aufgabenfelder: Geschäftsführung, Buchführung,
-            Kundenbetreuung, Amazon SEO & Ads, Webentwicklung (Schwerpunkt:
-            Wordpress)
+            <br />
+            {t("workheike.kadelo4")}
           </p>
         </li>
         <li className="mb-10 ml-4">
@@ -139,11 +139,10 @@ function AboutUs(props: any) {
             <img src={sramek} className="w-28 mx-auto "></img>
           </div>
           <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
-            <b>Werkstudent - Architektur</b>
+            <b>{t("workheike.sramek1")}</b>
           </h3>
           <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
-            Entwurfs- und Ausführungsplanung von verschiedenen Projekten mit
-            Spirit und SketchUp
+            {t("workheike.sramek2")}
           </p>
         </li>
       </ol>
@@ -155,7 +154,7 @@ function AboutUs(props: any) {
       <li className="mb-10 ml-4">
         <div className="absolute w-4 h-4 bg-violet rounded-full mt-1  -left-2  dark:border-gray-900 dark:bg-gray-400"></div>
         <time className="mb-1 text-sm font-normal leading-none text-violet dark:text-gray-400">
-          März 2022 - Oktober 2022
+          {t("universityheike.mimodate")}
         </time>
         <div className="m-4">
           <img src={mimo} className="w-28 mx-auto "></img>
@@ -164,7 +163,7 @@ function AboutUs(props: any) {
           <b>Mimo - Coding Bootcamp - Full-Stack</b>
         </h3>
         <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
-          Webentwicklung mit HTML, CSS, JavaScript, React, Node.js
+          {t("universityheike.mimo1")}
         </p>
       </li>
       <li className="mb-10 ml-4">
@@ -177,7 +176,8 @@ function AboutUs(props: any) {
         </div>
         <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
           <b>
-            California State University, East Bay - Design und angewandte Kunst
+            California State University, East Bay -{" "}
+            {t("universityheike.semester")}
           </b>
         </h3>
         <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
@@ -193,10 +193,10 @@ function AboutUs(props: any) {
           <img src={dortmund} className="w-28 mx-auto"></img>
         </div>
         <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
-          Technische Universität Dortmund - Master of Science - Architektur
+          {t("universityheike.tudortmund1")}{" "}
         </h3>
         <p className="text-base font-normal text-gray-500 dark:text-gray-400">
-          Abschlussarbeit: Vakuumdämmung in der Baupraxis
+          {t("universityheike.tudortmund2")}
         </p>
       </li>
 
@@ -209,10 +209,10 @@ function AboutUs(props: any) {
           <img src={wuppertal} className="w-28 mx-auto"></img>
         </div>
         <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
-          Bergische Universität Wuppertal - Bachelor of Science - Architektur
+          {t("universityheike.uniwuppertal1")}{" "}
         </h3>
         <p className="text-base font-normal text-gray-500 dark:text-gray-400">
-          Abschlussprojekt: Bauen im Bestand - Ehrenfeld Hybrids
+          {t("universityheike.uniwuppertal2")}
         </p>
       </li>
     </ol>
@@ -224,7 +224,7 @@ function AboutUs(props: any) {
         <li className="mb-10 ml-4">
           <div className="absolute w-4 h-4 bg-blue rounded-full mt-1 -left-2 dark:border-gray-900 dark:bg-gray-400"></div>
           <time className="mb-1 text-sm font-normal leading-none text-blue dark:text-gray-400">
-            November 2020 - Dezember 2021
+            {t("workerik.seedersdate")}
           </time>
           <div className="m-4">
             <a href="https://Www.seeders.de" target="_blank">
@@ -232,24 +232,21 @@ function AboutUs(props: any) {
             </a>
           </div>
           <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
-            Seeders GmbH
+            {t("workerik.seeders1")}
           </h3>
           <p className="text-base font-normal text-gray-500 dark:text-gray-400">
-            Gründung der Seeders GmbH als internationale SEO Agentur im Joint
-            Venture mit der Seeders Group. <br />
-            Nach einem rasanten Wachstum: Verkauf der Seeders GmbH an die
-            Seeders Group.
+            {t("workerik.seeders2")} <br />
+            {t("workerik.seeders3")}
           </p>
           <br />
           <p className="text-base font-normal text-gray-500 dark:text-gray-400">
-            - Aufgabenfelder: Investor, Strategisches Management,
-            Mitarbeitergewinnung
+            {t("workerik.seeders4")}
           </p>
         </li>
         <li className="mb-10 ml-4">
           <div className="absolute w-4 h-4 bg-blue rounded-full mt-1 -left-2  dark:border-gray-900 dark:bg-gray-400"></div>
           <time className="mb-1 text-sm font-normal leading-none text-blue dark:text-gray-400">
-            Oktober 2020 - heute
+            {t("workerik.kasperlinodate")}
           </time>
           <div className="m-4">
             <a href="https://www.brettspielguru.de" target="_blank">
@@ -257,37 +254,30 @@ function AboutUs(props: any) {
             </a>
           </div>
           <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
-            Kasperlino GmbH - Brettspielguru
+            {t("workerik.kasperlino1")}
           </h3>
           <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
-            Gründung der Kasperlino GmbH zum Vertrieb von Brettspielen und
-            Brettspielzubehör.
-            <br /> <br />- Aufgabenfelder: Investor, Produktentwicklung,
-            Amazon-Management, Webentwicklung (Javascript, React, MUI, Firebase)
+            {t("workerik.kasperlino2")}
+            <br /> <br /> {t("workerik.kasperlino3")}
           </p>
         </li>
 
         <li className="ml-4">
           <div className="absolute w-4 h-4 bg-blue rounded-full mt-1 -left-2  dark:border-gray-900 dark:bg-gray-400 "></div>
           <time className="mb-1 text-sm font-normal leading-none text-blue dark:text-gray-400">
-            Februar 2015 - heute
+            {t("workerik.kadelodate")}
           </time>
           <div className="m-4">
             <img src={kadelo} className="w-28 mx-auto"></img>
           </div>
           <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
-            Kadelo GmbH
+            {t("workerik.kadelo1")}
           </h3>
 
           <p className="text-base font-normal text-gray-500 dark:text-gray-400">
-            Gründung und Geschäftsführung der Kadelo GmbH mit acht Mitarbeitern
-            als Online-Marketing Agentur mit den Schwerpunkten SEO & Amazon SEO.
-            Bereichsverkauf an die Seeders Group.
+            {t("workerik.kadelo2")}
             <br />
-            <br />- Aufgabenfelder: Geschäftsführung, Projektmanagement,
-            Kundenbetreuung, Mitarbeiterführung, SEO-Optimierung, Google Ads
-            Optimierung, Amazon SEO & Ads, Webentwicklung (Schwerpunkt:
-            Wordpress)
+            <br /> {t("workerik.kadelo3")}
           </p>
         </li>
         <li className="mb-10 ml-4">
@@ -299,10 +289,10 @@ function AboutUs(props: any) {
             <img src={adesso} className="w-28 mx-auto"></img>
           </div>
           <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
-            Werkstudent - Softwareentwicklung
+            {t("workerik.adesso1")}
           </h3>
           <p className="text-base font-normal text-gray-500 dark:text-gray-400">
-            Webentwicklung mit HTML, CSS, JavaScript, JQuery, FirstSpirit & Java
+            {t("workerik.adesso2")}
           </p>
         </li>
       </ol>
@@ -320,7 +310,10 @@ function AboutUs(props: any) {
           <img src={csueb} className="w-28 mx-auto "></img>
         </div>
         <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
-          <b>California State University, East Bay - Auslandssemester</b>
+          <b>
+            California State University, East Bay -{" "}
+            {t("universityerik.semester")}
+          </b>
         </h3>
         <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
           Marketing Management, International Business Law, Global Supply Chain
@@ -337,11 +330,10 @@ function AboutUs(props: any) {
           <img src={essen} className="w-28 mx-auto"></img>
         </div>
         <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
-          Universität Duisburg-Essen - Bachelor of Science -
-          Wirtschaftsinformatik
+          {t("universityerik.uniessen")}
         </h3>
         <p className="text-base font-normal text-gray-500 dark:text-gray-400">
-          Abschlussarbeit: End-User Programming für Wissensarbeiter
+          {t("universityerik.thesis")}
         </p>
       </li>
     </ol>
@@ -367,19 +359,38 @@ function AboutUs(props: any) {
                   }}
                 >
                   <div className="group relative shrink-0 overflow-visible flex flex-col items-center	">
-                    <SiGithub></SiGithub>
+                    <a
+                      href="https://github.com/kaspi90"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <SiGithub></SiGithub>
+                    </a>
                     <p className="invisible group-hover:visible absolute top-10 bg-gray-700 text-white rounded-lg min-w-full	p-2 flex items-center justify-center min-h-12 text-lg text-center">
                       GitHub
                     </p>
                   </div>
                   <div className="group relative shrink-0 overflow-visible flex flex-col items-center	">
-                    <SiLinkedin></SiLinkedin>
+                    <a
+                      href="https://www.linkedin.com/in/erik-k-210a54a6/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <SiLinkedin></SiLinkedin>
+                    </a>
                     <p className="invisible group-hover:visible absolute top-10 bg-gray-700 text-white rounded-lg min-w-full	p-2 flex items-center justify-center min-h-12 text-lg text-center">
                       LinkedIn
                     </p>
                   </div>
                   <div className="group relative shrink-0 overflow-visible flex flex-col items-center	">
-                    <SiXing></SiXing>
+                    <a
+                      href="https://www.xing.com/profile/Erik_Kasper"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {" "}
+                      <SiXing></SiXing>{" "}
+                    </a>
                     <p className="invisible group-hover:visible absolute top-10 bg-gray-700 text-white rounded-lg min-w-full	p-2 flex items-center justify-center min-h-12 text-lg text-center">
                       Xing
                     </p>
@@ -388,22 +399,14 @@ function AboutUs(props: any) {
               </div>
             </div>
             <div className="w-1/2 sm:w-full">
-              <h3 className="mb-4 sm:text-center ">Über mich</h3>
+              <h3 className="mb-4 sm:text-center ">{t("aboutme.headline")}</h3>
               <p className="sm:w-5/6 sm:mx-auto text-justify">
-                Hallo, ich bin Erik, <br />
+                {t("aboutme.e1")} <br />
                 <br />
-                ich bin Wirtschaftsinformatiker und habe über zehn Jahre
-                Erfahrung in der IT. Ich arbeite als Software Engineer mit den
-                Schwerpunkten React & TypeScript. Zusätzlich besitze ich viel
-                Expertise in den Bereichen Unternehmensführung, Wachstum und
-                Projektmanagement. Ich achte in allen Projekten darauf, immer
-                das Geschäftsziel im Auge zu behalten und eine dementsprechende
-                Umsetzung anzustreben. <br />
-                <br /> Ich bin ein Fan von nachhaltigen und pragmatischen
-                Lösungen und lege viel Wert auf eine gute Kommunikation zwischen
-                allen Stakeholdern. <br /> <br />
-                Persönliche Interessen abseits der Arbeit: Radsport, Ski &
-                Brettspiele
+                {t("aboutme.e2")} <br />
+                <br /> {t("aboutme.e3")}
+                <br /> <br />
+                {t("aboutme.e4")}
               </p>
             </div>
           </div>
@@ -496,19 +499,37 @@ function AboutUs(props: any) {
                   }}
                 >
                   <div className="group relative shrink-0 overflow-visible flex flex-col items-center	">
-                    <SiGithub></SiGithub>
+                    <a
+                      href="https://github.com/heikchen"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <SiGithub></SiGithub>
+                    </a>
                     <p className="invisible group-hover:visible absolute top-10 bg-gray-700 text-white rounded-lg min-w-full	p-2 flex items-center justify-center min-h-12 text-lg text-center">
                       GitHub
                     </p>
                   </div>
                   <div className="group relative shrink-0 overflow-visible flex flex-col items-center	">
-                    <SiLinkedin></SiLinkedin>
+                    <a
+                      href="https://www.linkedin.com/in/heike-kasper-aa8162a9/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <SiLinkedin></SiLinkedin>
+                    </a>
                     <p className="invisible group-hover:visible absolute top-10 bg-gray-700 text-white rounded-lg min-w-full	p-2 flex items-center justify-center min-h-12 text-lg text-center">
                       LinkedIn
                     </p>
                   </div>
                   <div className="group relative shrink-0 overflow-visible flex flex-col items-center	">
-                    <SiXing></SiXing>
+                    <a
+                      href="https://www.xing.com/profile/Heike_Kasper22"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <SiXing></SiXing>
+                    </a>
                     <p className="invisible group-hover:visible absolute top-10 bg-gray-700 text-white rounded-lg min-w-full	p-2 flex items-center justify-center min-h-12 text-lg text-center">
                       Xing
                     </p>
@@ -519,21 +540,15 @@ function AboutUs(props: any) {
             <div className=" w-1/2 sm:w-full ">
               <h3 className="mb-4 sm:text-center">Über mich</h3>
               <p className="sm:w-5/6 sm:mx-auto text-justify">
-                Hallo, ich bin Heike,
+                {t("aboutmeheike.h1")}
                 <br />
                 <br />
-                nach meinem Architekturstudium habe ich als Geschäftsführerin
-                der Kadelo GmbH gearbeitet und bin dabei mit Web Development in
-                Kontakt gekommen. Es hat mir so viel Spaß gemacht, dass ich
-                dabei immer mehr Aufgaben übernommen und mich letztendlich dazu
-                entschieden habe, ein Coding Bootcamp bei Mimo anzufangen.
+                {t("aboutmeheike.h2")}
                 <br />
                 <br />
-                Ich liebe die Herausforderungen beim Coding und zugleich die
-                Kreativität beim Design.
+                {t("aboutmeheike.h3")}
                 <br />
-                <br /> Abseits der Arbeit mag ich: Brettspiele, Ski fahren,
-                wandern, Mangas lesen und zeichnen.
+                <br /> {t("aboutmeheike.h4")}
               </p>
             </div>
           </div>

@@ -1,0 +1,90 @@
+{
+    "title": "Welcome to react using react-i18next",
+    "navigation": {
+      "part1": "About Us",
+      "part2": "Projects",
+      "part3": "Contact"
+    },
+    "description": {
+      "part1": "To get started, edit <1>src/App.js</1> and save to reload.",
+      "part2": "Switch language between english and german using buttons above."
+    },
+    "aboutme": {
+      "headline": "About me",
+      "e1": "Hi, I'm Erik",
+      "e2": "I am a business information scientist and have over ten years of experience in IT. I work as a software engineer with a focus on React & TypeScript. Additionally, I have a lot of expertise in business management, growth and project management. In all projects, I make sure to always keep the business goal in mind and strive for implementation according to it.",
+      "e3": "I am a fan of sustainable and pragmatic solutions and place great value on good communication between all stakeholders.",
+      "e4": "Personal interests outside of work: cycling, skiing & board games"
+    },
+    "aboutmeheike": {
+      "headline": "About me",
+      "h1": "Hello, I'm Heike,",
+      "h2": "after my architecture studies I worked as the managing director of Kadelo GmbH and came into contact with web development. I enjoyed it so much that I took on more and more tasks and finally decided to start a coding bootcamp at Mimo.",
+      "h3": "I love the challenges in coding and at the same time the creativity in design.",
+      "h4": "Away from work, I like: board games, skiing, hiking, reading manga, and drawing."
+    },
+    "workerik": {
+      "seeders1": "Seeders GmbH",
+      "seeders2": "Foundation of Seeders GmbH as an international SEO agency in joint venture with Seeders Group.",
+      "seeders3": "After rapid growth: Sale of Seeders GmbH to the Seeders Group.",
+      "seeders4": "- Areas of responsibility: Investor, strategic management, employee recruitment",
+      "kasperlino1": "Kasperlino GmbH - Brettspielguru",
+      "kasperlino2": "Foundation of Kasperlino GmbH for the distribution of board games and board game accessories.",
+      "kasperlino3": "- Areas of responsibility: Investor, product development, Amazon management, web development (Javascript, React, MUI, Firebase).",
+      "kadelo1": "Kadelo GmbH",
+      "kadelo2": "Foundation and management of Kadelo GmbH with eight employees as an online marketing agency with a focus on SEO & Amazon SEO. Divisional sale to the Seeders Group.",
+      "kadelo3": "- Areas of responsibility: Business management, project management, customer support, staff management, SEO optimization, Google Ads optimization, Amazon SEO & Ads, web development (focus: Wordpress).",
+      "adesso1": "Working student - Software development",
+      "adesso2": "Web development with HTML, CSS, JavaScript, JQuery, FirstSpirit & Java",
+      "seedersdate": "November 2020 - December 2021",
+      "kasperlinodate": "October 2020 - today",
+      "kadelodate": "February 2015 - today"
+
+    },
+    "universityerik": {
+      "semester": "Semester abroad",
+      "uniessen": "University of Duisburg-Essen - Bachelor of Science - Business Informatics",
+      "thesis": "Thesis: End-User Programming for Knowledge Workers"
+    },
+    "workheike": {
+      "kasperlino1": "Brettspielguru",
+      "kasperlino2": "Business management of Kasperlino GmbH for the distribution of board games and board game accessories.",
+      "kasperlino3": "- Areas of responsibility: Executive management, product development, Amazon management",
+      "kadelo1": "Kadelo",
+      "kadelo2": "Management of Kadelo GmbH with eight employees as an online marketing agency with a focus on SEO & Amazon SEO.",
+      "kadelo3": "Divisional sale to the Seeders Group.",
+      "kadelo4": "- Areas of responsibility: Business management, accounting, customer support, Amazon SEO & Ads, web development (focus: Wordpress).",
+      "sramek1": "Working student - Architecture",
+      "sramek2": "Design and execution planning of various projects with Spirit and SketchUp",
+      "kasperlinodate": "October 2020 - today",
+      "kadelodate": "September 2016 - today"
+    },
+    "universityheike": {
+      "mimo1": "Web development with HTML, CSS, JavaScript, React, Node.js",
+      "semester": "Design and applied arts",
+      "tudortmund1": "Dortmund University of Technology - Master of Science - Architecture",
+      "tudortmund2": "Thesis: Vacuum insulation in building practice",
+      "uniwuppertal1": "Bergische Universität Wuppertal - Bachelor of Science - Architecture",
+      "uniwuppertal2": "Final Project: Building in Existing Contexts - Ehrenfeld Hybrids",
+      "mimodate": "March 2022 - October 2022"
+    },
+
+    "projects": {
+      "brettspielguru1":"Brettspielguru",
+      "brettspielguru2":"The website of Brettspielguru should present the products on the one hand, on the other hand provide a possibility to find the exact fitting card sleeves for different board games. In addition, new games with the matching card sleeves can be added independently in the backend.",
+      "manga-anime1":"Manga-Anime",
+      "manga-anime2":"A manga and anime portal that displays the currently most popular manga and anime including descriptions and ratings from Myanimelist. Additionally, own collections can be created and managed.",
+      "pokemon1":"Pokémon",
+      "pokemon2":"The Pokémon Project provides an overview of all official Pokémon cards currently available on the market. For each card, a corresponding sales value of TCG players is displayed. It is possible to create and manage your own collections.",
+      "boardgames1":"Boardgames",
+      "boardgames2":"Project for the overview of the currently most sought-after board games on the market. Furthermore, a board game search was implemented, which outputs an exact board game description incl. number of players, age recommendation and playing time."
+    },
+    "contact": {
+      "headline":"Contact",
+      "contactText":"We are looking forward to exciting projects. If you are looking for React developers for your project, feel free to contact us anytime."
+    },
+    "footer": {
+      "imprint":"Imprint",
+      "privacy":"Privacy Notice"
+    }
+  }
