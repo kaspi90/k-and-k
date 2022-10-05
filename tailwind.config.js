@@ -7,7 +7,7 @@ module.exports = {
 
   theme: {
     extend: {
-      screens: { sm: { max: "639px" } },
+      screens: { sm: { max: "639px" }, md: { max: "300px" } },
       colors: {
         blue: "#224CA6",
         lightblue: "#88E2FB",

@@ -19,7 +19,7 @@ function NavBar(props: any) {
     <div className=" bg-neutral-100 mb-12 dark:bg-gray-900 dark:text-white">
       <nav
         id="nav"
-        className="flex justify-between items-center min-h-24  max-w-[1280px] px-8 mx-auto mb-8 sm:flex-wrap sm:justify-center sm:pb-4 "
+        className="flex justify-between items-center min-h-24  max-w-[1280px] px-8 mx-auto mb-8 sm:flex-wrap sm:justify-center sm:pb-4 sm:px-2 "
       >
         <a href="#nav">
           <img
@@ -27,11 +27,11 @@ function NavBar(props: any) {
             src={props.mode ? logo_dark : logo}
           ></img>
         </a>
-        <div className="flex gap-5 content-center items-center">
+        <div className="flex gap-5 content-center items-center sm:gap-4 md:gap-3 md:text-xs">
           <a href="#aboutUs">{t("navigation.part1")}</a>
           <a href="#projects">{t("navigation.part2")}</a>
           <a href="#contact">{t("navigation.part3")}</a>
-          <div className="flex">
+          <div className="flex sm:gap-4 md:gap-3 ">
             <IconContext.Provider
               value={{
                 color: props.mode ? "#671595" : "#224CA6",
@@ -42,7 +42,7 @@ function NavBar(props: any) {
               <button onClick={props.toggleMode}>
                 {props.mode ? <MdOutlineLightMode /> : <MdOutlineDarkMode />}
               </button>
-              <div className="flex mx-5 pt-1">
+              <div className="flex mx-5 pt-1 sm:mx-0 md:pt-0">
                 <div className="pt-1">
                   <a
                     href="#"
