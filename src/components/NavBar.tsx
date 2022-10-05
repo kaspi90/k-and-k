@@ -4,11 +4,15 @@ import logo_dark from "../img/logo-lightsaber.png";
 import { IconContext } from "react-icons/lib";
 import { MdOutlineDarkMode, MdOutlineLightMode } from "react-icons/md";
 import { useTranslation } from "react-i18next";
+import { useState } from "react";
 
 function NavBar(props: any) {
   const { t, i18n } = useTranslation();
+  const [isActive, setIsActive] = useState(true);
+
   const changeLanguage = (lng: any) => {
     i18n.changeLanguage(lng);
+    setIsActive(!isActive);
   };
 
   return (
@@ -42,7 +46,7 @@ function NavBar(props: any) {
                 <div className="pt-1">
                   <a
                     href="#"
-                    className="hover:opacity-50"
+                    className={isActive ? "opacity-50 " : "pointer-events-none"}
                     onClick={() => changeLanguage("en")}
                   >
                     <svg
@@ -110,7 +114,9 @@ function NavBar(props: any) {
                 <div className="pt-1">
                   <a
                     href="#"
-                    className="hover:opacity-50 "
+                    className={
+                      !isActive ? "opacity-50 " : "pointer-events-none"
+                    }
                     onClick={() => changeLanguage("de")}
                   >
                     <svg
