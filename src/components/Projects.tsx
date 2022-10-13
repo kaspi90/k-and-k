@@ -1,6 +1,6 @@
 import code from "../img/code.svg";
-import brettspielguru from "../img/brettspielguru_de.png";
-import mangaAnime from "../img/manga-anime.png";
+import brettspielguru from "../img/brettspielguru_de.webp";
+import mangaAnime from "../img/manga-anime.webp";
 import pokemon from "../img/pokemon.png";
 import boardgame from "../img/boardgame.png";
 import { useTranslation } from "react-i18next";

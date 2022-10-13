@@ -1,5 +1,5 @@
-import erik from "../img/erik.jpg";
-import heike from "../img/heike.jpg";
+import erik from "../img/erik.webp";
+import heike from "../img/heike.webp";
 import erikLightsaber from "../img/erikLightsaber.jpg";
 import heikeLightsaber from "../img/heikeLightsaber.jpg";
 
