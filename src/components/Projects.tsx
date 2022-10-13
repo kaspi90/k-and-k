@@ -34,6 +34,7 @@ function Projects(props: any) {
               <img
                 src={brettspielguru}
                 className="rounded-xl shrink-0 shadow-md"
+                alt="brettspielguru projekt"
               ></img>
             </div>
             <div className="rounded-xl w-1/2 sm:w-full">
@@ -228,6 +229,7 @@ function Projects(props: any) {
               <img
                 src={mangaAnime}
                 className="rounded-xl shrink-0 shadow-md"
+                alt="manga anime projekt"
               ></img>
             </div>
           </div>
@@ -240,6 +242,7 @@ function Projects(props: any) {
               <img
                 src={pokemon}
                 className="rounded-xl shrink-0 shadow-md"
+                alt="pokemon projekt"
               ></img>
             </div>
             <div className="rounded-xl w-1/2 sm:w-full ">
@@ -419,7 +422,11 @@ function Projects(props: any) {
               </div>
             </div>
             <div className=" rounded-xl p-12 sm:basis-96 w-1/2 mx-auto">
-              <img src={boardgame} className="rounded-xl shadow-md"></img>
+              <img
+                src={boardgame}
+                className="rounded-xl shadow-md"
+                alt="boardgame projekt"
+              ></img>
             </div>
           </div>
         </div>

@@ -23,6 +23,7 @@ function NavBar(props: any) {
       >
         <a href="#nav">
           <img
+            alt="k-and-k logo"
             className="max-h-24 p-4"
             src={props.mode ? logo_dark : logo}
           ></img>
