@@ -15,16 +15,16 @@ import heikeLightsaber2x from "../img/heikeLightsaber_320.webp";
 import heikeLightsaber3x from "../img/heikeLightsaber_640.webp";
 import heikeLightsaber4x from "../img/heikeLightsaber_1280.webp";
 
-import essen from "../img/uni_essen.svg";
-import csueb from "../img/csueb.svg";
-import kadelo from "../img/kadelo_logo.png";
-import seeders from "../img/seeders_logo.png";
-import brettspielguru from "../img/Logo_Brettspielguru_Final.png";
-import adesso from "../img/adesso_logo.svg";
-import dortmund from "../img/Technische_Universität_Dortmund_Logo Kopie.png";
-import wuppertal from "../img/BUW_Logo.svg";
-import mimo from "../img/Mimo_Logo.png";
-import sramek from "../img/SRAMEK+LOGO+NEU+ohne+Hintergrund+2017-640w.png";
+import essen from "../img/uni_essen.webp";
+import csueb from "../img/csueb.webp";
+import kadelo from "../img/kadelo_logo.webp";
+import seeders from "../img/seeders_logo.webp";
+import brettspielguru from "../img/Logo_Brettspielguru_Final.webp";
+import adesso from "../img/adesso_logo.webp";
+import dortmund from "../img/Technische_Universität_Dortmund_Logo Kopie.webp";
+import wuppertal from "../img/BUW_Logo.webp";
+import mimo from "../img/Mimo_Logo.webp";
+import sramek from "../img/SRAMEK+LOGO+NEU+ohne+Hintergrund+2017-640w.webp";
 import { IconContext } from "react-icons";
 import {
   SiTypescript,
