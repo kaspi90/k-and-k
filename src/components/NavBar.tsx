@@ -29,9 +29,9 @@ function NavBar(props: any) {
           ></img>
         </a>
         <div className="flex gap-5 content-center items-center sm:gap-4 md:gap-3 md:text-xs">
-          <a href="#aboutUs">{t("navigation.part1")}</a>
-          <a href="#projects">{t("navigation.part2")}</a>
-          <a href="#contact">{t("navigation.part3")}</a>
+          <a href="aboutUs">{t("navigation.part1")}</a>
+          <a href="projects">{t("navigation.part2")}</a>
+          <a href="contact">{t("navigation.part3")}</a>
           <div className="flex sm:gap-4 md:gap-3 ">
             <IconContext.Provider
               value={{
@@ -46,7 +46,7 @@ function NavBar(props: any) {
               <div className="flex mx-5 pt-1 sm:mx-0 md:pt-0">
                 <div className="pt-1">
                   <a
-                    href="#"
+                    href="en"
                     aria-label="Language Englisch"
                     className={isActive ? "opacity-50 " : "pointer-events-none"}
                     onClick={() => changeLanguage("en")}
@@ -115,7 +115,7 @@ function NavBar(props: any) {
                 <span className="mx-1">|</span>
                 <div className="pt-1">
                   <a
-                    href="#"
+                    href="de"
                     aria-label="Language Deutsch"
                     className={
                       !isActive ? "opacity-50 " : "pointer-events-none"
