@@ -39,7 +39,7 @@ function Projects(props: any) {
                 src={brettspielguru}
                 className="rounded-xl shrink-0 shadow-md"
                 alt="brettspielguru projekt"
-                srcSet={`${brettspielguru} 1x,${brettspielguru2x} 3x`}
+                srcSet={`${brettspielguru} 1x,${brettspielguru2x} 2x, ${brettspielguru3x} 3x`}
               ></img>
             </div>
             <div className="rounded-xl w-1/2 sm:w-full">
