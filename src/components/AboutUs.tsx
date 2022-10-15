@@ -156,7 +156,7 @@ function AboutUs(props: any) {
           <div className="m-4">
             <img
               src={brettspielguru}
-              className="w-28 mx-auto"
+              className="w-28 h-auto mx-auto"
               alt="Brettspielguru Logo"
             ></img>
           </div>
