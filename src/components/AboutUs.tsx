@@ -180,7 +180,7 @@ function AboutUs(props: any) {
           <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
             {t("workheike.kadelo1")}
           </h3>
-          <p className="text-base font-normal text-gray-500 dark:text-gray-400">
+          <p className="mb-8 text-base font-normal text-gray-500 dark:text-gray-400">
             {t("workheike.kadelo2")}
             {t("workheike.kadelo3")}
             <br />
@@ -352,13 +352,13 @@ function AboutUs(props: any) {
             {t("workerik.kadelo1")}
           </h3>
 
-          <p className="text-base font-normal text-gray-500 dark:text-gray-400">
+          <p className=" mb-8 text-base font-normal text-gray-500 dark:text-gray-400">
             {t("workerik.kadelo2")}
             <br />
             <br /> {t("workerik.kadelo3")}
           </p>
         </li>
-        <li className="mb-10 ml-4">
+        <li className="ml-4">
           <div className="absolute w-4 h-4 bg-blue rounded-full mt-1 -left-2  dark:border-gray-900 dark:bg-gray-400"></div>
           <time className="mb-1 text-sm font-normal leading-none text-blue dark:text-gray-400">
             2011 - 2015

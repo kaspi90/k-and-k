@@ -21,7 +21,7 @@ function NavBar(props: any) {
         id="nav"
         className="flex justify-between items-center min-h-24  max-w-[1280px] px-8 mx-auto mb-8 sm:flex-wrap sm:justify-center sm:pb-4 sm:px-2 "
       >
-        <a href="#nav">
+        <a href="">
           <img
             alt="k-and-k logo"
             className="max-h-24 p-4"
