@@ -1,15 +1,15 @@
-import brettspielguru from "../img/brettspielguru_de_534.jpg";
-import brettspielguru2x from "../img/brettspielguru_de_1068.jpg";
-import brettspielguru3x from "../img/brettspielguru_de_1602.jpg";
-import mangaAnime from "../img/manga-anime_534.jpg";
-import mangaAnime2x from "../img/manga-anime_1068.jpg";
-import mangaAnime3x from "../img/manga-anime_1602.jpg";
+import brettspielguru from "../img/brettspielguru_de_534.webp";
+import brettspielguru2x from "../img/brettspielguru_de_1068.webp";
+import brettspielguru3x from "../img/brettspielguru_de_1602.webp";
+import mangaAnime from "../img/manga-anime_534.webp";
+import mangaAnime2x from "../img/manga-anime_1068.webp";
+import mangaAnime3x from "../img/manga-anime_1602.webp";
 import pokemon from "../img/pokemon_534.webp";
 import pokemon2x from "../img/pokemon_1068.webp";
 import pokemon3x from "../img/pokemon_1602.webp";
-import boardgame from "../img/boardgame_534.jpg";
-import boardgame2x from "../img/boardgame_1068.jpg";
-import boardgame3x from "../img/boardgame_1602.jpg";
+import boardgame from "../img/boardgame_534.webp";
+import boardgame2x from "../img/boardgame_1068.webp";
+import boardgame3x from "../img/boardgame_1602.webp";
 import { useTranslation } from "react-i18next";
 
 import { Slide } from "react-awesome-reveal";
