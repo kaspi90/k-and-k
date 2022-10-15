@@ -88,10 +88,10 @@ function AboutUs(props: any) {
           <img
             src={heike}
             alt="Heike Profilfoto"
-            srcSet={`${heike} 1x,
-            ${heike2x} 2x, 
-            ${heike3x} 3x, 
-            ${heike4x} 4x`}
+            srcSet={`${heike} 160w,
+            ${heike2x} 320w, 
+            ${heike3x} 640w, 
+            ${heike4x} 1280w`}
           ></img>
         </div>
       );
