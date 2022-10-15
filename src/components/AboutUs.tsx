@@ -1,7 +1,19 @@
-import erik from "../img/erik.webp";
-import heike from "../img/heike.webp";
-import erikLightsaber from "../img/erikLightsaber.jpg";
-import heikeLightsaber from "../img/heikeLightsaber.jpg";
+import erik from "../img/erik_160.jpg";
+import erik2x from "../img/erik_320.jpg";
+import erik3x from "../img/erik_640.jpg";
+import erik4x from "../img/erik_1280.jpg";
+import heike from "../img/heike_160.jpg";
+import heike2x from "../img/heike_320.jpg";
+import heike3x from "../img/heike_640.jpg";
+import heike4x from "../img/heike_1280.jpg";
+import erikLightsaber from "../img/erikLightsaber_160.jpg";
+import erikLightsaber2x from "../img/erikLightsaber_320.jpg";
+import erikLightsaber3x from "../img/erikLightsaber_640.jpg";
+import erikLightsaber4x from "../img/erikLightsaber_1280.jpg";
+import heikeLightsaber from "../img/heikeLightsaber_160.jpg";
+import heikeLightsaber2x from "../img/heikeLightsaber_320.jpg";
+import heikeLightsaber3x from "../img/heikeLightsaber_640.jpg";
+import heikeLightsaber4x from "../img/heikeLightsaber_1280.jpg";
 
 import essen from "../img/uni_essen.svg";
 import csueb from "../img/csueb.svg";
@@ -46,9 +58,23 @@ function AboutUs(props: any) {
           className="h-40 w-40 rounded-full border-4  border-violet mb-4 overflow-hidden "
         >
           {isHovered ? (
-            <img src={heikeLightsaber}></img>
+            <img
+              src={heikeLightsaber}
+              alt="Heike Lichtschwert Profilfoto"
+              srcSet={`${heikeLightsaber} 1x,
+            ${heikeLightsaber2x} 2x, 
+            ${heikeLightsaber3x} 3x, 
+            ${heikeLightsaber4x} 4x`}
+            ></img>
           ) : (
-            <img src={heike}></img>
+            <img
+              src={heike}
+              alt="Heike Profilfoto"
+              srcSet={`${heike} 1x,
+            ${heike2x} 2x, 
+            ${heike3x} 3x, 
+            ${heike4x} 4x`}
+            ></img>
           )}
         </div>
       );
@@ -59,7 +85,14 @@ function AboutUs(props: any) {
           onMouseLeave={() => setIsHovered(false)}
           className="h-40 w-40 rounded-full border-4  border-violet mb-4 overflow-hidden "
         >
-          <img src={heike}></img>
+          <img
+            src={heike}
+            alt="Heike Profilfoto"
+            srcSet={`${heike} 1x,
+            ${heike2x} 2x, 
+            ${heike3x} 3x, 
+            ${heike4x} 4x`}
+          ></img>
         </div>
       );
   };
@@ -73,9 +106,23 @@ function AboutUs(props: any) {
           className="h-40 w-40 rounded-full border-4  border-blue dark:border-lightblue mb-4 overflow-hidden "
         >
           {isHovered ? (
-            <img src={erikLightsaber}></img>
+            <img
+              src={erikLightsaber}
+              alt="Erik Lichtschwert Profilfoto"
+              srcSet={`${erikLightsaber} 1x,
+            ${erikLightsaber2x} 2x, 
+            ${erikLightsaber3x} 3x, 
+            ${erikLightsaber4x} 4x`}
+            ></img>
           ) : (
-            <img src={erik}></img>
+            <img
+              src={erik}
+              alt="Erik Profilfoto"
+              srcSet={`${erik} 1x,
+           ${erik2x} 2x, 
+           ${erik3x} 3x, 
+           ${erik4x} 4x`}
+            ></img>
           )}
         </div>
       );
@@ -86,7 +133,14 @@ function AboutUs(props: any) {
           onMouseLeave={() => setIsHovered(false)}
           className="h-40 w-40 rounded-full border-4  border-blue mb-4 overflow-hidden "
         >
-          <img src={erik}></img>
+          <img
+            src={erik}
+            alt="Erik Profilfoto"
+            srcSet={`${erik} 1x,
+           ${erik2x} 2x, 
+           ${erik3x} 3x, 
+           ${erik4x} 4x`}
+          ></img>
         </div>
       );
   };
@@ -100,7 +154,11 @@ function AboutUs(props: any) {
             {t("workheike.kasperlinodate")}
           </time>
           <div className="m-4">
-            <img src={brettspielguru} className="w-28 mx-auto "></img>
+            <img
+              src={brettspielguru}
+              className="w-28 mx-auto"
+              alt="Brettspielguru Logo"
+            ></img>
           </div>
           <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
             {t("workheike.kasperlino1")}
@@ -117,7 +175,7 @@ function AboutUs(props: any) {
             {t("workheike.kadelodate")}
           </time>
           <div className="m-4">
-            <img src={kadelo} className="w-28 mx-auto"></img>
+            <img src={kadelo} className="w-28 mx-auto" alt="Kadelo Logo"></img>
           </div>
           <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
             {t("workheike.kadelo1")}
@@ -136,7 +194,11 @@ function AboutUs(props: any) {
             2013 - 2016
           </time>
           <div className="m-4">
-            <img src={sramek} className="w-28 mx-auto "></img>
+            <img
+              src={sramek}
+              className="w-28 mx-auto "
+              alt="Sramek Architekten Logo"
+            ></img>
           </div>
           <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
             <b>{t("workheike.sramek1")}</b>
@@ -157,7 +219,7 @@ function AboutUs(props: any) {
           {t("universityheike.mimodate")}
         </time>
         <div className="m-4">
-          <img src={mimo} className="w-28 mx-auto "></img>
+          <img src={mimo} className="w-28 mx-auto " alt="Mimo Dev Logo"></img>
         </div>
         <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
           <b>Mimo - Coding Bootcamp - Full-Stack</b>
@@ -172,7 +234,7 @@ function AboutUs(props: any) {
           2015
         </time>
         <div className="m-4">
-          <img src={csueb} className="w-28 mx-auto "></img>
+          <img src={csueb} className="w-28 mx-auto " alt="csueb Logo"></img>
         </div>
         <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
           <b>
@@ -190,7 +252,11 @@ function AboutUs(props: any) {
           2014 - 2018
         </time>
         <div className="m-4">
-          <img src={dortmund} className="w-28 mx-auto"></img>
+          <img
+            src={dortmund}
+            className="w-28 mx-auto"
+            alt="TU Dortmund Logo"
+          ></img>
         </div>
         <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
           {t("universityheike.tudortmund1")}{" "}
@@ -206,7 +272,11 @@ function AboutUs(props: any) {
           2010 - 2013
         </time>
         <div className="m-4">
-          <img src={wuppertal} className="w-28 mx-auto"></img>
+          <img
+            src={wuppertal}
+            className="w-28 mx-auto"
+            alt="Bergische Universität Wuppertal Logo"
+          ></img>
         </div>
         <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
           {t("universityheike.uniwuppertal1")}{" "}
@@ -228,7 +298,11 @@ function AboutUs(props: any) {
           </time>
           <div className="m-4">
             <a href="https://Www.seeders.de" target="_blank">
-              <img src={seeders} className="w-28 mx-auto"></img>
+              <img
+                src={seeders}
+                className="w-28 mx-auto"
+                alt="Seeders Logo"
+              ></img>
             </a>
           </div>
           <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
@@ -250,7 +324,11 @@ function AboutUs(props: any) {
           </time>
           <div className="m-4">
             <a href="https://www.brettspielguru.de" target="_blank">
-              <img src={brettspielguru} className="w-28 mx-auto "></img>
+              <img
+                src={brettspielguru}
+                className="w-28 mx-auto "
+                alt="Brettspielguru Logo"
+              ></img>
             </a>
           </div>
           <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
@@ -268,7 +346,7 @@ function AboutUs(props: any) {
             {t("workerik.kadelodate")}
           </time>
           <div className="m-4">
-            <img src={kadelo} className="w-28 mx-auto"></img>
+            <img src={kadelo} className="w-28 mx-auto" alt="Kadelo Logo"></img>
           </div>
           <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
             {t("workerik.kadelo1")}
@@ -286,7 +364,7 @@ function AboutUs(props: any) {
             2011 - 2015
           </time>
           <div className="m-4">
-            <img src={adesso} className="w-28 mx-auto"></img>
+            <img src={adesso} className="w-28 mx-auto" alt="adesso Logo"></img>
           </div>
           <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
             {t("workerik.adesso1")}
@@ -307,7 +385,7 @@ function AboutUs(props: any) {
           2015
         </time>
         <div className="m-4">
-          <img src={csueb} className="w-28 mx-auto "></img>
+          <img src={csueb} className="w-28 mx-auto " alt="csueb Logo"></img>
         </div>
         <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
           <b>
@@ -327,7 +405,7 @@ function AboutUs(props: any) {
           2010-2014
         </time>
         <div className="m-4">
-          <img src={essen} className="w-28 mx-auto"></img>
+          <img src={essen} className="w-28 mx-auto" alt="Uni Essen Logo"></img>
         </div>
         <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
           {t("universityerik.uniessen")}
@@ -361,6 +439,7 @@ function AboutUs(props: any) {
                   <div className="group relative shrink-0 overflow-visible flex flex-col items-center	">
                     <a
                       href="https://github.com/kaspi90"
+                      aria-label="Github Erik"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -373,6 +452,7 @@ function AboutUs(props: any) {
                   <div className="group relative shrink-0 overflow-visible flex flex-col items-center	">
                     <a
                       href="https://www.linkedin.com/in/erik-k-210a54a6/"
+                      aria-label="Linkedin Erik"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -385,6 +465,7 @@ function AboutUs(props: any) {
                   <div className="group relative shrink-0 overflow-visible flex flex-col items-center	">
                     <a
                       href="https://www.xing.com/profile/Erik_Kasper"
+                      aria-label="Xing Erik"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -501,6 +582,7 @@ function AboutUs(props: any) {
                   <div className="group relative shrink-0 overflow-visible flex flex-col items-center	">
                     <a
                       href="https://github.com/heikchen"
+                      aria-label="Github Heike"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -513,6 +595,7 @@ function AboutUs(props: any) {
                   <div className="group relative shrink-0 overflow-visible flex flex-col items-center	">
                     <a
                       href="https://www.linkedin.com/in/heike-kasper-aa8162a9/"
+                      aria-label="Linkedin Heike"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -525,6 +608,7 @@ function AboutUs(props: any) {
                   <div className="group relative shrink-0 overflow-visible flex flex-col items-center	">
                     <a
                       href="https://www.xing.com/profile/Heike_Kasper22"
+                      aria-label="Xing Heike"
                       target="_blank"
                       rel="noopener noreferrer"
                     >

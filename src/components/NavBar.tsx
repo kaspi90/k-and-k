@@ -40,13 +40,14 @@ function NavBar(props: any) {
                 size: "2em",
               }}
             >
-              <button onClick={props.toggleMode}>
+              <button onClick={props.toggleMode} aria-label="dark Mode">
                 {props.mode ? <MdOutlineLightMode /> : <MdOutlineDarkMode />}
               </button>
               <div className="flex mx-5 pt-1 sm:mx-0 md:pt-0">
                 <div className="pt-1">
                   <a
                     href="#"
+                    aria-label="Language Englisch"
                     className={isActive ? "opacity-50 " : "pointer-events-none"}
                     onClick={() => changeLanguage("en")}
                   >
@@ -115,6 +116,7 @@ function NavBar(props: any) {
                 <div className="pt-1">
                   <a
                     href="#"
+                    aria-label="Language Deutsch"
                     className={
                       !isActive ? "opacity-50 " : "pointer-events-none"
                     }

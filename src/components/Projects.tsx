@@ -1,8 +1,15 @@
-import code from "../img/code.svg";
-import brettspielguru from "../img/brettspielguru_de.webp";
-import mangaAnime from "../img/manga-anime.webp";
-import pokemon from "../img/pokemon.png";
-import boardgame from "../img/boardgame.png";
+import brettspielguru from "../img/brettspielguru_de_534.jpg";
+import brettspielguru2x from "../img/brettspielguru_de_1068.jpg";
+import brettspielguru3x from "../img/brettspielguru_de_1602.jpg";
+import mangaAnime from "../img/manga-anime_534.jpg";
+import mangaAnime2x from "../img/manga-anime_1068.jpg";
+import mangaAnime3x from "../img/manga-anime_1602.jpg";
+import pokemon from "../img/pokemon_534.jpg";
+import pokemon2x from "../img/pokemon_1068.jpg";
+import pokemon3x from "../img/pokemon_1602.jpg";
+import boardgame from "../img/boardgame_534.jpg";
+import boardgame2x from "../img/boardgame_1068.jpg";
+import boardgame3x from "../img/boardgame_1602.jpg";
 import { useTranslation } from "react-i18next";
 
 import { Slide } from "react-awesome-reveal";
@@ -13,9 +20,6 @@ import {
   SiReact,
   SiTailwindcss,
   SiMaterialui,
-  SiXing,
-  SiLinkedin,
-  SiGithub,
   SiFirebase,
   SiNodedotjs,
   SiCss3,
@@ -35,6 +39,7 @@ function Projects(props: any) {
                 src={brettspielguru}
                 className="rounded-xl shrink-0 shadow-md"
                 alt="brettspielguru projekt"
+                srcSet={`${brettspielguru} 1x,${brettspielguru2x} 2x, ${brettspielguru3x} 3x`}
               ></img>
             </div>
             <div className="rounded-xl w-1/2 sm:w-full">
@@ -230,6 +235,7 @@ function Projects(props: any) {
                 src={mangaAnime}
                 className="rounded-xl shrink-0 shadow-md"
                 alt="manga anime projekt"
+                srcSet={`${mangaAnime} 1x,${mangaAnime2x} 2x, ${mangaAnime3x} 3x`}
               ></img>
             </div>
           </div>
@@ -243,6 +249,7 @@ function Projects(props: any) {
                 src={pokemon}
                 className="rounded-xl shrink-0 shadow-md"
                 alt="pokemon projekt"
+                srcSet={`${pokemon} 1x,${pokemon2x} 2x, ${pokemon3x} 3x`}
               ></img>
             </div>
             <div className="rounded-xl w-1/2 sm:w-full ">
@@ -426,6 +433,7 @@ function Projects(props: any) {
                 src={boardgame}
                 className="rounded-xl shadow-md"
                 alt="boardgame projekt"
+                srcSet={`${boardgame} 1x,${boardgame2x} 2x, ${boardgame3x} 3x`}
               ></img>
             </div>
           </div>
