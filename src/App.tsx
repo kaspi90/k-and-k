@@ -9,8 +9,6 @@ import PrivacyProtection from "./components/PrivacyProtection";
 import Contact from "./components/Contact";
 import { I18nextProvider } from "react-i18next";
 import i18n from "./react-i18next";
-
-import { Suspense } from "react";
 import {
   BrowserRouter as Router,
   Routes,
