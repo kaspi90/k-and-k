@@ -85,6 +85,8 @@
     },
     "footer": {
       "imprint":"Imprint",
-      "privacy":"Privacy Notice"
+      "privacy":"Privacy Notice",
+      "germany": "Germany"
+
     }
   }
