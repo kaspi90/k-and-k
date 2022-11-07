@@ -419,290 +419,295 @@ function AboutUs(props: any) {
 
   return (
     <div
-      className="flex flex-wrap content-center justify-center  dark:bg-gray-800 dark:text-white"
+      className="flex flex-wrap flex-col content-center justify-center  dark:bg-gray-800 dark:text-white "
       id="aboutUs"
     >
-      <div className="w-full">
-        <div className="flex content-center justify-center mb-16  ">
-          <div className="items-center flex w-full justify-center gap-20  flex-wrap">
-            <div>
-              <h3 className="flex justify-center mt-4 mb-4">Erik Kasper</h3>
-              <PortraitErik />
-              <div className="flex overflow-visible justify-center gap-2">
-                <IconContext.Provider
-                  value={{
-                    color: props.mode ? "#88E2FB" : "#224CA6",
-                    className: "hover:grayscale",
-                    size: "2em",
-                  }}
-                >
-                  <div className="group relative shrink-0 overflow-visible flex flex-col items-center	">
-                    <a
-                      href="https://github.com/kaspi90"
-                      aria-label="Github Erik"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <SiGithub></SiGithub>
-                    </a>
-                    <p className="invisible group-hover:visible absolute top-10 bg-gray-700 text-white rounded-lg min-w-full	p-2 flex items-center justify-center min-h-12 text-lg text-center">
-                      GitHub
-                    </p>
-                  </div>
-                  <div className="group relative shrink-0 overflow-visible flex flex-col items-center	">
-                    <a
-                      href="https://www.linkedin.com/in/erik-k-210a54a6/"
-                      aria-label="Linkedin Erik"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <SiLinkedin></SiLinkedin>
-                    </a>
-                    <p className="invisible group-hover:visible absolute top-10 bg-gray-700 text-white rounded-lg min-w-full	p-2 flex items-center justify-center min-h-12 text-lg text-center">
-                      LinkedIn
-                    </p>
-                  </div>
-                  <div className="group relative shrink-0 overflow-visible flex flex-col items-center	">
-                    <a
-                      href="https://www.xing.com/profile/Erik_Kasper"
-                      aria-label="Xing Erik"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      {" "}
-                      <SiXing></SiXing>{" "}
-                    </a>
-                    <p className="invisible group-hover:visible absolute top-10 bg-gray-700 text-white rounded-lg min-w-full	p-2 flex items-center justify-center min-h-12 text-lg text-center">
-                      Xing
-                    </p>
-                  </div>
-                </IconContext.Provider>
-              </div>
-            </div>
-            <div className="w-1/2 sm:w-full">
-              <h3 className="mb-4 sm:text-center ">{t("aboutme.headline")}</h3>
-              <p className="sm:w-5/6 sm:mx-auto text-justify">
-                {t("aboutme.e1")} <br />
-                <br />
-                {t("aboutme.e2")} <br />
-                <br /> {t("aboutme.e3")}
-                <br /> <br />
-                {t("aboutme.e4")}
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="mb-16 w-full mt-4 items-center flex flex-col">
-          <h3 className="mb-4">Technologien</h3>
-          <div className="flex gap-2">
-            <IconContext.Provider
-              value={{
-                color: props.mode ? "#88E2FB" : "#224CA6",
-                className: "hover:grayscale",
-                size: "2em",
-              }}
-            >
-              <div className="group relative shrink-0 overflow-visible flex flex-col items-center	">
-                <SiTypescript></SiTypescript>
-                <p className="invisible group-hover:visible absolute top-10 bg-gray-700 text-white rounded-lg min-w-full	p-2 flex items-center justify-center min-h-12 text-lg text-center">
-                  Typescript
-                </p>
-              </div>
-              <div className="group relative shrink-0 overflow-visible flex flex-col items-center	">
-                <SiJavascript></SiJavascript>
-                <p className="invisible group-hover:visible absolute top-10 bg-gray-700 text-white rounded-lg min-w-full	p-2 flex items-center justify-center min-h-12 text-lg text-center">
-                  Javascript
-                </p>
-              </div>
-              <div className="group relative shrink-0 overflow-visible flex flex-col items-center	">
-                <SiReact></SiReact>
-                <p className="invisible group-hover:visible absolute top-10 bg-gray-700 text-white rounded-lg min-w-full	p-2 flex items-center justify-center min-h-12 text-lg text-center">
-                  React
-                </p>
-              </div>
-              <div className="group relative shrink-0 overflow-visible flex flex-col items-center	">
-                <SiTailwindcss></SiTailwindcss>
-                <p className="invisible group-hover:visible absolute top-10 bg-gray-700 text-white rounded-lg min-w-full	p-2 flex items-center justify-center min-h-12 text-lg text-center">
-                  Tailwind
-                </p>
-              </div>
-              <div className="group relative shrink-0 overflow-visible flex flex-col items-center	">
-                <SiMaterialui></SiMaterialui>
-                <p className="invisible group-hover:visible absolute top-10 bg-gray-700 text-white rounded-lg min-w-full	p-2 flex items-center justify-center min-h-12 text-lg text-center">
-                  MateterialUI
-                </p>
-              </div>{" "}
-              <div className="group relative shrink-0 overflow-visible flex flex-col items-center	">
-                <SiFirebase></SiFirebase>
-                <p className="invisible group-hover:visible absolute top-10 bg-gray-700 text-white rounded-lg min-w-full	p-2 flex items-center justify-center min-h-12 text-lg text-center">
-                  Firebase
-                </p>
-              </div>
-            </IconContext.Provider>
-          </div>
-        </div>
-
-        <div className="flex content-center justify-center mb-16 ">
-          <div className="flex-col flex items-center w-3/4 sm:w-5/6">
-            <div className="w-3/4  sm:w-full">
+      <div className="max-w-[1280px] mx-auto  ">
+        <div className="w-full  ">
+          <div className="flex content-center justify-center mb-16  ">
+            <div className="items-center flex w-full justify-center gap-20  flex-wrap">
               <div>
-                <Accordion
-                  title="Arbeit"
-                  color="bg-white"
-                  content={work}
-                  open={false}
-                />
-                <div className="h-10"></div>
-                <Accordion
-                  title="Studium"
-                  color="bg-white"
-                  content={studium}
-                  open={false}
-                />
+                <h3 className="flex justify-center mt-4 mb-4">Erik Kasper</h3>
+                <PortraitErik />
+                <div className="flex overflow-visible justify-center gap-2">
+                  <IconContext.Provider
+                    value={{
+                      color: props.mode ? "#88E2FB" : "#224CA6",
+                      className: "hover:grayscale",
+                      size: "2em",
+                    }}
+                  >
+                    <div className="group relative shrink-0 overflow-visible flex flex-col items-center	">
+                      <a
+                        href="https://github.com/kaspi90"
+                        aria-label="Github Erik"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <SiGithub></SiGithub>
+                      </a>
+                      <p className="invisible group-hover:visible absolute top-10 bg-gray-700 text-white rounded-lg min-w-full	p-2 flex items-center justify-center min-h-12 text-lg text-center">
+                        GitHub
+                      </p>
+                    </div>
+                    <div className="group relative shrink-0 overflow-visible flex flex-col items-center	">
+                      <a
+                        href="https://www.linkedin.com/in/erik-k-210a54a6/"
+                        aria-label="Linkedin Erik"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <SiLinkedin></SiLinkedin>
+                      </a>
+                      <p className="invisible group-hover:visible absolute top-10 bg-gray-700 text-white rounded-lg min-w-full	p-2 flex items-center justify-center min-h-12 text-lg text-center">
+                        LinkedIn
+                      </p>
+                    </div>
+                    <div className="group relative shrink-0 overflow-visible flex flex-col items-center	">
+                      <a
+                        href="https://www.xing.com/profile/Erik_Kasper"
+                        aria-label="Xing Erik"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        {" "}
+                        <SiXing></SiXing>{" "}
+                      </a>
+                      <p className="invisible group-hover:visible absolute top-10 bg-gray-700 text-white rounded-lg min-w-full	p-2 flex items-center justify-center min-h-12 text-lg text-center">
+                        Xing
+                      </p>
+                    </div>
+                  </IconContext.Provider>
+                </div>
+              </div>
+              <div className="w-1/2 sm:w-full">
+                <h3 className="mb-4 sm:text-center ">
+                  {t("aboutme.headline")}
+                </h3>
+                <p className="sm:w-5/6 sm:mx-auto text-justify">
+                  {t("aboutme.e1")} <br />
+                  <br />
+                  {t("aboutme.e2")} <br />
+                  <br /> {t("aboutme.e3")}
+                  <br /> <br />
+                  {t("aboutme.e4")}
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="mb-16 w-full mt-4 items-center flex flex-col">
+            <h3 className="mb-4">Technologien</h3>
+            <div className="flex gap-2">
+              <IconContext.Provider
+                value={{
+                  color: props.mode ? "#88E2FB" : "#224CA6",
+                  className: "hover:grayscale",
+                  size: "2em",
+                }}
+              >
+                <div className="group relative shrink-0 overflow-visible flex flex-col items-center	">
+                  <SiTypescript></SiTypescript>
+                  <p className="invisible group-hover:visible absolute top-10 bg-gray-700 text-white rounded-lg min-w-full	p-2 flex items-center justify-center min-h-12 text-lg text-center">
+                    Typescript
+                  </p>
+                </div>
+                <div className="group relative shrink-0 overflow-visible flex flex-col items-center	">
+                  <SiJavascript></SiJavascript>
+                  <p className="invisible group-hover:visible absolute top-10 bg-gray-700 text-white rounded-lg min-w-full	p-2 flex items-center justify-center min-h-12 text-lg text-center">
+                    Javascript
+                  </p>
+                </div>
+                <div className="group relative shrink-0 overflow-visible flex flex-col items-center	">
+                  <SiReact></SiReact>
+                  <p className="invisible group-hover:visible absolute top-10 bg-gray-700 text-white rounded-lg min-w-full	p-2 flex items-center justify-center min-h-12 text-lg text-center">
+                    React
+                  </p>
+                </div>
+                <div className="group relative shrink-0 overflow-visible flex flex-col items-center	">
+                  <SiTailwindcss></SiTailwindcss>
+                  <p className="invisible group-hover:visible absolute top-10 bg-gray-700 text-white rounded-lg min-w-full	p-2 flex items-center justify-center min-h-12 text-lg text-center">
+                    Tailwind
+                  </p>
+                </div>
+                <div className="group relative shrink-0 overflow-visible flex flex-col items-center	">
+                  <SiMaterialui></SiMaterialui>
+                  <p className="invisible group-hover:visible absolute top-10 bg-gray-700 text-white rounded-lg min-w-full	p-2 flex items-center justify-center min-h-12 text-lg text-center">
+                    MateterialUI
+                  </p>
+                </div>{" "}
+                <div className="group relative shrink-0 overflow-visible flex flex-col items-center	">
+                  <SiFirebase></SiFirebase>
+                  <p className="invisible group-hover:visible absolute top-10 bg-gray-700 text-white rounded-lg min-w-full	p-2 flex items-center justify-center min-h-12 text-lg text-center">
+                    Firebase
+                  </p>
+                </div>
+              </IconContext.Provider>
+            </div>
+          </div>
+
+          <div className="flex content-center justify-center mb-16 ">
+            <div className="flex-col flex items-center w-3/4 sm:w-5/6">
+              <div className="w-3/4  sm:w-full">
+                <div>
+                  <Accordion
+                    title="Arbeit"
+                    color="bg-white"
+                    content={work}
+                    open={false}
+                  />
+                  <div className="h-10"></div>
+                  <Accordion
+                    title="Studium"
+                    color="bg-white"
+                    content={studium}
+                    open={false}
+                  />
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-
-      <div className="bg-neutral-100 pt-12 w-full dark:bg-gray-900 dark:text-white">
-        <div className="flex content-center justify-center bg-neutral-100 dark:bg-gray-900 ">
-          <div className="items-center flex flex-row-reverse w-full flex-wrap justify-center gap-20 ">
-            <div className="flex flex-col ">
-              <h3 className="flex justify-center mt-4 mb-4">Heike Kasper</h3>
-              <PortraitHeike />
-              <div className="flex overflow-visible justify-center gap-2">
-                <IconContext.Provider
-                  value={{
-                    color: "#671595",
-                    className: "hover:grayscale",
-                    size: "2em",
-                  }}
-                >
-                  <div className="group relative shrink-0 overflow-visible flex flex-col items-center	">
-                    <a
-                      href="https://github.com/heikchen"
-                      aria-label="Github Heike"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <SiGithub></SiGithub>
-                    </a>
-                    <p className="invisible group-hover:visible absolute top-10 bg-gray-700 text-white rounded-lg min-w-full	p-2 flex items-center justify-center min-h-12 text-lg text-center">
-                      GitHub
-                    </p>
-                  </div>
-                  <div className="group relative shrink-0 overflow-visible flex flex-col items-center	">
-                    <a
-                      href="https://www.linkedin.com/in/heike-kasper-aa8162a9/"
-                      aria-label="Linkedin Heike"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <SiLinkedin></SiLinkedin>
-                    </a>
-                    <p className="invisible group-hover:visible absolute top-10 bg-gray-700 text-white rounded-lg min-w-full	p-2 flex items-center justify-center min-h-12 text-lg text-center">
-                      LinkedIn
-                    </p>
-                  </div>
-                  <div className="group relative shrink-0 overflow-visible flex flex-col items-center	">
-                    <a
-                      href="https://www.xing.com/profile/Heike_Kasper22"
-                      aria-label="Xing Heike"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <SiXing></SiXing>
-                    </a>
-                    <p className="invisible group-hover:visible absolute top-10 bg-gray-700 text-white rounded-lg min-w-full	p-2 flex items-center justify-center min-h-12 text-lg text-center">
-                      Xing
-                    </p>
-                  </div>
-                </IconContext.Provider>
+      <div className="w-full bg-neutral-100 dark:bg-gray-900">
+        <div className="bg-neutral-100 pt-12 w-full max-w-[1280px] dark:bg-gray-900 dark:text-white mx-auto  ">
+          <div className="flex content-center justify-center bg-neutral-100 dark:bg-gray-900 ">
+            <div className="items-center flex flex-row-reverse w-full flex-wrap justify-center gap-20 ">
+              <div className="flex flex-col ">
+                <h3 className="flex justify-center mt-4 mb-4">Heike Kasper</h3>
+                <PortraitHeike />
+                <div className="flex overflow-visible justify-center gap-2">
+                  <IconContext.Provider
+                    value={{
+                      color: "#671595",
+                      className: "hover:grayscale",
+                      size: "2em",
+                    }}
+                  >
+                    <div className="group relative shrink-0 overflow-visible flex flex-col items-center	">
+                      <a
+                        href="https://github.com/heikchen"
+                        aria-label="Github Heike"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <SiGithub></SiGithub>
+                      </a>
+                      <p className="invisible group-hover:visible absolute top-10 bg-gray-700 text-white rounded-lg min-w-full	p-2 flex items-center justify-center min-h-12 text-lg text-center">
+                        GitHub
+                      </p>
+                    </div>
+                    <div className="group relative shrink-0 overflow-visible flex flex-col items-center	">
+                      <a
+                        href="https://www.linkedin.com/in/heike-kasper-aa8162a9/"
+                        aria-label="Linkedin Heike"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <SiLinkedin></SiLinkedin>
+                      </a>
+                      <p className="invisible group-hover:visible absolute top-10 bg-gray-700 text-white rounded-lg min-w-full	p-2 flex items-center justify-center min-h-12 text-lg text-center">
+                        LinkedIn
+                      </p>
+                    </div>
+                    <div className="group relative shrink-0 overflow-visible flex flex-col items-center	">
+                      <a
+                        href="https://www.xing.com/profile/Heike_Kasper22"
+                        aria-label="Xing Heike"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <SiXing></SiXing>
+                      </a>
+                      <p className="invisible group-hover:visible absolute top-10 bg-gray-700 text-white rounded-lg min-w-full	p-2 flex items-center justify-center min-h-12 text-lg text-center">
+                        Xing
+                      </p>
+                    </div>
+                  </IconContext.Provider>
+                </div>
+              </div>
+              <div className=" w-1/2 sm:w-full ">
+                <h3 className="mb-4 sm:text-center">Über mich</h3>
+                <p className="sm:w-5/6 sm:mx-auto text-justify">
+                  {t("aboutmeheike.h1")}
+                  <br />
+                  <br />
+                  {t("aboutmeheike.h2")}
+                  <br />
+                  <br />
+                  {t("aboutmeheike.h3")}
+                  <br />
+                  <br /> {t("aboutmeheike.h4")}
+                </p>
               </div>
             </div>
-            <div className=" w-1/2 sm:w-full ">
-              <h3 className="mb-4 sm:text-center">Über mich</h3>
-              <p className="sm:w-5/6 sm:mx-auto text-justify">
-                {t("aboutmeheike.h1")}
-                <br />
-                <br />
-                {t("aboutmeheike.h2")}
-                <br />
-                <br />
-                {t("aboutmeheike.h3")}
-                <br />
-                <br /> {t("aboutmeheike.h4")}
-              </p>
+          </div>
+          <div className="mb-16 mt-4 bg-neutral-100	w-full items-center flex flex-col dark:bg-gray-900">
+            <h3 className="mb-4">Technologien</h3>
+            <div className="flex gap-2">
+              <IconContext.Provider
+                value={{
+                  color: "#671595",
+                  className: "hover:grayscale",
+                  size: "2em",
+                }}
+              >
+                <div className="group relative shrink-0 overflow-visible flex flex-col items-center	">
+                  <SiTypescript></SiTypescript>
+                  <p className="invisible group-hover:visible absolute top-10 bg-gray-700 text-white rounded-lg min-w-full	p-2 flex items-center justify-center min-h-12 text-lg text-center">
+                    Typescript
+                  </p>
+                </div>
+                <div className="group relative shrink-0 overflow-visible flex flex-col items-center	">
+                  <SiJavascript></SiJavascript>
+                  <p className="invisible group-hover:visible absolute top-10 bg-gray-700 text-white rounded-lg min-w-full	p-2 flex items-center justify-center min-h-12 text-lg text-center">
+                    Javascript
+                  </p>
+                </div>
+                <div className="group relative shrink-0 overflow-visible flex flex-col items-center	">
+                  <SiReact></SiReact>
+                  <p className="invisible group-hover:visible absolute top-10 bg-gray-700 text-white rounded-lg min-w-full	p-2 flex items-center justify-center min-h-12 text-lg text-center">
+                    React
+                  </p>
+                </div>
+                <div className="group relative shrink-0 overflow-visible flex flex-col items-center	">
+                  <SiTailwindcss></SiTailwindcss>
+                  <p className="invisible group-hover:visible absolute top-10 bg-gray-700 text-white rounded-lg min-w-full	p-2 flex items-center justify-center min-h-12 text-lg text-center">
+                    Tailwind
+                  </p>
+                </div>
+                <div className="group relative shrink-0 overflow-visible flex flex-col items-center	">
+                  <SiNodedotjs></SiNodedotjs>
+                  <p className="invisible group-hover:visible absolute top-10 bg-gray-700 text-white rounded-lg min-w-full	p-2 flex items-center justify-center min-h-12 text-lg text-center">
+                    Node.js
+                  </p>
+                </div>
+                <div className="group relative shrink-0 overflow-visible flex flex-col items-center	">
+                  <SiStorybook></SiStorybook>
+                  <p className="invisible group-hover:visible absolute top-10 bg-gray-700 text-white rounded-lg min-w-full	p-2 flex items-center justify-center min-h-12 text-lg text-center">
+                    Storybook
+                  </p>
+                </div>
+              </IconContext.Provider>
             </div>
           </div>
-        </div>
-        <div className="mb-16 mt-4 bg-neutral-100	w-full items-center flex flex-col dark:bg-gray-900">
-          <h3 className="mb-4">Technologien</h3>
-          <div className="flex gap-2">
-            <IconContext.Provider
-              value={{
-                color: "#671595",
-                className: "hover:grayscale",
-                size: "2em",
-              }}
-            >
-              <div className="group relative shrink-0 overflow-visible flex flex-col items-center	">
-                <SiTypescript></SiTypescript>
-                <p className="invisible group-hover:visible absolute top-10 bg-gray-700 text-white rounded-lg min-w-full	p-2 flex items-center justify-center min-h-12 text-lg text-center">
-                  Typescript
-                </p>
-              </div>
-              <div className="group relative shrink-0 overflow-visible flex flex-col items-center	">
-                <SiJavascript></SiJavascript>
-                <p className="invisible group-hover:visible absolute top-10 bg-gray-700 text-white rounded-lg min-w-full	p-2 flex items-center justify-center min-h-12 text-lg text-center">
-                  Javascript
-                </p>
-              </div>
-              <div className="group relative shrink-0 overflow-visible flex flex-col items-center	">
-                <SiReact></SiReact>
-                <p className="invisible group-hover:visible absolute top-10 bg-gray-700 text-white rounded-lg min-w-full	p-2 flex items-center justify-center min-h-12 text-lg text-center">
-                  React
-                </p>
-              </div>
-              <div className="group relative shrink-0 overflow-visible flex flex-col items-center	">
-                <SiTailwindcss></SiTailwindcss>
-                <p className="invisible group-hover:visible absolute top-10 bg-gray-700 text-white rounded-lg min-w-full	p-2 flex items-center justify-center min-h-12 text-lg text-center">
-                  Tailwind
-                </p>
-              </div>
-              <div className="group relative shrink-0 overflow-visible flex flex-col items-center	">
-                <SiNodedotjs></SiNodedotjs>
-                <p className="invisible group-hover:visible absolute top-10 bg-gray-700 text-white rounded-lg min-w-full	p-2 flex items-center justify-center min-h-12 text-lg text-center">
-                  Node.js
-                </p>
-              </div>
-              <div className="group relative shrink-0 overflow-visible flex flex-col items-center	">
-                <SiStorybook></SiStorybook>
-                <p className="invisible group-hover:visible absolute top-10 bg-gray-700 text-white rounded-lg min-w-full	p-2 flex items-center justify-center min-h-12 text-lg text-center">
-                  Storybook
-                </p>
-              </div>
-            </IconContext.Provider>
-          </div>
-        </div>
-        <div className="flex content-center justify-center mb-16 bg-neutral-100  dark:bg-gray-900">
-          <div className="flex-col flex items-center w-3/4 sm:w-5/6">
-            <div className="w-3/4 sm:w-full">
-              <div className="bg-neutral-100 dark:bg-gray-900">
-                <Accordion
-                  title="Arbeit"
-                  color="bg-neutral-100"
-                  content={workHeike}
-                  open={false}
-                />
-                <div className="bg-neutral-100 h-10 dark:bg-gray-900"></div>
-                <Accordion
-                  title="Studium"
-                  content={unversityHeike}
-                  open={false}
-                  color="bg-neutral-100"
-                />
+          <div className="flex content-center justify-center mb-16 bg-neutral-100  dark:bg-gray-900">
+            <div className="flex-col flex items-center w-3/4 sm:w-5/6">
+              <div className="w-3/4 sm:w-full">
+                <div className="bg-neutral-100 dark:bg-gray-900">
+                  <Accordion
+                    title="Arbeit"
+                    color="bg-neutral-100"
+                    content={workHeike}
+                    open={false}
+                  />
+                  <div className="bg-neutral-100 h-10 dark:bg-gray-900"></div>
+                  <Accordion
+                    title="Studium"
+                    content={unversityHeike}
+                    open={false}
+                    color="bg-neutral-100"
+                  />
+                </div>
               </div>
             </div>
           </div>

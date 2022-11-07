@@ -29,7 +29,10 @@ function Projects(props: any) {
   const { t } = useTranslation();
 
   return (
-    <div id="projects" className="w-5/6 mx-auto pt-12 h-fit overflow-y-hidden">
+    <div
+      id="projects"
+      className="w-5/6 mx-auto pt-12 h-fit overflow-y-hidden max-w-[1280px]"
+    >
       <h3 className="justify-center m-auto flex p-4">Projekte</h3>
       <Slide direction="up" triggerOnce>
         <div className="flex justify-center mb-12 flex-wrap w-full  ">
