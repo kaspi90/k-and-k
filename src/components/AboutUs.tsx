@@ -695,14 +695,14 @@ function AboutUs(props: any) {
               <div className="w-3/4 sm:w-full">
                 <div className="bg-neutral-100 dark:bg-gray-900">
                   <Accordion
-                    title="Arbeit"
+                    title={t("aboutme.title")}
                     color="bg-neutral-100"
                     content={workHeike}
                     open={false}
                   />
                   <div className="bg-neutral-100 h-10 dark:bg-gray-900"></div>
                   <Accordion
-                    title="Studium"
+                    title={t("aboutme.titleStudy")}
                     content={unversityHeike}
                     open={false}
                     color="bg-neutral-100"
