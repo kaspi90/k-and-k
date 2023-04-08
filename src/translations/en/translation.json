@@ -22,8 +22,8 @@
     "aboutmeheike": {
       "headline": "About me",
       "h1": "Hello, I'm Heike,",
-      "h2": "after my architecture studies I worked as the managing director of Kadelo GmbH and came into contact with web development. I enjoyed it so much that I took on more and more tasks and finally decided to start a coding bootcamp at Mimo.",
-      "h3": "I love the challenges in coding and at the same time the creativity in design.",
+      "h2": "As a passionate web developer with a focus on the frontend, I have a very strong knowledge of HTML, CSS, and TypeScript, as well as expertise with modern frontend frameworks such as React. I have experience working with cross-functional teams, including designers and backend developers, to ensure seamless integration of frontend and backend components. I also strive to keep up to date with the latest technologies and best practices, and to constantly improve my skills through continuous learning and experimentation.",
+      "h3": "For me, coding combines the challenge of solving problems on the one hand and creativity in design on the other.",
       "h4": "Away from work, I like: board games, skiing, hiking, reading manga, and drawing."
     },
     "workerik": {
@@ -56,7 +56,7 @@
       "kadelo1": "Kadelo",
       "kadelo2": "Management of Kadelo GmbH with eight employees as an online marketing agency with a focus on SEO & Amazon SEO.",
       "kadelo3": "Divisional sale to the Seeders Group.",
-      "kadelo4": "- Areas of responsibility: Business management, accounting, customer support, Amazon SEO & Ads, web development (focus: Wordpress).",
+      "kadelo4": "- Areas of responsibility: Web development with Wordpress, Javascript, CSS and HTML, SEO, Amazon SEO & Ads. Since 2022 Freelancer in the field of web development with focus on frontend.",
       "sramek1": "Working student - Architecture",
       "sramek2": "Design and execution planning of various projects with Spirit and SketchUp",
       "kasperlinodate": "October 2020 - today",
@@ -77,8 +77,8 @@
       "brettspielguru2":"The website of Brettspielguru should present the products on the one hand, on the other hand provide a possibility to find the exact fitting card sleeves for different board games. In addition, new games with the matching card sleeves can be added independently in the backend.",
       "manga-anime1":"Manga-Anime",
       "manga-anime2":"A manga and anime portal that displays the currently most popular manga and anime including descriptions and ratings from Myanimelist. Additionally, own collections can be created and managed.",
-      "pokemon1":"Pokémon",
-      "pokemon2":"The Pokémon Project provides an overview of all official Pokémon cards currently available on the market. For each card, a corresponding sales value of TCG players is displayed. It is possible to create and manage your own collections.",
+      "javlis1":"Javlis",
+      "javlis2":"Relaunch and further development of Javlis.com, a portal for Decentralized Finance",
       "boardgames1":"Boardgames",
       "boardgames2":"Project for the overview of the currently most sought-after board games on the market. Furthermore, a board game search was implemented, which outputs an exact board game description incl. number of players, age recommendation and playing time."
     },

@@ -14,7 +14,6 @@ import heikeLightsaber from "../img/heikeLightsaber_160.webp";
 import heikeLightsaber2x from "../img/heikeLightsaber_320.webp";
 import heikeLightsaber3x from "../img/heikeLightsaber_640.webp";
 import heikeLightsaber4x from "../img/heikeLightsaber_1280.webp";
-
 import essen from "../img/uni_essen.webp";
 import csueb from "../img/csueb.webp";
 import kadelo from "../img/kadelo_logo.webp";
@@ -24,7 +23,6 @@ import adesso from "../img/adesso_logo.webp";
 import dortmund from "../img/Technische_Universität_Dortmund_Logo Kopie.webp";
 import wuppertal from "../img/BUW_Logo.webp";
 import mimo from "../img/Mimo_Logo.webp";
-import sramek from "../img/SRAMEK+LOGO+NEU+ohne+Hintergrund+2017-640w.webp";
 import { IconContext } from "react-icons";
 import {
   SiTypescript,
@@ -38,6 +36,11 @@ import {
   SiFirebase,
   SiNodedotjs,
   SiStorybook,
+  SiNextdotjs,
+  SiFigma,
+  SiGitlab,
+  SiCypress,
+  SiChartdotjs,
 } from "react-icons/si";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
@@ -148,27 +151,6 @@ function AboutUs(props: any) {
   const workHeike = (
     <div>
       <ol className="relative border-l border-violet dark:border-gray-400 mx-2">
-        <li className="mb-10 ml-4">
-          <div className="absolute w-4 h-4 bg-violet rounded-full mt-1 -left-2  dark:border-gray-900 dark:bg-gray-400"></div>
-          <time className="mb-1 text-sm font-normal leading-none text-violet dark:text-gray-400">
-            {t("workheike.kasperlinodate")}
-          </time>
-          <div className="m-4">
-            <img
-              src={brettspielguru}
-              className="w-28 h-auto mx-auto"
-              alt="Brettspielguru Logo"
-            ></img>
-          </div>
-          <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
-            {t("workheike.kasperlino1")}
-          </h3>
-          <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
-            {t("workheike.kasperlino2")}
-            <br /> <br />
-            {t("workheike.kasperlino3")}
-          </p>
-        </li>
         <li className="ml-4">
           <div className="absolute w-4 h-4 bg-violet rounded-full mt-1  -left-2  dark:border-gray-900 dark:bg-gray-400"></div>
           <time className="mb-1 text-sm font-normal leading-none text-violet dark:text-gray-400">
@@ -186,25 +168,6 @@ function AboutUs(props: any) {
             <br />
             <br />
             {t("workheike.kadelo4")}
-          </p>
-        </li>
-        <li className="mb-10 ml-4">
-          <div className="absolute w-4 h-4 bg-violet rounded-full mt-1  -left-2  dark:border-gray-900 dark:bg-gray-400"></div>
-          <time className="mb-1 text-sm font-normal leading-none text-violet dark:text-gray-400">
-            2013 - 2016
-          </time>
-          <div className="m-4">
-            <img
-              src={sramek}
-              className="w-28 mx-auto "
-              alt="Sramek Architekten Logo"
-            ></img>
-          </div>
-          <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
-            <b>{t("workheike.sramek1")}</b>
-          </h3>
-          <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
-            {t("workheike.sramek2")}
           </p>
         </li>
       </ol>
@@ -297,7 +260,7 @@ function AboutUs(props: any) {
             {t("workerik.seedersdate")}
           </time>
           <div className="m-4">
-            <a href="https://Www.seeders.de" target="_blank">
+            <a href="https://Www.seeders.de" target="_blank" rel="noreferrer">
               <img
                 src={seeders}
                 className="w-28 mx-auto"
@@ -323,7 +286,11 @@ function AboutUs(props: any) {
             {t("workerik.kasperlinodate")}
           </time>
           <div className="m-4">
-            <a href="https://www.brettspielguru.de" target="_blank">
+            <a
+              href="https://www.brettspielguru.de"
+              target="_blank"
+              rel="noreferrer"
+            >
               <img
                 src={brettspielguru}
                 className="w-28 mx-auto "
@@ -685,6 +652,36 @@ function AboutUs(props: any) {
                   <SiStorybook></SiStorybook>
                   <p className="invisible group-hover:visible absolute top-10 bg-gray-700 text-white rounded-lg min-w-full	p-2 flex items-center justify-center min-h-12 text-lg text-center">
                     Storybook
+                  </p>
+                </div>
+                <div className="group relative shrink-0 overflow-visible flex flex-col items-center	">
+                  <SiNextdotjs></SiNextdotjs>
+                  <p className="invisible group-hover:visible absolute top-10 bg-gray-700 text-white rounded-lg min-w-full	p-2 flex items-center justify-center min-h-12 text-lg text-center">
+                    Next.js
+                  </p>
+                </div>
+                <div className="group relative shrink-0 overflow-visible flex flex-col items-center	">
+                  <SiFigma></SiFigma>
+                  <p className="invisible group-hover:visible absolute top-10 bg-gray-700 text-white rounded-lg min-w-full	p-2 flex items-center justify-center min-h-12 text-lg text-center">
+                    Figma
+                  </p>
+                </div>
+                <div className="group relative shrink-0 overflow-visible flex flex-col items-center	">
+                  <SiGitlab></SiGitlab>
+                  <p className="invisible group-hover:visible absolute top-10 bg-gray-700 text-white rounded-lg min-w-full	p-2 flex items-center justify-center min-h-12 text-lg text-center">
+                    Gitlab
+                  </p>
+                </div>
+                <div className="group relative shrink-0 overflow-visible flex flex-col items-center	">
+                  <SiCypress></SiCypress>
+                  <p className="invisible group-hover:visible absolute top-10 bg-gray-700 text-white rounded-lg min-w-full	p-2 flex items-center justify-center min-h-12 text-lg text-center">
+                    Cypress
+                  </p>
+                </div>
+                <div className="group relative shrink-0 overflow-visible flex flex-col items-center	">
+                  <SiChartdotjs></SiChartdotjs>
+                  <p className="invisible group-hover:visible absolute top-10 bg-gray-700 text-white rounded-lg min-w-full	p-2 flex items-center justify-center min-h-12 text-lg text-center">
+                    Chart.js
                   </p>
                 </div>
               </IconContext.Provider>

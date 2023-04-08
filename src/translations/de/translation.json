@@ -21,8 +21,8 @@
     "aboutmeheike": {
       "headline": "Über mich",
       "h1": "Hallo, ich bin Heike,",
-      "h2": "nach meinem Architekturstudium habe ich als Geschäftsführerin der Kadelo GmbH gearbeitet und bin dabei mit Web Development in Kontakt gekommen. Es hat mir so viel Spaß gemacht, dass ich dabei immer mehr Aufgaben übernommen und mich letztendlich dazu entschieden habe, ein Coding Bootcamp bei Mimo anzufangen.",
-      "h3": "Ich liebe die Herausforderungen beim Coding und zugleich die Kreativität beim Design.",
+      "h2": "Als leidenschaftliche Webentwicklerin mit Schwerpunkt Frontend verfüge ich über sehr gute Kenntnisse in HTML, CSS und TypeScript sowie über Expertise mit modernen Frontend-Frameworks wie React. Ich habe Erfahrung in der Zusammenarbeit mit funktionsübergreifenden Teams, einschließlich Designern und Backend-Entwicklern, um eine nahtlose Integration von Frontend- und Backend-Komponenten sicherzustellen. Darüber hinaus bin ich bestrebt, mich über die neuesten Technologien und Best Practices auf dem Laufenden zu halten und meine Fähigkeiten durch kontinuierliches Lernen und Experimentieren ständig zu verbessern. ",
+      "h3": "Coding vereint für mich zum einen die Herausforderung Probleme zu lösen und zugleich die Kreativität beim Design.",
       "h4": "Abseits der Arbeit mag ich: Brettspiele, Ski fahren, wandern, Mangas lesen und zeichnen."
     },
     "workerik": {
@@ -55,7 +55,7 @@
       "kadelo1": "Kadelo",
       "kadelo2": "Geschäftsführung der Kadelo GmbH mit acht Mitarbeitern als Online-Marketing Agentur mit den Schwerpunkten SEO & Amazon SEO.",
       "kadelo3": "Bereichsverkauf an die Seeders Group.",
-      "kadelo4": "- Aufgabenfelder: Geschäftsführung, Buchführung, Kundenbetreuung, Amazon SEO & Ads, Webentwicklung (Schwerpunkt: Wordpress)",
+      "kadelo4": "- Aufgabenfelder: Webentwicklung mit Wordpress, Javascript, CSS und HTML, SEO, Amazon SEO & Ads. Seit 2022 Freelancer im Bereich Webentwicklung mit Schwerpunkt Frontend",
       "sramek1": "Werkstudent - Architektur",
       "sramek2": "Entwurfs- und Ausführungsplanung von verschiedenen Projekten mit Spirit und SketchUp",
       "kasperlinodate": "Oktober 2020 - heute",
@@ -76,8 +76,8 @@
       "brettspielguru2":"Die Webseite von Brettspielguru sollte einerseits die Produkte präsentieren, andererseits eine Möglichkeit bereitstellen, um die passgenauen Kartenhüllen für verschiedene Brettspiele zu finden. Außerdem können im Backend eigenständig neue Spiele mit den passenden Kartenhüllen eingepflegt werden.",
       "manga-anime1":"Manga-Anime",
       "manga-anime2":"Ein Manga- und Animeportal, welches die derzeit beliebtesten Mangas und Animes inkl. Beschreibung und Bewertungen von Myanimelist anzeigt. Zusätzlich können eigene Sammlungen erstellt und verwaltet werden.",
-      "pokemon1":"Pokémon",
-      "pokemon2":"Das Pokémon Projekt ermöglicht eine Übersicht über alle derzeit offiziel am Markt erhältlichen Pokémon Karten. Für jede Karte wird ein entsprechender Verkaufswert von TCG-Player anzeigt. Es ist möglich, eigene Sammlungen anzulegen und zu verwalten.",
+      "javlis1":"Javlis",
+      "javlis2":"Relaunch und Weiterentwicklung von Javlis.com, ein Portal für Decentralized Finance",
       "boardgames1":"Boardgames",
       "boardgames2":"Projekt für die Übersicht über die derzeit gefragtesten Brettspiele am Markt. Weiterhin wurde eine Brettspielsuche implementiert, die eine genaue Brettspielbeschreibung inkl. Spieleranzahl, Altersempfehlung und Spielzeit ausgibt."
     },
