@@ -464,7 +464,7 @@ function AboutUs(props: any) {
           </div>
           <div className="mb-16 w-full mt-4 items-center flex flex-col">
             <h3 className="mb-4">Technologien</h3>
-            <div className="flex gap-2">
+            <div className="flex gap-2 flex-wrap justify-center">
               <IconContext.Provider
                 value={{
                   color: props.mode ? "#88E2FB" : "#224CA6",
@@ -472,7 +472,7 @@ function AboutUs(props: any) {
                   size: "2em",
                 }}
               >
-                <div className="group relative shrink-0 overflow-visible flex flex-col items-center	">
+                <div className="group relative shrink-0 overflow-visible flex flex-col items-center ">
                   <SiTypescript></SiTypescript>
                   <p className="invisible group-hover:visible absolute top-10 bg-gray-700 text-white rounded-lg min-w-full	p-2 flex items-center justify-center min-h-12 text-lg text-center">
                     Typescript
@@ -610,7 +610,7 @@ function AboutUs(props: any) {
           </div>
           <div className="mb-16 mt-4 bg-neutral-100	w-full items-center flex flex-col dark:bg-gray-900">
             <h3 className="mb-4">Technologien</h3>
-            <div className="flex gap-2">
+            <div className="flex gap-2 flex-wrap justify-center">
               <IconContext.Provider
                 value={{
                   color: "#671595",
