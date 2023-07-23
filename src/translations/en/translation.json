@@ -35,13 +35,19 @@
       "kasperlino2": "Foundation of Kasperlino GmbH for the distribution of board games and board game accessories.",
       "kasperlino3": "- Areas of responsibility: Investor, product development, Amazon management, web development (Javascript, React, MUI, Firebase).",
       "kadelo1": "Kadelo GmbH",
-      "kadelo2": "Foundation and management of Kadelo GmbH with eight employees as an online marketing agency with a focus on SEO & Amazon SEO. Divisional sale to the Seeders Group.",
-      "kadelo3": "- Areas of responsibility: Business management, project management, customer support, staff management, SEO optimization, Google Ads optimization, Amazon SEO & Ads, web development (focus: Wordpress).",
+      "kadelo2": "Foundation and management of Kadelo GmbH with eight employees as an online marketing agency with a focus on Wordpress, SEO & Amazon SEO. Divisional sale to the Seeders Group.",
+      "kadelo3": "- Areas of responsibility: Business management, project management, customer support, staff management, web development (focus: Wordpress), SEO optimization, Google Ads optimization, Amazon SEO & Ads.",
       "adesso1": "Working student - Software development",
       "adesso2": "Web development with HTML, CSS, JavaScript, JQuery, FirstSpirit & Java",
       "seedersdate": "November 2020 - December 2021",
       "kasperlinodate": "October 2020 - today",
-      "kadelodate": "February 2015 - today"
+      "kadelodate": "February 2015 - today",
+      "webprojaggtdate": "January 2023 - today",
+      "webprojaggt1": "Freelancer - WEBPROJAGGT GmbH & Co. KG ",
+      "webprojaggt2": "Development of an insurance platform",
+      "webprojaggt3": "- Consulting in the selection of technologies",
+      "webprojaggt4": "- Frontend architecture and development of the software with Next.js, Tailwind and i18n",
+      "webprojaggt5": "- Initial setup of the codebase"
 
     },
     "universityerik": {
@@ -61,6 +67,8 @@
       "sramek2": "Design and execution planning of various projects with Spirit and SketchUp",
       "kasperlinodate": "October 2020 - today",
       "kadelodate": "September 2016 - today"
+  
+    
     },
     "universityheike": {
       "mimo1": "Web development with HTML, CSS, JavaScript, React, Node.js",

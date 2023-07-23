@@ -18,7 +18,7 @@ import essen from "../img/uni_essen.webp";
 import csueb from "../img/csueb.webp";
 import kadelo from "../img/kadelo_logo.webp";
 import seeders from "../img/seeders_logo.webp";
-import brettspielguru from "../img/Logo_Brettspielguru_Final.webp";
+import webprojaggt from "../img/webprojaggt.webp";
 import adesso from "../img/adesso_logo.webp";
 import dortmund from "../img/Technische_Universität_Dortmund_Logo Kopie.webp";
 import wuppertal from "../img/BUW_Logo.webp";
@@ -41,6 +41,8 @@ import {
   SiGitlab,
   SiCypress,
   SiChartdotjs,
+  SiNestjs,
+  SiPrisma,
 } from "react-icons/si";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
@@ -254,13 +256,54 @@ function AboutUs(props: any) {
   const work = (
     <div>
       <ol className="relative border-l border-blue dark:border-gray-400 mx-2">
+        <li className="ml-4">
+          <div className="absolute w-4 h-4 bg-blue rounded-full mt-1 -left-2  dark:border-gray-900 dark:bg-gray-400 "></div>
+          <time className="mb-1 text-sm font-normal leading-none text-blue dark:text-gray-400">
+            {t("workerik.webprojaggtdate")}
+          </time>
+          <div className="m-4">
+            <img
+              src={webprojaggt}
+              className="w-16 mx-auto"
+              alt="Kadelo Logo"
+            ></img>
+          </div>
+          <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+            {t("workerik.webprojaggt1")}
+          </h3>
+
+          <p className=" mb-8 text-base font-normal text-gray-500 dark:text-gray-400">
+            {t("workerik.webprojaggt2")}
+            <br /> {t("workerik.webprojaggt3")}
+            <br /> {t("workerik.webprojaggt4")}
+            <br /> {t("workerik.webprojaggt5")}
+          </p>
+        </li>
+        <li className="ml-4">
+          <div className="absolute w-4 h-4 bg-blue rounded-full mt-1 -left-2  dark:border-gray-900 dark:bg-gray-400 "></div>
+          <time className="mb-1 text-sm font-normal leading-none text-blue dark:text-gray-400">
+            {t("workerik.kadelodate")}
+          </time>
+          <div className="m-4">
+            <img src={kadelo} className="w-28 mx-auto" alt="Kadelo Logo"></img>
+          </div>
+          <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+            {t("workerik.kadelo1")}
+          </h3>
+
+          <p className=" mb-8 text-base font-normal text-gray-500 dark:text-gray-400">
+            {t("workerik.kadelo2")}
+            <br />
+            <br /> {t("workerik.kadelo3")}
+          </p>
+        </li>
         <li className="mb-10 ml-4">
           <div className="absolute w-4 h-4 bg-blue rounded-full mt-1 -left-2 dark:border-gray-900 dark:bg-gray-400"></div>
           <time className="mb-1 text-sm font-normal leading-none text-blue dark:text-gray-400">
             {t("workerik.seedersdate")}
           </time>
           <div className="m-4">
-            <a href="https://Www.seeders.de" target="_blank" rel="noreferrer">
+            <a href="https://www.seeders.de" target="_blank" rel="noreferrer">
               <img
                 src={seeders}
                 className="w-28 mx-auto"
@@ -280,51 +323,7 @@ function AboutUs(props: any) {
             {t("workerik.seeders4")}
           </p>
         </li>
-        <li className="mb-10 ml-4">
-          <div className="absolute w-4 h-4 bg-blue rounded-full mt-1 -left-2  dark:border-gray-900 dark:bg-gray-400"></div>
-          <time className="mb-1 text-sm font-normal leading-none text-blue dark:text-gray-400">
-            {t("workerik.kasperlinodate")}
-          </time>
-          <div className="m-4">
-            <a
-              href="https://www.brettspielguru.de"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img
-                src={brettspielguru}
-                className="w-28 mx-auto "
-                alt="Brettspielguru Logo"
-              ></img>
-            </a>
-          </div>
-          <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
-            {t("workerik.kasperlino1")}
-          </h3>
-          <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
-            {t("workerik.kasperlino2")}
-            <br /> <br /> {t("workerik.kasperlino3")}
-          </p>
-        </li>
 
-        <li className="ml-4">
-          <div className="absolute w-4 h-4 bg-blue rounded-full mt-1 -left-2  dark:border-gray-900 dark:bg-gray-400 "></div>
-          <time className="mb-1 text-sm font-normal leading-none text-blue dark:text-gray-400">
-            {t("workerik.kadelodate")}
-          </time>
-          <div className="m-4">
-            <img src={kadelo} className="w-28 mx-auto" alt="Kadelo Logo"></img>
-          </div>
-          <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
-            {t("workerik.kadelo1")}
-          </h3>
-
-          <p className=" mb-8 text-base font-normal text-gray-500 dark:text-gray-400">
-            {t("workerik.kadelo2")}
-            <br />
-            <br /> {t("workerik.kadelo3")}
-          </p>
-        </li>
         <li className="ml-4">
           <div className="absolute w-4 h-4 bg-blue rounded-full mt-1 -left-2  dark:border-gray-900 dark:bg-gray-400"></div>
           <time className="mb-1 text-sm font-normal leading-none text-blue dark:text-gray-400">
@@ -490,6 +489,12 @@ function AboutUs(props: any) {
                     React
                   </p>
                 </div>
+                <div className="group relative shrink-0 overflow-visible flex flex-col items-center ">
+                  <SiNodedotjs></SiNodedotjs>
+                  <p className="invisible group-hover:visible absolute top-10 bg-gray-700 text-white rounded-lg min-w-full	p-2 flex items-center justify-center min-h-12 text-lg text-center">
+                    Node.js
+                  </p>
+                </div>
                 <div className="group relative shrink-0 overflow-visible flex flex-col items-center	">
                   <SiTailwindcss></SiTailwindcss>
                   <p className="invisible group-hover:visible absolute top-10 bg-gray-700 text-white rounded-lg min-w-full	p-2 flex items-center justify-center min-h-12 text-lg text-center">
@@ -497,11 +502,35 @@ function AboutUs(props: any) {
                   </p>
                 </div>
                 <div className="group relative shrink-0 overflow-visible flex flex-col items-center	">
+                  <SiNextdotjs></SiNextdotjs>
+                  <p className="invisible group-hover:visible absolute top-10 bg-gray-700 text-white rounded-lg min-w-full	p-2 flex items-center justify-center min-h-12 text-lg text-center">
+                    Next.js
+                  </p>
+                </div>
+                <div className="group relative shrink-0 overflow-visible flex flex-col items-center	">
+                  <SiFigma></SiFigma>
+                  <p className="invisible group-hover:visible absolute top-10 bg-gray-700 text-white rounded-lg min-w-full	p-2 flex items-center justify-center min-h-12 text-lg text-center">
+                    Figma
+                  </p>
+                </div>
+                <div className="group relative shrink-0 overflow-visible flex flex-col items-center	">
                   <SiMaterialui></SiMaterialui>
                   <p className="invisible group-hover:visible absolute top-10 bg-gray-700 text-white rounded-lg min-w-full	p-2 flex items-center justify-center min-h-12 text-lg text-center">
                     MateterialUI
                   </p>
-                </div>{" "}
+                </div>
+                <div className="group relative shrink-0 overflow-visible flex flex-col items-center	">
+                  <SiNestjs></SiNestjs>
+                  <p className="invisible group-hover:visible absolute top-10 bg-gray-700 text-white rounded-lg min-w-full	p-2 flex items-center justify-center min-h-12 text-lg text-center">
+                    Nest.js
+                  </p>
+                </div>
+                <div className="group relative shrink-0 overflow-visible flex flex-col items-center	">
+                  <SiPrisma></SiPrisma>
+                  <p className="invisible group-hover:visible absolute top-10 bg-gray-700 text-white rounded-lg min-w-full	p-2 flex items-center justify-center min-h-12 text-lg text-center">
+                    Prisma
+                  </p>
+                </div>
                 <div className="group relative shrink-0 overflow-visible flex flex-col items-center	">
                   <SiFirebase></SiFirebase>
                   <p className="invisible group-hover:visible absolute top-10 bg-gray-700 text-white rounded-lg min-w-full	p-2 flex items-center justify-center min-h-12 text-lg text-center">
