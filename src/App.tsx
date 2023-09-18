@@ -15,11 +15,13 @@ import {
   Route,
   BrowserRouter,
 } from "react-router-dom";
+import Reference from "./components/Reference";
 
 const Home = (props: any) => {
   return (
     <>
       <AboutUs mode={props.mode} />
+      <Reference />
       <Projects mode={props.mode} />
       <Contact></Contact>
     </>
