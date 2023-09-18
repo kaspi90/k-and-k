@@ -2,7 +2,8 @@
     "navigation": {
       "part1": "Über Uns",
       "part2": "Projekte",
-      "part3": "Kontakt"
+      "part3": "Kontakt",
+      "part4": "Referenzen"
     },
     "description": {
       "part1": "Um loszulegen, ändere <1>src/App(DE).js</1> und speichere um neuzuladen.",

@@ -30,6 +30,7 @@ function NavBar(props: any) {
         </a>
         <div className="flex gap-5 content-center items-center sm:gap-4 md:gap-3 md:text-xs">
           <a href="#aboutUs">{t("navigation.part1")}</a>
+          <a href="#references">{t("navigation.part4")}</a>
           <a href="#projects">{t("navigation.part2")}</a>
           <a href="#contact">{t("navigation.part3")}</a>
           <div className="flex sm:gap-4 md:gap-3 ">

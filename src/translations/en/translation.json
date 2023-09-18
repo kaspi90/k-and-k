@@ -3,7 +3,9 @@
     "navigation": {
       "part1": "About Us",
       "part2": "Projects",
-      "part3": "Contact"
+      "part3": "Contact",
+      "part4": "References"
+
     },
     "description": {
       "part1": "To get started, edit <1>src/App.js</1> and save to reload.",
