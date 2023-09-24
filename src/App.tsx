@@ -16,10 +16,12 @@ import {
   BrowserRouter,
 } from "react-router-dom";
 import Reference from "./components/Reference";
+import CallToAction from "./components/CallToAction";
 
 const Home = (props: any) => {
   return (
     <>
+      <CallToAction />
       <AboutUs mode={props.mode} />
       <Reference />
       <Projects mode={props.mode} />

@@ -1,5 +1,16 @@
 {
-    "title": "Welcome to react using react-i18next",
+   
+  "calltoaction": {
+    "headline": "React freelancer for your project",
+    "description": "As freelance web developers we support agencies and companies in the implementation of unique projects. With us you can look forward to a fast implementation, modern tools and transparency in the development.",
+    "bulletpoint1": "React frontend web development (single page applications, user interfaces, configurators, etc.)",
+    "bulletpoint2": "Support for ongoing projects also for regular support or minor adjustments",
+    "bulletpoint3": "Uncomplicated communication via telephone, zoom video call, WhatsApp or e-mail",
+    "call":"Non-binding initial consultation",
+    "call2":"You are looking for support for your project? Then just call us or send us an e-mail."
+  },
+  
+  "title": "Welcome to react using react-i18next",
     "navigation": {
       "part1": "About Us",
       "part2": "Projects",

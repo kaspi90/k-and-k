@@ -1,4 +1,8 @@
-import javlis from "../img/javlis.png";
+import javlis from "../img/javlis160.webp";
+import javlis2x from "../img/javlis320.webp";
+import javlis3x from "../img/javlis640.webp";
+import javlis4x from "../img/javlis1280.webp";
+
 import { useTranslation } from "react-i18next";
 
 import { Slide } from "react-awesome-reveal";
@@ -22,7 +26,7 @@ function Projects(props: any) {
   }
 
   return (
-    <div className=" bg-neutral-100 dark:bg-gray-900 ">
+    <div className="  dark:bg-gray-800 ">
       <div
         id="projects"
         className="w-5/6 mx-auto pt-12 h-fit overflow-y-hidden max-w-[1280px]"
@@ -33,10 +37,14 @@ function Projects(props: any) {
             <div className="items-center flex w-full justify-center  mb-12 flex-wrap">
               <div className=" rounded-xl p-12 w-1/2 sm:basis-96 ">
                 <img
+                  className="rounded-xl shrink-0 shadow-md w-full"
                   src={javlis}
-                  className="rounded-xl shrink-0 shadow-md"
-                  alt="javlis projekt"
-                ></img>
+                  srcSet={`${javlis} 160w,
+     ${javlis2x} 320w, 
+     ${javlis3x} 640w, 
+     ${javlis4x} 1280w`}
+                  sizes="(max-width: 640px) 160px, (max-width: 1280px) 320px, 640px"
+                />
               </div>
               <div className="rounded-xl w-1/2 sm:w-full ">
                 <div className="mb-6">
