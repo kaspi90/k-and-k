@@ -16,7 +16,7 @@ const CallToAction = () => {
     <div className=" dark:bg-gray-800 " id="contact">
       <div className="w-3/4 mx-auto pb-10 ">
         <div className="flex lg:my-20 flex-col lg:flex-row">
-          <div className="lg:w-1/2 m-5">
+          <div className="lg:w-1/2 lg:m-5 justify-center mx-auto ">
             <div className="mb-5">
               <h2 className="text-center mb-4">{t("calltoaction.headline")}</h2>
               <p className="mb-5">{t("calltoaction.description")}</p>
