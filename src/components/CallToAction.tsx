@@ -22,7 +22,7 @@ const CallToAction = () => {
               <p className="mb-5 text-justify">
                 {t("calltoaction.description")}
               </p>
-              <ul className="list-disc mx-auto text-center ">
+              <ul className="list-disc  ">
                 <li className="py-1 px-2">{t("calltoaction.bulletpoint1")}</li>
                 <li className="py-1 px-2">{t("calltoaction.bulletpoint2")}</li>
                 <li className="py-1 px-2">{t("calltoaction.bulletpoint3")}</li>
