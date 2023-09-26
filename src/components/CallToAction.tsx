@@ -14,7 +14,7 @@ const CallToAction = () => {
 
   return (
     <div className=" dark:bg-gray-800 max-w-[1280px] mx-auto" id="calltoaction">
-      <div className="w-3/4 mx-auto pb-10 ">
+      <div className=" mx-auto pb-10 ">
         <div className="flex lg:my-20 flex-col lg:flex-row items-center gap-2">
           <div className="lg:w-1/2 lg:m-5 justify-center mx-auto ">
             <div className="mb-5">
