@@ -13,17 +13,19 @@ const CallToAction = () => {
   const { t } = useTranslation();
 
   return (
-    <div className=" dark:bg-gray-800 " id="contact">
+    <div className=" dark:bg-gray-800 max-w-[1280px] mx-auto" id="calltoaction">
       <div className="w-3/4 mx-auto pb-10 ">
         <div className="flex lg:my-20 flex-col lg:flex-row">
           <div className="lg:w-1/2 lg:m-5 justify-center mx-auto ">
             <div className="mb-5">
               <h2 className="text-center mb-4">{t("calltoaction.headline")}</h2>
-              <p className="mb-5">{t("calltoaction.description")}</p>
-              <ul className="list-disc ">
-                <li className="py-1 px-3">{t("calltoaction.bulletpoint1")}</li>
-                <li className="py-1 px-3">{t("calltoaction.bulletpoint2")}</li>
-                <li className="py-1 px-3">{t("calltoaction.bulletpoint3")}</li>
+              <p className="mb-5 text-justify">
+                {t("calltoaction.description")}
+              </p>
+              <ul className="list-disc mx-auto text-center ">
+                <li className="py-1 px-2">{t("calltoaction.bulletpoint1")}</li>
+                <li className="py-1 px-2">{t("calltoaction.bulletpoint2")}</li>
+                <li className="py-1 px-2">{t("calltoaction.bulletpoint3")}</li>
               </ul>
             </div>
             <div className="w-full  justify-center">
