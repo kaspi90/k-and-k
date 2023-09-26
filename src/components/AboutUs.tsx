@@ -396,7 +396,7 @@ function AboutUs(props: any) {
                 <div>
                   <h3 className="flex justify-center mt-4 mb-4">Erik Kasper</h3>
                   <PortraitErik />
-                  <div className="flex overflow-visible justify-center gap-2">
+                  <div className="flex overflow-visible justify-center gap-2 ">
                     <IconContext.Provider
                       value={{
                         color: props.mode ? "#88E2FB" : "#224CA6",
@@ -464,7 +464,7 @@ function AboutUs(props: any) {
             </div>
             <div className="mb-16 w-full mt-4 items-center flex flex-col">
               <h3 className="mb-4">Technologien</h3>
-              <div className="flex gap-2 flex-wrap justify-center">
+              <div className="flex gap-2 flex-wrap justify-center w-[90%]">
                 <IconContext.Provider
                   value={{
                     color: props.mode ? "#88E2FB" : "#224CA6",
@@ -641,7 +641,7 @@ function AboutUs(props: any) {
           </div>
           <div className="mb-16 mt-4 	w-full items-center flex flex-col dark:bg-gray-800">
             <h3 className="mb-4">Technologien</h3>
-            <div className="flex gap-2 flex-wrap justify-center">
+            <div className="flex gap-2 flex-wrap justify-center w-[90%]">
               <IconContext.Provider
                 value={{
                   color: "#671595",
