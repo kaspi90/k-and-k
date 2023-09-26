@@ -40,14 +40,6 @@ const CallToAction = () => {
             </div>
           </div>
           <div className="lg:w-1/2 lg:block hidden">
-            {/* <img
-              className="w-full"
-              src={calltoaction}
-              srcSet={`${calltoaction} 1x,
-           ${calltoaction2x} 2x, 
-           ${calltoaction3x} 3x, 
-           ${calltoaction4x} 4x`}
-            /> */}
             <img
               className="rounded-xl  w-full"
               src={calltoaction}
