@@ -22,9 +22,15 @@ import kadelo from "../img/kadelo_logo.webp";
 import seeders from "../img/seeders_logo.webp";
 import webprojaggt from "../img/webprojaggt.webp";
 import adesso from "../img/adesso_logo.webp";
+import adessoh from "../img/adesso_logoh.webp";
 import dortmund from "../img/Technische_Universität_Dortmund_Logo Kopie.webp";
+
+import dortmundh from "../img/Technische_Universität_Dortmund_Logo Kopieh.webp";
 import wuppertal from "../img/BUW_Logo.webp";
+import wuppertalh from "../img/BUW_Logoh.webp";
 import mimo from "../img/Mimo_Logo.webp";
+import mimoh from "../img/Mimo_Logoh.webp";
+
 import { IconContext } from "react-icons";
 import {
   SiTypescript,
@@ -186,7 +192,16 @@ function AboutUs(props: any) {
           {t("universityheike.mimodate")}
         </time>
         <div className="m-4">
-          <img src={mimo} className="w-28 mx-auto " alt="Mimo Dev Logo"></img>
+          <img
+            src={mimo}
+            className="w-28 mx-auto "
+            alt="Mimo Dev Logo"
+            srcSet={`${mimo} 160w,
+            ${mimo} 320w, 
+           ${mimoh} 640w, 
+          ${mimoh} 1280w`}
+            sizes="(max-width: 640px) 160px, (max-width: 1280px) 320px, 640px"
+          />
         </div>
         <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
           <b>Mimo - Coding Bootcamp - Full-Stack</b>
@@ -232,6 +247,11 @@ function AboutUs(props: any) {
             src={dortmund}
             className="w-28 mx-auto"
             alt="TU Dortmund Logo"
+            srcSet={`${dortmund} 160w,
+            ${dortmund} 320w, 
+           ${dortmundh} 640w, 
+          ${dortmundh} 1280w`}
+            sizes="(max-width: 640px) 160px, (max-width: 1280px) 320px, 640px"
           ></img>
         </div>
         <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
@@ -252,6 +272,11 @@ function AboutUs(props: any) {
             src={wuppertal}
             className="w-28 mx-auto"
             alt="Bergische Universität Wuppertal Logo"
+            srcSet={`${wuppertal} 160w,
+            ${wuppertal} 320w, 
+           ${wuppertalh} 640w, 
+          ${wuppertalh} 1280w`}
+            sizes="(max-width: 640px) 160px, (max-width: 1280px) 320px, 640px"
           ></img>
         </div>
         <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
@@ -341,7 +366,16 @@ function AboutUs(props: any) {
             2011 - 2015
           </time>
           <div className="m-4">
-            <img src={adesso} className="w-28 mx-auto" alt="adesso Logo"></img>
+            <img
+              src={adesso}
+              className="w-28 mx-auto"
+              alt="adesso Logo"
+              srcSet={`${adesso} 160w,
+            ${adesso} 320w, 
+           ${adessoh} 640w, 
+          ${adessoh} 1280w`}
+              sizes="(max-width: 640px) 160px, (max-width: 1280px) 320px, 640px"
+            ></img>
           </div>
           <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
             {t("workerik.adesso1")}
