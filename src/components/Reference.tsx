@@ -42,7 +42,6 @@ const Reference = () => {
                 {!isExtended && (
                   <p className="pt-2">
                     <a
-                      href=""
                       className="underline"
                       onClick={(e) => {
                         e.preventDefault();
@@ -86,6 +85,7 @@ const Reference = () => {
                   ${igor2} 640w, 
                  ${igor2} 1280w`}
                   sizes="(max-width: 640px) 160px, (max-width: 1280px) 320px, 640px"
+                  alt="Igor Shelkovenkov"
                 />
                 <div className="p-2">
                   <p className="font-bold">Igor Shelkovenkov</p>
@@ -115,6 +115,7 @@ const Reference = () => {
                   <img
                     src={michael}
                     className="w-[64px] h-[64px] rounded-full"
+                    alt="Michael Zsilla"
                   />
                   <div className="p-2">
                     <p className="font-bold">Michael Zsilla</p>
@@ -141,7 +142,11 @@ const Reference = () => {
                   würde jederzeit zurückkommen, wenn es um kluge Websites geht."
                 </p>
                 <div className="flex p-2 items-center">
-                  <img src={kia} className="w-[64px] h-[64px] rounded-full" />
+                  <img
+                    src={kia}
+                    className="w-[64px] h-[64px] rounded-full"
+                    alt="Kia Kahawa"
+                  />
                   <div className="p-2">
                     <p className="font-bold">Kia Kahawa</p>
                     <p>Geschäftsführerin bei</p>
@@ -172,6 +177,7 @@ const Reference = () => {
                 <img
                   src={sebastian}
                   className="w-[64px] h-[64px] rounded-full"
+                  alt="Sebastian Heinl"
                 />
                 <div className="p-2">
                   <p className="font-bold">Sebastian Heinl</p>
