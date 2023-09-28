@@ -5,6 +5,8 @@ import michael from "../img/Michael Zsilla.webp";
 import kia from "../img/Kia Kahawa.webp";
 
 import igor from "../img/Igor Shelkovenkov.webp";
+import igor2 from "../img/Igor Shelkovenkovh.webp";
+
 import { IconContext } from "react-icons";
 import {
   SiTypescript,
@@ -76,7 +78,15 @@ const Reference = () => {
                 )}
               </p>
               <div className="flex p-2 items-center">
-                <img src={igor} className="w-[64px] h-[64px] rounded-full" />
+                <img
+                  src={igor}
+                  className="w-[64px] h-[64px] rounded-full"
+                  srcSet={`${igor} 160w,
+                   ${igor} 320w, 
+                  ${igor2} 640w, 
+                 ${igor2} 1280w`}
+                  sizes="(max-width: 640px) 160px, (max-width: 1280px) 320px, 640px"
+                />
                 <div className="p-2">
                   <p className="font-bold">Igor Shelkovenkov</p>
                   <p>CEO und Founder </p>
