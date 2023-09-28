@@ -16,6 +16,8 @@ import heikeLightsaber3x from "../img/heikeLightsaber_640.webp";
 import heikeLightsaber4x from "../img/heikeLightsaber_1280.webp";
 import essen from "../img/uni_essen.webp";
 import csueb from "../img/csueb.webp";
+import csuebh from "../img/csuebh.webp";
+
 import kadelo from "../img/kadelo_logo.webp";
 import seeders from "../img/seeders_logo.webp";
 import webprojaggt from "../img/webprojaggt.webp";
@@ -199,7 +201,16 @@ function AboutUs(props: any) {
           2015
         </time>
         <div className="m-4">
-          <img src={csueb} className="w-28 mx-auto " alt="csueb Logo"></img>
+          <img
+            src={csuebh}
+            className="w-28 mx-auto"
+            alt="csueb Logo"
+            srcSet={`${csueb} 160w,
+                   ${csueb} 320w, 
+                  ${csuebh} 640w, 
+                 ${csuebh} 1280w`}
+            sizes="(max-width: 640px) 160px, (max-width: 1280px) 320px, 640px"
+          ></img>
         </div>
         <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
           <b>
@@ -351,7 +362,16 @@ function AboutUs(props: any) {
           2015
         </time>
         <div className="m-4">
-          <img src={csueb} className="w-28 mx-auto " alt="csueb Logo"></img>
+          <img
+            src={csueb}
+            className="w-28 mx-auto "
+            alt="csueb Logo"
+            srcSet={`${csueb} 160w,
+                   ${csueb} 320w, 
+                  ${csuebh} 640w, 
+                 ${csuebh} 1280w`}
+            sizes="(max-width: 640px) 160px, (max-width: 1280px) 320px, 640px"
+          ></img>
         </div>
         <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
           <b>

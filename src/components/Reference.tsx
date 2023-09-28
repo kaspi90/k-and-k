@@ -41,7 +41,7 @@ const Reference = () => {
                 übertroffen.{" "}
                 {!isExtended && (
                   <p className="pt-2">
-                    <a
+                    <p
                       className="underline"
                       onClick={(e) => {
                         e.preventDefault();
@@ -49,7 +49,7 @@ const Reference = () => {
                       }}
                     >
                       mehr lesen
-                    </a>
+                    </p>
                   </p>
                 )}
                 {isExtended && (
