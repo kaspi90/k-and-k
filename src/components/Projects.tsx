@@ -111,12 +111,12 @@ function Projects(props: any) {
                     </div>
                   </IconContext.Provider>
                 </div>
-                <div className="justify-center flex mx-auto ">
+                <div className="justify-center flex mx-auto">
                   <a
                     href="https://javlis.com/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="mr-4 inline-flex items-center px-6 py-4 space-x-2 text-sm font-bold text-white uppercase bg-gray-700 rounded-lg hover:bg-gray-900 dark:bg-gray-500 dark:hover:bg-gray-400"
+                    className="inline-flex items-center px-6 py-4 space-x-2 text-sm font-bold text-white uppercase bg-gray-700 rounded-lg hover:bg-gray-900 dark:bg-gray-500 dark:hover:bg-gray-400"
                   >
                     <span>
                       <svg
