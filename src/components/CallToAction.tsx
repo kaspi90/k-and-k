@@ -14,7 +14,7 @@ const CallToAction = () => {
 
   return (
     <div className=" dark:bg-gray-800 max-w-[1280px] mx-auto" id="calltoaction">
-      <div className=" mx-auto pb-10 ">
+      <div className="mx-auto pb-10 w-[90%]">
         <div className="flex lg:my-20 flex-col lg:flex-row items-center gap-2">
           <div className="lg:w-1/2 lg:m-5 justify-center mx-auto ">
             <div className="mb-5">
@@ -33,7 +33,7 @@ const CallToAction = () => {
                 onClick={() => setmodalState(!modalState)}
                 className="p-3 bg-gray-700 hover:bg-gray-900 rounded-lg text-white flex items-center gap-2 mx-auto"
               >
-                <SiGooglechat /> Jetzt Verfügbarkeit anfragen{" "}
+                <SiGooglechat /> {t("calltoaction.button")}
                 <span className="relative flex h-3 w-3">
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
                   <span className="relative inline-flex rounded-full h-3 w-3 bg-white"></span>
