@@ -33,7 +33,7 @@ function Projects(props: any) {
       >
         <h3 className="justify-center m-auto flex p-4">Projekte</h3>
         <Slide direction="up" triggerOnce>
-          <div className="flex  justify-center mb-12 flex-wrap lg:w-full w-[90%]  ">
+          <div className="flex  justify-center mb-12 flex-wrap w-full ">
             <div className="items-center flex w-full justify-center  mb-12 flex-wrap">
               <div className=" rounded-xl p-12 w-1/2 sm:basis-96 ">
                 <img
