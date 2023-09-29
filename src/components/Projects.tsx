@@ -29,11 +29,11 @@ function Projects(props: any) {
     <div className="  dark:bg-gray-800 ">
       <div
         id="projects"
-        className="w-5/6 mx-auto pt-12 h-fit overflow-y-hidden max-w-[1280px]"
+        className="w-5/6 mx-auto pt-12 h-fit overflow-y-hidden max-w-[1280px] "
       >
         <h3 className="justify-center m-auto flex p-4">Projekte</h3>
         <Slide direction="up" triggerOnce>
-          <div className="flex  justify-center mb-12 flex-wrap w-full  ">
+          <div className="flex  justify-center mb-12 flex-wrap lg:w-full w-[90%]  ">
             <div className="items-center flex w-full justify-center  mb-12 flex-wrap">
               <div className=" rounded-xl p-12 w-1/2 sm:basis-96 ">
                 <img
