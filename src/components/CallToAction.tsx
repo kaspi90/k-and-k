@@ -68,11 +68,11 @@ const CallToAction = () => {
         <div className="gap-4 flex flex-col">
           <div className="p-2 border rounded-lg text-center font-bold flex items-center gap-1 justify-center">
             <AiOutlinePhone />
-            0151 51303150
+            <a href="tel:+4915151303150">0151 51303150</a>
           </div>
           <div className="p-2 border rounded-lg text-center font-bold flex items-center gap-1 justify-center">
             <AiOutlineMail />
-            kontakt@k-and-k.codes
+            <a href="mailto:kontakt@kadelo.de">kontakt@k-and-k.codes</a>
           </div>
         </div>
       </Modals>
