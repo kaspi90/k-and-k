@@ -111,7 +111,7 @@ function Projects(props: any) {
                     </div>
                   </IconContext.Provider>
                 </div>
-                <div className="justify-center flex ">
+                <div className="justify-center flex mx-auto ">
                   <a
                     href="https://javlis.com/"
                     target="_blank"
