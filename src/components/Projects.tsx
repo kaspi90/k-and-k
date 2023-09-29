@@ -33,7 +33,7 @@ function Projects(props: any) {
       >
         <h3 className="justify-center m-auto flex p-4">Projekte</h3>
         <Slide direction="up" triggerOnce>
-          <div className="flex  justify-center mb-12 flex-wrap w-full ">
+          <div className="flex  justify-center mb-12 flex-wrap w-full">
             <div className="items-center flex w-full justify-center  mb-12 flex-wrap">
               <div className=" rounded-xl p-12 w-1/2 sm:basis-96 ">
                 <img
@@ -46,14 +46,14 @@ function Projects(props: any) {
                   sizes="(max-width: 640px) 160px, (max-width: 1280px) 320px, 640px"
                 />
               </div>
-              <div className="rounded-xl w-1/2 sm:w-full ">
+              <div className="rounded-xl w-1/2 sm:w-[85%]">
                 <div className="mb-6">
                   <h3 className="mb-7 justify-center flex text-2xl font-semibold text-center text-gray-900 font-header dark:text-white ">
                     {t("projects.javlis1")}
                   </h3>
                   <p className="text-justify">{t("projects.javlis2")}</p>
                 </div>
-                <div className="flex overflow-visible justify-center gap-2 mb-7">
+                <div className="flex overflow-visible justify-center gap-2 mb-7 flex-wrap">
                   <IconContext.Provider
                     value={{
                       color: props.mode ? "#6B7280" : "#374151",
