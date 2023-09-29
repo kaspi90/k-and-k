@@ -12,7 +12,9 @@ function Contact() {
           <div className="p-1">
             <GrMail></GrMail>
           </div>
-          <div className="text-center">kontakt@k-and-k.codes</div>
+          <div className="text-center">
+            <a href="mailto:kontakt@k-and-k.codes"></a>kontakt@k-and-k.codes
+          </div>
         </div>
       </div>
     </div>

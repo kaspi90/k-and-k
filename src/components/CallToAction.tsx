@@ -1,5 +1,5 @@
 import { SiGooglechat } from "react-icons/si";
-import { AiOutlinePhone, AiOutlineMail } from "react-icons/ai";
+import { AiOutlinePhone, AiOutlineMail, AiOutlineCheck } from "react-icons/ai";
 import calltoaction from "../img/REV_WithPolygon160.webp";
 import calltoaction2x from "../img/REV_WithPolygon320.webp";
 import calltoaction3x from "../img/REV_WithPolygon640.webp";
@@ -22,10 +22,16 @@ const CallToAction = () => {
               <p className="mb-5 text-justify">
                 {t("calltoaction.description")}
               </p>
-              <ul className="list-disc  ">
-                <li className="py-1 px-2">{t("calltoaction.bulletpoint1")}</li>
-                <li className="py-1 px-2">{t("calltoaction.bulletpoint2")}</li>
-                <li className="py-1 px-2">{t("calltoaction.bulletpoint3")}</li>
+              <ul className="">
+                <li className="py-1 px-2 flex items-center gap-2">
+                  <AiOutlineCheck size={20} /> {t("calltoaction.bulletpoint1")}
+                </li>
+                <li className="py-1 px-2 flex items-center gap-2">
+                  <AiOutlineCheck size={20} /> {t("calltoaction.bulletpoint2")}
+                </li>
+                <li className="py-1 px-2 flex items-center gap-2">
+                  <AiOutlineCheck size={20} /> {t("calltoaction.bulletpoint2")}
+                </li>
               </ul>
             </div>
             <div className="w-full  justify-center">
