@@ -15,7 +15,7 @@ module.exports = {
       },
     },
     fontFamily: {
-      sans: ["SignikaNegative"],
+      sans: ["Helvetica", "Arial", "sans-serif"],
     },
   },
 
