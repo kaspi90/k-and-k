@@ -30,7 +30,7 @@ const CallToAction = () => {
                   <AiOutlineCheck size={20} /> {t("calltoaction.bulletpoint2")}
                 </li>
                 <li className="py-1 px-2 flex items-center gap-2">
-                  <AiOutlineCheck size={20} /> {t("calltoaction.bulletpoint2")}
+                  <AiOutlineCheck size={20} /> {t("calltoaction.bulletpoint3")}
                 </li>
               </ul>
             </div>
