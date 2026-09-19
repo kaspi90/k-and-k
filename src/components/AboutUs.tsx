@@ -15,6 +15,7 @@ import heikeLightsaber2x from "../img/heikeLightsaber_320.webp";
 import heikeLightsaber3x from "../img/heikeLightsaber_640.webp";
 import heikeLightsaber4x from "../img/heikeLightsaber_1280.webp";
 import essen from "../img/uni_essen.webp";
+import iu from "../img/iu_logo.svg";
 import csueb from "../img/csueb.webp";
 import csuebh from "../img/csuebh.webp";
 
@@ -395,7 +396,14 @@ function AboutUs(props: any) {
         <time className="mb-1 text-sm font-normal leading-none text-blue dark:text-gray-400">
           2022 - 2026
         </time>
-        <h3 className="mt-4 text-lg font-semibold text-gray-900 dark:text-white">
+        <div className="m-4">
+          <img
+            src={iu}
+            className="w-28 mx-auto dark:invert"
+            alt="IU Internationale Hochschule Logo"
+          />
+        </div>
+        <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
           {t("universityerik.iu")}
         </h3>
       </li>
