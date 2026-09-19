@@ -391,6 +391,15 @@ function AboutUs(props: any) {
   const studium = (
     <ol className="relative border-l border-blue dark:border-gray-400 mx-2">
       <li className="mb-10 ml-4">
+        <div className="absolute w-4 h-4 bg-blue rounded-full mt-1 -left-2 dark:border-gray-900 dark:bg-gray-400"></div>
+        <time className="mb-1 text-sm font-normal leading-none text-blue dark:text-gray-400">
+          2022 - 2026
+        </time>
+        <h3 className="mt-4 text-lg font-semibold text-gray-900 dark:text-white">
+          {t("universityerik.iu")}
+        </h3>
+      </li>
+      <li className="mb-10 ml-4">
         <div className="absolute w-4 h-4 bg-blue rounded-full mt-1  -left-2  dark:border-gray-900 dark:bg-gray-400"></div>
         <time className="mb-1 text-sm font-normal leading-none text-blue dark:text-gray-400">
           2015
