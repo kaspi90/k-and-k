@@ -21,10 +21,6 @@ import {
 function Projects(props: any) {
   const { t } = useTranslation();
 
-  function classNames(arg0: string): string | undefined {
-    throw new Error("Function not implemented.");
-  }
-
   return (
     <div className="  dark:bg-gray-800 ">
       <div
@@ -39,6 +35,7 @@ function Projects(props: any) {
                 <img
                   className="rounded-xl shrink-0 shadow-md w-full"
                   src={javlis}
+                  alt="Vorschau des Javlis-Projekts"
                   srcSet={`${javlis} 160w,
      ${javlis2x} 320w, 
      ${javlis3x} 640w, 

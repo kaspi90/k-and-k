@@ -51,6 +51,7 @@ const CallToAction = () => {
             <img
               className="rounded-xl  w-full"
               src={calltoaction}
+              alt="Webentwicklung für digitale Projekte"
               srcSet={`${calltoaction} 160w,
      ${calltoaction2x} 320w, 
      ${calltoaction3x} 640w, 

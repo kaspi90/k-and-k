@@ -13,7 +13,7 @@ function Contact() {
             <GrMail></GrMail>
           </div>
           <div className="text-center">
-            <a href="mailto:kontakt@k-and-k.codes"></a>kontakt@k-and-k.codes
+            <a href="mailto:kontakt@k-and-k.codes">kontakt@k-and-k.codes</a>
           </div>
         </div>
       </div>

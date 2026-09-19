@@ -1,5 +1,5 @@
-import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
-import { FiChevronDown, FiChevronUp } from "react-icons/fi";
+import React, { useRef, useState } from "react";
+import { FiChevronDown } from "react-icons/fi";
 
 interface AccordionProps {
   title: React.ReactNode;
@@ -15,36 +15,14 @@ export const Accordion: React.FC<AccordionProps> = ({
   color,
 }) => {
   const [active, setActive] = useState(open);
-  const [height, setHeight] = useState("0px");
-  const [rotate, setRotate] = useState("transform duration-700 ease");
-  const targetRef = useRef();
+  const [height, setHeight] = useState(open ? "100%" : "0px");
 
-  const contentSpace = useRef(null);
-
-  const initialHeight = async () => {
-    // @ts-ignore
-
-    setHeight(`100%`);
-
-    setRotate("transform duration-700 ease");
-  };
-
-  useEffect(() => {
-    // Update the document title using the browser API
-
-    if (active) {
-      initialHeight();
-    }
-  }, []);
+  const contentSpace = useRef<HTMLDivElement>(null);
 
   function toggleAccordion() {
     setActive((prevState) => !prevState);
-    // @ts-ignore
-    setHeight(active ? "0px" : `${contentSpace.current.scrollHeight}px`);
-    setRotate(
-      active
-        ? "transform duration-700 ease"
-        : "transform duration-700 ease rotate-180"
+    setHeight(
+      active ? "0px" : `${contentSpace.current?.scrollHeight ?? 0}px`
     );
   }
 

@@ -9,12 +9,7 @@ import PrivacyProtection from "./components/PrivacyProtection";
 import Contact from "./components/Contact";
 import { I18nextProvider } from "react-i18next";
 import i18n from "./react-i18next";
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  BrowserRouter,
-} from "react-router-dom";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Reference from "./components/Reference";
 import CallToAction from "./components/CallToAction";
 
@@ -32,9 +27,9 @@ const Home = (props: any) => {
 
 function App() {
   const [mode, setMode] = React.useState(false);
-  const el = document.getElementById("modeSwitch");
 
   React.useEffect(() => {
+    const el = document.getElementById("modeSwitch");
     el?.classList.toggle("dark", mode);
   }, [mode]);
 

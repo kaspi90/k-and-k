@@ -1,5 +1,4 @@
 import { Slide } from "react-awesome-reveal";
-import { useTranslation } from "react-i18next";
 import sebastian from "../img/Sebastian Heinl.webp";
 import michael from "../img/Michael Zsilla.webp";
 import kia from "../img/Kia Kahawa.webp";
@@ -7,21 +6,9 @@ import kia from "../img/Kia Kahawa.webp";
 import igor from "../img/Igor Shelkovenkov.webp";
 import igor2 from "../img/Igor Shelkovenkovh.webp";
 
-import { IconContext } from "react-icons";
-import {
-  SiTypescript,
-  SiReact,
-  SiTailwindcss,
-  SiNextdotjs,
-  SiCypress,
-  SiGitlab,
-  SiChartdotjs,
-  SiFigma,
-} from "react-icons/si";
 import { useState } from "react";
 
 const Reference = () => {
-  const { t } = useTranslation();
   const [isExtended, setIsExtended] = useState(false);
 
   return (
@@ -62,8 +49,8 @@ const Reference = () => {
                     überzeugt, dass sie in jedem Team einen wertvollen Beitrag
                     leisten wird".
                     <p className="pt-2">
-                      <a
-                        href="#"
+                      <button
+                        type="button"
                         className="underline"
                         onClick={(e) => {
                           e.preventDefault();
@@ -71,7 +58,7 @@ const Reference = () => {
                         }}
                       >
                         weniger
-                      </a>{" "}
+                      </button>{" "}
                     </p>
                   </>
                 )}
