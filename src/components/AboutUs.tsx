@@ -406,6 +406,9 @@ function AboutUs(props: any) {
         <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
           {t("universityerik.iu")}
         </h3>
+        <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+          {t("universityerik.iuthesis")}
+        </p>
       </li>
       <li className="mb-10 ml-4">
         <div className="absolute w-4 h-4 bg-blue rounded-full mt-1  -left-2  dark:border-gray-900 dark:bg-gray-400"></div>
