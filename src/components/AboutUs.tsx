@@ -457,7 +457,10 @@ function AboutUs(props: any) {
             <div className="flex content-center justify-center mb-16  ">
               <div className="items-center flex w-full justify-center gap-20  flex-wrap">
                 <div>
-                  <h3 className="flex justify-center mt-4 mb-4">Erik Kasper</h3>
+                  <h3 className="flex justify-center mt-4 mb-1">Erik Kasper</h3>
+                  <p className="mb-4 text-center text-sm text-gray-500 dark:text-gray-400">
+                    Master of Science (M.Sc.)
+                  </p>
                   <PortraitErik />
                   <div className="flex overflow-visible justify-center gap-2 ">
                     <IconContext.Provider
@@ -634,7 +637,10 @@ function AboutUs(props: any) {
           <div className="flex content-center justify-center  dark:bg-gray-800 ">
             <div className="items-center flex flex-row-reverse w-full flex-wrap justify-center gap-20 ">
               <div className="flex flex-col ">
-                <h3 className="flex justify-center mt-4 mb-4">Heike Kasper</h3>
+                <h3 className="flex justify-center mt-4 mb-1">Heike Kasper</h3>
+                <p className="mb-4 text-center text-sm text-gray-500 dark:text-gray-400">
+                  Master of Science (M.Sc.)
+                </p>
                 <PortraitHeike />
                 <div className="flex overflow-visible justify-center gap-2">
                   <IconContext.Provider
