@@ -1,59 +1,58 @@
-import React from "react";
-import "./App.css";
-import NavBar from "./components/NavBar";
-import AboutUs from "./components/AboutUs";
-import Projects from "./components/Projects";
-import Footer from "./components/Footer";
-import Imprint from "./components/Imprint";
-import PrivacyProtection from "./components/PrivacyProtection";
-import Contact from "./components/Contact";
-import { I18nextProvider } from "react-i18next";
-import i18n from "./react-i18next";
-import { Routes, Route, BrowserRouter } from "react-router-dom";
-import Reference from "./components/Reference";
-import CallToAction from "./components/CallToAction";
+import { BrowserRouter, Navigate, Route, Routes, useLocation } from "react-router-dom";
 
-const Home = (props: any) => {
+import { Layout } from "./components/layout/Layout";
+import { FEATURES, legacyRedirect } from "./config/site";
+import HomePage from "./pages/HomePage";
+import LegalPage from "./pages/LegalPage";
+import NotFoundPage from "./pages/NotFoundPage";
+import ProfilePage from "./pages/ProfilePage";
+import { ThemeProvider } from "./theme/ThemeProvider";
+
+/** Frühere Adressen (/de/…, /legal-notice, /privacy) – Anker bleibt erhalten. */
+function LegacyRedirect() {
+  const { pathname, hash } = useLocation();
+  const target = legacyRedirect(pathname) ?? "/";
+  return <Navigate to={{ pathname: target, hash }} replace />;
+}
+
+/**
+ * Deutsch unter /, Englisch unter /en. Alle Routen stehen zusätzlich in
+ * src/config/routes.json – daraus erzeugt scripts/postbuild.js je Seite
+ * statisches HTML mit passenden Meta-Angaben, hreflang und strukturierten Daten.
+ */
+export function AppRoutes() {
   return (
-    <>
-      <CallToAction />
-      <AboutUs mode={props.mode} />
-      <Reference />
-      <Projects mode={props.mode} />
-      <Contact></Contact>
-    </>
-  );
-};
-
-function App() {
-  const [mode, setMode] = React.useState(false);
-
-  React.useEffect(() => {
-    const el = document.getElementById("modeSwitch");
-    el?.classList.toggle("dark", mode);
-  }, [mode]);
-
-  function toggleMode() {
-    setMode((prevState) => !prevState);
-  }
-  return (
-    <div>
-      <I18nextProvider i18n={i18n}>
-        <BrowserRouter>
-          <div className="w-full m-auto dark:bg-slate-800 dark:text-white">
-            <NavBar toggleMode={toggleMode} mode={mode} />
-
-            <Routes>
-              <Route path="/" element={<Home mode={mode} />} />
-              <Route path="/impressum" element={<Imprint />} />
-              <Route path="/datenschutz" element={<PrivacyProtection />} />
-            </Routes>
-          </div>
-          <Footer />
-        </BrowserRouter>
-      </I18nextProvider>
-    </div>
+    <Routes>
+      <Route path="/en" element={<Layout lang="en" />}>
+        <Route index element={<HomePage />} />
+        {FEATURES.profilePages && <Route path="heike" element={<ProfilePage person="heike" />} />}
+        {FEATURES.profilePages && <Route path="erik" element={<ProfilePage person="erik" />} />}
+        <Route path="legal-notice" element={<LegalPage type="imprint" />} />
+        <Route path="privacy" element={<LegalPage type="privacy" />} />
+        <Route path="*" element={<NotFoundPage />} />
+      </Route>
+      <Route path="/de/*" element={<LegacyRedirect />} />
+      <Route path="/de" element={<LegacyRedirect />} />
+      <Route path="/legal-notice" element={<LegacyRedirect />} />
+      <Route path="/privacy" element={<LegacyRedirect />} />
+      <Route element={<Layout lang="de" />}>
+        <Route path="/" element={<HomePage />} />
+        {FEATURES.profilePages && <Route path="/heike" element={<ProfilePage person="heike" />} />}
+        {FEATURES.profilePages && <Route path="/erik" element={<ProfilePage person="erik" />} />}
+        <Route path="/impressum" element={<LegalPage type="imprint" />} />
+        <Route path="/datenschutz" element={<LegalPage type="privacy" />} />
+        <Route path="*" element={<NotFoundPage />} />
+      </Route>
+    </Routes>
   );
 }
 
-export default App;
+export default function App() {
+  return (
+    <ThemeProvider>
+      <BrowserRouter>
+        <AppRoutes />
+      </BrowserRouter>
+    </ThemeProvider>
+  );
+}

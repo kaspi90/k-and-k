@@ -1,46 +1,44 @@
-# Getting Started with Create React App
+# k-and-k.codes
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Website von Heike Kasper und Erik Kasper – zwei unabhängig arbeitenden
+selbstständigen Softwareentwicklern.
 
-## Available Scripts
+Create React App · React 18 · TypeScript · React Router · i18next · Tailwind (Reset/Utilities)
 
-In the project directory, you can run:
+## Befehle
 
-### `npm start`
+| Befehl | Zweck |
+| --- | --- |
+| `npm start` | Entwicklungsserver (http://localhost:3000) |
+| `npm run build` | Produktions-Build + `scripts/postbuild.js` (statisches HTML je Route mit Meta/hreflang/JSON-LD, `sitemap.xml`, `404.html`) |
+| `npm run preview` | Produktions-Build lokal ausliefern (http://localhost:4173) – inkl. Weiterleitungen aus `vercel.json` und HTTP 404 für unbekannte Pfade |
+| `npm run test:ci` | Tests einmalig (inkl. Prüfung auf Platzhaltertexte und EN/DE-Schlüsselgleichheit) |
+| `npm run typecheck` | TypeScript |
+| `npm run lint` | ESLint (react-app-Regeln, keine Warnungen erlaubt) |
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Node 20 (siehe `.nvmrc`).
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Struktur
 
-### `npm test`
+- `src/config/site.json` – URL, E-Mail, Feature-Schalter, persönliche Links (Instagram/CV nur mit bestätigter URL)
+- `src/config/routes.json` – alle Seiten in DE (Hauptversion, `/…`) und EN (`/en/…`); Basis für Router, Sprachumschalter, Postbuild und Sitemap
+- `src/translations/{en,de}/translation.json` – Oberflächentexte
+- `src/content/` – Profile, Kundenstimmen, Rechtstexte, Case Studies (leer → Bereich ausgeblendet), Portraits
+- `src/styles/tokens.css` – semantische Design-Tokens für Dark (primär) und Light Mode
+- `src/styles/site.css` – Layout und Komponenten nach dem Figma-Entwurf
+- `public/brand/` – Logo-Varianten (auf dunklem/hellem Grund, Bildmarke), `public/og-image*.png` – Social Preview je Sprache
+- `docs/CONTENT-TODO.md` – offene Inhalte, Freigaben und rechtliche Prüfpunkte
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Theme und Sprache
 
-### `npm run build`
+- Theme: Das Inline-Skript in `public/index.html` setzt `data-theme` vor dem ersten Rendern
+  (gespeicherte Auswahl `localStorage["kk-theme"]`, sonst `prefers-color-scheme`). Kein Flackern.
+- Sprache ergibt sich aus der URL: Deutsch ohne Präfix (Hauptversion, `x-default`), Englisch unter `/en`.
+  Der Umschalter verlinkt dieselbe Seite in der anderen Sprache und behält Anker wie `#contact`;
+  Theme und Sprache sind unabhängig.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Deployment
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Vercel mit Preset „Other“ (`vercel.json`: `framework: null`, Build `npm run build`, Output `build`) –
+kein SPA-Catch-all, unbekannte Pfade liefern `404.html` mit HTTP 404.
+Header und Weiterleitungen (`/de/*` → `/*`, `/legal-notice`, `/privacy` → `/en/…`): `vercel.json`.

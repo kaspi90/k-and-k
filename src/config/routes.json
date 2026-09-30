@@ -1,0 +1,7 @@
+[
+  { "key": "home", "de": "/", "en": "/en" },
+  { "key": "heike", "de": "/heike", "en": "/en/heike", "feature": "profilePages" },
+  { "key": "erik", "de": "/erik", "en": "/en/erik", "feature": "profilePages" },
+  { "key": "imprint", "de": "/impressum", "en": "/en/legal-notice" },
+  { "key": "privacy", "de": "/datenschutz", "en": "/en/privacy" }
+]

@@ -1,117 +1,315 @@
 {
-  "calltoaction": {
-    "headline": "React Freelancer für dein Projekt",
-    "description": "Als freiberufliche Webentwickler unterstützen wir Agenturen und Unternehmen bei der Umsetzung von einzigartigen Projekten. Bei uns steht eine schnelle Umsetzung, der Einsatz modernster Tools und eine transparente Entwicklung im Vordergrund.",
-    "bulletpoint1": "React Frontend Web-Entwicklung (Single Page Anwendungen, User Interfaces, Konfiguratoren u.v.m.)",
-    "bulletpoint2": "Unterstützung bei laufenden Projekten auch für den regelmäßigen Support oder kleinere Anpassungen",
-    "bulletpoint3": "Unkomplizierte Kommunikation via Telefon, zoom Video Call, WhatsApp oder E-Mail",
-    "call":"Unverbindliches Erstgespräch",
-    "call2":"Du suchst Unterstützung für dein Projekt? Dann ruf uns einfach an oder sende uns eine E-Mail. ",
-    "button":"Jetzt Verfügbarkeit anfragen"
-
-  },
-    "navigation": {
-      "part1": "Über Uns",
-      "part2": "Projekte",
-      "part3": "Kontakt",
-      "part4": "Referenzen"
+  "meta": {
+    "home": {
+      "title": "k-and-k.codes — Selbstständige Softwareentwickler",
+      "description": "Heike und Erik Kasper arbeiten unabhängig als selbstständige Softwareentwickler für moderne Webanwendungen, Softwaremodernisierung und KI-gestützte Entwicklung."
     },
-    "description": {
-      "part1": "Um loszulegen, ändere <1>src/App(DE).js</1> und speichere um neuzuladen.",
-      "part2": "Wechsle die Sprache zwischen deutsch und englisch mit Hilfe der beiden Schalter."
+    "heike": {
+      "title": "Heike Kasper — Selbstständige Softwareentwicklerin | k-and-k.codes",
+      "description": "Heike Kasper ist selbstständige Softwareentwicklerin für React, TypeScript und KI-gestützte Entwicklung – mit Hintergrund in Architektur und Energieeffizienz."
     },
-    "aboutme": {
-      "headline": "Über mich",
-      "e1": "Hallo, ich bin Erik,",
-      "e2": "ich bin Wirtschaftsinformatiker und habe über zehn Jahre Erfahrung in der IT. Ich arbeite als Software Engineer mit den Schwerpunkten React & TypeScript. Zusätzlich besitze ich viel Expertise in den Bereichen Unternehmensführung, Wachstum und Projektmanagement. Ich achte in allen Projekten darauf, immer das Geschäftsziel im Auge zu behalten und eine dementsprechende Umsetzung anzustreben.",
-      "e3": "Ich bin ein Fan von nachhaltigen und pragmatischen Lösungen und lege viel Wert auf eine gute Kommunikation zwischen allen Stakeholdern.",
-      "e4": "Persönliche Interessen abseits der Arbeit: Radsport, Ski & Brettspiele",
-      "title": "Arbeit",
-      "titleStudy": "Studium"
-
+    "erik": {
+      "title": "Erik Kasper — Selbstständiger Softwareentwickler | k-and-k.codes",
+      "description": "Erik Kasper ist selbstständiger Softwareentwickler mit mehr als zehn Jahren Erfahrung in IT und Webentwicklung – React, TypeScript sowie Produkt- und Frontend-Architektur."
     },
-    "aboutmeheike": {
-      "headline": "Über mich",
-      "h1": "Hallo, ich bin Heike,",
-      "h2": "Als leidenschaftliche Webentwicklerin mit Schwerpunkt Frontend verfüge ich über sehr gute Kenntnisse in HTML, CSS und TypeScript sowie über Expertise mit modernen Frontend-Frameworks wie React. Ich habe Erfahrung in der Zusammenarbeit mit funktionsübergreifenden Teams, einschließlich Designern und Backend-Entwicklern, um eine nahtlose Integration von Frontend- und Backend-Komponenten sicherzustellen. Darüber hinaus bin ich bestrebt, mich über die neuesten Technologien und Best Practices auf dem Laufenden zu halten und meine Fähigkeiten durch kontinuierliches Lernen und Experimentieren ständig zu verbessern. ",
-      "h3": "Coding vereint für mich zum einen die Herausforderung Probleme zu lösen und zugleich die Kreativität beim Design.",
-      "h4": "Abseits der Arbeit mag ich: Brettspiele, Ski fahren, wandern, Mangas lesen und zeichnen."
+    "imprint": {
+      "title": "Impressum | k-and-k.codes",
+      "description": "Impressum von k-and-k.codes, der Website der selbstständigen Softwareentwickler Heike Kasper und Erik Kasper."
     },
-    "workerik": {
-      "seeders1": "Seeders GmbH",
-      "seeders2": "Gründung der Seeders GmbH als internationale SEO Agentur im Joint Venture mit der Seeders Group.",
-      "seeders3": "Nach einem rasanten Wachstum: Verkauf der Seeders GmbH an die Seeders Group.",
-      "seeders4": "- Aufgabenfelder: Investor, Strategisches Management, Mitarbeitergewinnung",
-      "kasperlino1": "Kasperlino GmbH - Brettspielguru",
-      "kasperlino2": "Gründung der Kasperlino GmbH zum Vertrieb von Brettspielen und Brettspielzubehör.",
-      "kasperlino3": "- Aufgabenfelder: Investor, Produktentwicklung, Amazon-Management, Webentwicklung (Javascript, React, MUI, Firebase)",
-      "kadelo1": "Kadelo GmbH",
-      "kadelo2": "Gründung und Geschäftsführung der Kadelo GmbH mit acht Mitarbeitern als Online-Marketing Agentur mit den Schwerpunkten Wordpress, SEO & Amazon SEO. Bereichsverkauf an die Seeders Group.",
-      "kadelo3": "- Aufgabenfelder: Geschäftsführung, Projektmanagement, Kundenbetreuung, Mitarbeiterführung, Webentwicklung (Schwerpunkt: Wordpress), SEO-Optimierung, Google Ads Optimierung, Amazon SEO & Ads",
-      "adesso1": "Werkstudent - Softwareentwicklung",
-      "adesso2": "Webentwicklung mit HTML, CSS, JavaScript, JQuery, FirstSpirit & Java",
-      "seedersdate": "November 2020 - Dezember 2021",
-      "kasperlinodate": "Oktober 2020 - heute",
-      "kadelodate": "Februar 2015 - heute",
-      "webprojaggtdate": "Januar 2023 - heute",
-      "webprojaggt1": "Freelancer - WEBPROJAGGT GmbH & Co. KG ",
-      "webprojaggt2": "Neuentwicklung einer Versicherungsplattform",
-      "webprojaggt3": "- Beratung bei der Auswahl der Technologien",
-      "webprojaggt4": "- Frontend-Architektur und Entwicklung der Software mit Next.js, Tailwind und i18n",
-      "webprojaggt5": "- Initiales Aufsetzen der Codebase"
-    
-
+    "privacy": {
+      "title": "Datenschutzerklärung | k-and-k.codes",
+      "description": "Wie personenbezogene Daten beim Besuch von k-and-k.codes und bei einer Kontaktaufnahme verarbeitet werden."
     },
-    "universityerik": {
-      "iu": "IU Internationale Hochschule - Master of Science - Wirtschaftsinformatik",
-      "iuthesis": "Abschlussarbeit: Potenziale und Grenzen generativer KI als Decision-Support-System in der Immobilienbewertung: Eine vergleichende Mixed-Methods-Analyse auf Basis realer Immobilienexposés",
-      "semester": "Auslandssemster",
-      "uniessen": "Universität Duisburg-Essen - Bachelor of Science - Wirtschaftsinformatik",
-      "thesis": "Abschlussarbeit: End-User Programming für Wissensarbeiter"
-    },
-    "workheike": {
-      "kasperlino1": "Brettspielguru",
-      "kasperlino2": "Geschäftführung der Kasperlino GmbH zum Vertrieb von Brettspielen und Brettspielzubehör.",
-      "kasperlino3": "- Aufgabenfelder: Geschäftsführung, Produktentwicklung, Amazon-Management",
-      "kadelo1": "Kadelo",
-      "kadelo2": "Geschäftsführung der Kadelo GmbH mit acht Mitarbeitern als Online-Marketing Agentur mit den Schwerpunkten SEO & Amazon SEO.",
-      "kadelo3": "Bereichsverkauf an die Seeders Group.",
-      "kadelo4": "- Aufgabenfelder: Webentwicklung mit Wordpress, Javascript, CSS und HTML, SEO, Amazon SEO & Ads. Seit 2022 Freelancer im Bereich Webentwicklung mit Schwerpunkt Frontend",
-      "sramek1": "Werkstudent - Architektur",
-      "sramek2": "Entwurfs- und Ausführungsplanung von verschiedenen Projekten mit Spirit und SketchUp",
-      "kasperlinodate": "Oktober 2020 - heute",
-      "kadelodate": "September 2016 - heute"
-    },
-    "universityheike": {
-      "mimo1": "Webentwicklung mit HTML, CSS, JavaScript, React, Node.js",
-      "semester": "Design und angewandte Kunst",
-      "tudortmund1": "Technische Universität Dortmund - Master of Science - Architektur",
-      "tudortmund2": "Abschlussarbeit: Vakuumdämmung in der Baupraxis",
-      "uniwuppertal1": "Bergische Universität Wuppertal - Bachelor of Science - Architektur",
-      "uniwuppertal2": "Abschlussprojekt: Bauen im Bestand - Ehrenfeld Hybrids",
-      "mimodate": "März 2022 - Oktober 2022"
-    },
-
-    "projects": {
-      "brettspielguru1":"Brettspielguru",
-      "brettspielguru2":"Die Webseite von Brettspielguru sollte einerseits die Produkte präsentieren, andererseits eine Möglichkeit bereitstellen, um die passgenauen Kartenhüllen für verschiedene Brettspiele zu finden. Außerdem können im Backend eigenständig neue Spiele mit den passenden Kartenhüllen eingepflegt werden.",
-      "manga-anime1":"Manga-Anime",
-      "manga-anime2":"Ein Manga- und Animeportal, welches die derzeit beliebtesten Mangas und Animes inkl. Beschreibung und Bewertungen von Myanimelist anzeigt. Zusätzlich können eigene Sammlungen erstellt und verwaltet werden.",
-      "javlis1":"Javlis",
-      "javlis2":"Relaunch und Weiterentwicklung von Javlis.com, ein Portal für Decentralized Finance",
-      "boardgames1":"Boardgames",
-      "boardgames2":"Projekt für die Übersicht über die derzeit gefragtesten Brettspiele am Markt. Weiterhin wurde eine Brettspielsuche implementiert, die eine genaue Brettspielbeschreibung inkl. Spieleranzahl, Altersempfehlung und Spielzeit ausgibt."
-    },
-    "contact": {
-      "headline":"Kontakt",
-      "contactText":"Wir freuen uns auf spannende Projekte. Wenn du React-Entwickler für dein Projekt suchst, kannst du dich gerne jederzeit bei uns melden."
-    },
-
-    "footer": {
-      "imprint":"Impressum",
-      "privacy":"Datenschutz",
-      "germany": "Deutschland"
+    "notFound": {
+      "title": "Seite nicht gefunden | k-and-k.codes",
+      "description": "Die angeforderte Seite existiert nicht."
     }
-
-    
+  },
+  "a11y": {
+    "skip": "Zum Inhalt springen",
+    "home": "k-and-k.codes – Startseite",
+    "primaryNav": "Hauptnavigation",
+    "openMenu": "Menü öffnen",
+    "closeMenu": "Menü schließen",
+    "language": "Sprache",
+    "switchToLight": "Zum hellen Modus wechseln",
+    "switchToDark": "Zum dunklen Modus wechseln",
+    "newTab": "öffnet in neuem Tab",
+    "footerNav": "Fußbereich",
+    "portrait": "Porträt von {{name}}",
+    "workflow": "Entwicklungsablauf von der Idee bis zum Betrieb, mit KI-Unterstützung und menschlicher Prüfung"
+  },
+  "nav": {
+    "people": "Heike & Erik",
+    "services": "Leistungen",
+    "work": "Projekte",
+    "process": "Vorgehen",
+    "expertise": "Expertise",
+    "contact": "Kontakt",
+    "cta": "Projekt besprechen"
+  },
+  "language": {
+    "de": "Deutsch",
+    "en": "English"
+  },
+  "hero": {
+    "eyebrow": "Softwareentwicklung · direkt und persönlich",
+    "title": "Wir entwickeln Software,",
+    "titleLead": "die",
+    "titleAccent": "funktioniert.",
+    "ai": "KI-gestützt, wo es sinnvoll ist.",
+    "sub": "Heike und Erik arbeiten unabhängig an modernen Webanwendungen und digitalen Produkten. Direkt, pragmatisch und mit technischer Verantwortung.",
+    "ctaWork": "Projekte ansehen",
+    "ctaPeople": "Heike & Erik kennenlernen",
+    "ctaContact": "Projekt besprechen",
+    "proof": [
+      "Zwei Entwickler.",
+      "Direkte Zusammenarbeit.",
+      "Moderne Softwareentwicklung."
+    ],
+    "mapTitle": "k&k / delivery.system",
+    "mapStatus": "live",
+    "mapSteps": [
+      "Idee",
+      "Architektur",
+      "Entwicklung",
+      "KI",
+      "Review",
+      "Test",
+      "Betrieb"
+    ],
+    "mapHuman": "menschliche Prüfung"
+  },
+  "people": {
+    "eyebrow": "Die Menschen hinter k-and-k.codes",
+    "title": "Zwei Profile. Unterschiedliche Schwerpunkte.",
+    "body": "Heike und Erik arbeiten unabhängig als selbstständige Softwareentwickler. Wählen Sie das Profil, das fachlich zu Ihrem Projekt passt, und sprechen Sie die passende Person direkt an.",
+    "availability": "Direkt für Projektanfragen verfügbar.",
+    "background": "Hintergrund",
+    "viewProfile": "Profil ansehen",
+    "workWith": "{{name}} anfragen",
+    "mailSubject": "Projektanfrage für {{name}} über k-and-k.codes",
+    "profilesOf": "{{name}} im Web",
+    "instagram": "Instagram · @fromplanstopixels",
+    "cv": "Lebenslauf herunterladen",
+    "cvLink": "Lebenslauf (PDF)"
+  },
+  "services": {
+    "eyebrow": "Wofür Sie uns beauftragen können",
+    "title": "Software-Expertise für Ihr Produkt.",
+    "body": "Von wichtigen Produktentscheidungen bis zur langfristigen Weiterentwicklung: Sie arbeiten direkt mit den Menschen, die Ihre Software konzipieren und umsetzen.",
+    "items": [
+      {
+        "title": "Produkt- und Webentwicklung",
+        "text": "Wir entwickeln wartbare Webanwendungen und digitale Produkte – von der klaren Oberfläche bis zur stabilen technischen Umsetzung."
+      },
+      {
+        "title": "Architektur und Modernisierung",
+        "text": "Wir schaffen klare Strukturen und entwickeln bestehende Software weiter, ohne wertvolles Wissen über Bord zu werfen."
+      },
+      {
+        "title": "KI-Integration und Qualität",
+        "text": "Wir verbinden sinnvolle KI-Unterstützung mit Testing, Code-Reviews und klarer menschlicher Verantwortung."
+      }
+    ]
+  },
+  "collaboration": {
+    "eyebrow": "Formen der Zusammenarbeit",
+    "title": "Arbeiten Sie mit dem Profil, das zu Ihrem Produkt passt.",
+    "statement": "Beauftragen Sie Heike oder Erik direkt – passend zu Aufgabe und Projekt.",
+    "items": [
+      {
+        "title": "Direkte Beauftragung",
+        "text": "Sie beauftragen Heike oder Erik direkt – für einen klar umrissenen Beitrag zu Ihrem Projekt."
+      },
+      {
+        "title": "Mit Ihrem Team",
+        "text": "Die ausgewählte Person verstärkt Ihr bestehendes Produkt- oder Entwicklungsteam."
+      },
+      {
+        "title": "Definiertes Projekt oder langfristige Zusammenarbeit",
+        "text": "Heike oder Erik übernimmt ein klar abgegrenztes Entwicklungspaket oder begleitet Ihr Produkt dauerhaft."
+      }
+    ]
+  },
+  "work": {
+    "eyebrow": "Ausgewählte Projekte",
+    "title": "Echte Arbeit, echte Belege.",
+    "body": "Ausgewählte Projekte, veröffentlicht mit Freigabe unserer Kunden.",
+    "labels": {
+      "challenge": "Herausforderung",
+      "situation": "Ausgangssituation",
+      "role": "Unsere Rolle",
+      "contributors": "Beitrag",
+      "solution": "Lösung",
+      "technology": "Technologie",
+      "result": "Ergebnis",
+      "impact": "Wirkung"
+    }
+  },
+  "testimonials": {
+    "eyebrow": "Kundenstimmen",
+    "title": "Vertrauen durch direkte Zusammenarbeit.",
+    "body": "Empfehlungen von Kunden, die direkt mit uns gearbeitet haben. Die Originale finden Sie auf LinkedIn.",
+    "translated": "",
+    "original": "Original auf LinkedIn",
+    "about": "Empfehlung für {{name}}"
+  },
+  "process": {
+    "eyebrow": "Vorgehen und KI",
+    "title": "So entwickeln wir verlässliche Software.",
+    "statement": "KI kann Entwicklung beschleunigen. Verlässlich wird sie durch Erfahrung, sorgfältige Prüfung und klare Verantwortung.",
+    "body": "Unser Prozess reicht vom ersten Gespräch bis zum laufenden Betrieb. KI unterstützt uns dort, wo sie sinnvoll hilft. Entscheidungen und Verantwortung bleiben bei uns.",
+    "tagAi": "KI-gestützt",
+    "tagHuman": "Menschlich verantwortet",
+    "steps": [
+      {
+        "title": "Verstehen",
+        "text": "Anforderungen, Nutzer und Geschäftsziele",
+        "tag": ""
+      },
+      {
+        "title": "Architektur",
+        "text": "Systeme, Schnittstellen und Daten",
+        "tag": "human"
+      },
+      {
+        "title": "Entwickeln",
+        "text": "Moderne Entwicklung mit KI-gestützten Werkzeugen",
+        "tag": "ai"
+      },
+      {
+        "title": "Prüfen und verbessern",
+        "text": "Code-Review, Tests, Auslieferung und kontinuierliche Weiterentwicklung",
+        "tag": ""
+      }
+    ],
+    "helpsTag": "Beschleunigen",
+    "helpsTitle": "Wo KI hilft",
+    "helps": [
+      "Prototypen",
+      "Bestehenden Code verstehen",
+      "Standardcode",
+      "Fehlersuche",
+      "Refactoring",
+      "Code-Review",
+      "Testing",
+      "Dokumentation"
+    ],
+    "humanTag": "Verantwortung",
+    "humanTitle": "Was bei uns bleibt",
+    "human": [
+      "Architektur",
+      "Produktentscheidungen",
+      "Sicherheit",
+      "Geschäftslogik",
+      "Finale Prüfung und Freigabe",
+      "Verantwortung"
+    ]
+  },
+  "expertise": {
+    "eyebrow": "Expertise",
+    "title": "Ein klarer Fokus, sich ergänzende Stärken.",
+    "groups": [
+      {
+        "title": "Webentwicklung",
+        "items": [
+          "React",
+          "TypeScript",
+          "Moderne Webanwendungen",
+          "Frontend-Architektur"
+        ]
+      },
+      {
+        "title": "Produkt und Architektur",
+        "items": [
+          "Anwendungsarchitektur",
+          "Produktdenken",
+          "Geschäftsziele",
+          "Nachhaltige Lösungen",
+          "Technische Strategie"
+        ]
+      },
+      {
+        "title": "Qualität",
+        "items": [
+          "Testing",
+          "Code-Reviews",
+          "Softwarequalität",
+          "Strukturierte Umsetzung"
+        ]
+      },
+      {
+        "title": "KI-gestützte Entwicklung",
+        "items": [
+          "KI im Entwicklungsalltag",
+          "KI-Integration",
+          "Menschliche Prüfung",
+          "Technische Verantwortung"
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Kontakt aufnehmen",
+    "title": "Sie planen etwas",
+    "titleAccent": "Komplexes?",
+    "sub": "Machen wir daraus Software, die funktioniert.",
+    "direct": "Sprechen Sie direkt mit Heike oder Erik – passend zu Ihrem Projekt und dem benötigten Schwerpunkt.",
+    "topics": [
+      "Webanwendungen",
+      "Modernisierung bestehender Software",
+      "KI-gestützte Entwicklung"
+    ],
+    "cta": "Projekt besprechen",
+    "mailSubject": "Projektanfrage über k-and-k.codes"
+  },
+  "footer": {
+    "tagline": "Moderne Software, persönlich entwickelt.",
+    "names": "Heike Kasper / Erik Kasper",
+    "explore": "Entdecken",
+    "people": "Personen",
+    "contact": "Kontakt",
+    "imprint": "Impressum",
+    "privacy": "Datenschutz",
+    "linkedin": "LinkedIn {{name}}",
+    "github": "GitHub {{name}}",
+    "cv": "Lebenslauf {{name}}",
+    "copyright": "© {{year}} k-and-k.codes"
+  },
+  "profile": {
+    "back": "Zurück zu den Profilen",
+    "status": "Selbstständig · direkt für Projektanfragen verfügbar",
+    "contact": "Projekt besprechen",
+    "mailSubject": "Projektanfrage für {{name}} über k-and-k.codes",
+    "focus": "Schwerpunkte",
+    "approach": "So arbeitet {{name}}",
+    "experience": "Berufserfahrung",
+    "education": "Ausbildung",
+    "technologies": "Technologien",
+    "links": "Profile",
+    "collaboration": "Zusammenarbeit",
+    "collaborationItems": [
+      {
+        "title": "Einzeln",
+        "text": "Sie beauftragen {{name}} direkt für einen klar umrissenen Beitrag zu Ihrem Projekt."
+      },
+      {
+        "title": "Mit Ihrem Team",
+        "text": "{{name}} verstärkt Ihr bestehendes Produkt- oder Entwicklungsteam."
+      }
+    ],
+    "otherProfile": "{{name}} kennenlernen"
+  },
+  "legal": {
+    "eyebrow": "Rechtliches / k-and-k.codes",
+    "translationNote": "",
+    "germanVersion": ""
+  },
+  "notFound": {
+    "eyebrow": "404",
+    "title": "Seite nicht gefunden.",
+    "body": "Die gesuchte Seite existiert nicht oder wurde verschoben.",
+    "cta": "Zur Startseite"
   }
+}
