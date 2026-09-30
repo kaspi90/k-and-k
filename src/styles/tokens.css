@@ -1,0 +1,146 @@
+/*
+ * Semantische Design-Tokens für k-and-k.codes.
+ * Dark Mode ist die primäre Darstellung; Light Mode nutzt dieselben
+ * Komponenten mit eigener, warmer Off-White-Palette (keine Farbumkehr).
+ * Das Inline-Skript in public/index.html setzt data-theme vor dem ersten Rendern;
+ * die @font-face-Regeln für die selbst gehostete Inter stehen ebenfalls dort.
+ */
+
+:root {
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-mono: ui-monospace, "SF Mono", "Cascadia Code", "JetBrains Mono", Menlo, Consolas, monospace;
+  --max: 1240px;
+  --header-h: 76px;
+  --radius: 0px;
+
+  /* Markenfarben (fix) */
+  --brand-blue: #258fe4;
+  --brand-violet: #8736d1;
+  --brand-cyan: #75d6ec;
+  --gradient-brand: linear-gradient(120deg, var(--brand-blue), var(--brand-violet));
+}
+
+/* ---------- Dark Mode (primär) ---------- */
+:root,
+[data-theme="dark"] {
+  color-scheme: dark;
+  --color-bg: #0c0d10;
+  --color-bg-elevated: #101116;
+  --color-bg-card: #13141a;
+  --color-bg-inset: #0f1014;
+  --color-bg-header: rgba(12, 13, 16, 0.84);
+  --color-bg-menu: #0f1014;
+
+  --color-text: #f4f1e9;
+  --color-text-secondary: #b8b8c1;
+  --color-text-muted: #9a9aa4;
+
+  --color-border: rgba(244, 241, 233, 0.12);
+  --color-border-strong: rgba(244, 241, 233, 0.24);
+  --color-grid: rgba(244, 241, 233, 0.055);
+  --color-grid-strong: rgba(244, 241, 233, 0.09);
+
+  --color-accent: #8736d1;
+  --color-accent-2: #258fe4;
+  --color-accent-text: #c29cf2;
+  --color-accent-2-text: #86b9f4;
+  --color-accent-soft: rgba(135, 54, 209, 0.14);
+
+  --glow-violet: rgba(135, 54, 209, 0.17);
+  --glow-blue: rgba(37, 143, 228, 0.15);
+  --glow-page: rgba(139, 103, 255, 0.09);
+  --glow-strength: 1;
+
+  --button-bg: #f4f1e9;
+  --button-text: #0c0d10;
+  --button-border: #f4f1e9;
+  --button-hover-shadow: 0 12px 32px rgba(244, 241, 233, 0.12);
+  --button-secondary-bg: transparent;
+  --button-secondary-text: #f4f1e9;
+  --button-secondary-border: rgba(244, 241, 233, 0.3);
+  --button-secondary-hover-bg: rgba(244, 241, 233, 0.06);
+
+  --link: #f4f1e9;
+  --link-hover: #c29cf2;
+  --focus-ring: #c29cf2;
+  --focus-ring-offset: #0c0d10;
+
+  --disabled-bg: rgba(244, 241, 233, 0.08);
+  --disabled-text: #7a7a84;
+  --success: #5fd49a;
+  --success-bg: rgba(95, 212, 154, 0.12);
+  --warning: #f0c05a;
+  --warning-bg: rgba(240, 192, 90, 0.12);
+  --error: #ff7a85;
+  --error-bg: rgba(255, 122, 133, 0.12);
+
+  --shadow-card: 0 40px 100px rgba(0, 0, 0, 0.4);
+  --shadow-node: 0 16px 30px rgba(0, 0, 0, 0.24);
+
+  --portrait-bg: #121319;
+  --portrait-glow-heike: rgba(135, 54, 209, 0.3);
+  --portrait-glow-erik: rgba(37, 143, 228, 0.26);
+  --portrait-fade: rgba(19, 20, 26, 0.88);
+}
+
+/* ---------- Light Mode ---------- */
+[data-theme="light"] {
+  color-scheme: light;
+  --color-bg: #f5f3ee;
+  --color-bg-elevated: #eeebf1;
+  --color-bg-card: #ebe8f1;
+  --color-bg-inset: #f1eff4;
+  --color-bg-header: rgba(245, 243, 238, 0.86);
+  --color-bg-menu: #f5f3ee;
+
+  --color-text: #17181c;
+  --color-text-secondary: #43444e;
+  --color-text-muted: #5b5b67;
+
+  --color-border: rgba(23, 24, 28, 0.13);
+  --color-border-strong: rgba(23, 24, 28, 0.26);
+  --color-grid: rgba(62, 48, 120, 0.075);
+  --color-grid-strong: rgba(62, 48, 120, 0.12);
+
+  --color-accent: #6d28c9;
+  --color-accent-2: #1d64c7;
+  --color-accent-text: #6a26c2;
+  --color-accent-2-text: #1a5bb8;
+  --color-accent-soft: rgba(109, 40, 201, 0.09);
+
+  --glow-violet: rgba(135, 54, 209, 0.08);
+  --glow-blue: rgba(37, 143, 228, 0.07);
+  --glow-page: rgba(139, 103, 255, 0.05);
+  --glow-strength: 0.5;
+
+  --button-bg: #17181c;
+  --button-text: #f5f3ee;
+  --button-border: #17181c;
+  --button-hover-shadow: 0 12px 28px rgba(23, 24, 28, 0.16);
+  --button-secondary-bg: transparent;
+  --button-secondary-text: #17181c;
+  --button-secondary-border: rgba(23, 24, 28, 0.3);
+  --button-secondary-hover-bg: rgba(23, 24, 28, 0.05);
+
+  --link: #17181c;
+  --link-hover: #6a26c2;
+  --focus-ring: #6a26c2;
+  --focus-ring-offset: #f5f3ee;
+
+  --disabled-bg: rgba(23, 24, 28, 0.06);
+  --disabled-text: #8a8a94;
+  --success: #1c7a4d;
+  --success-bg: rgba(28, 122, 77, 0.1);
+  --warning: #8a5a00;
+  --warning-bg: rgba(138, 90, 0, 0.1);
+  --error: #b3261e;
+  --error-bg: rgba(179, 38, 30, 0.08);
+
+  --shadow-card: 0 30px 70px rgba(40, 32, 80, 0.1);
+  --shadow-node: 0 10px 24px rgba(40, 32, 80, 0.08);
+
+  --portrait-bg: #e4e1ec;
+  --portrait-glow-heike: rgba(135, 54, 209, 0.16);
+  --portrait-glow-erik: rgba(37, 143, 228, 0.15);
+  --portrait-fade: rgba(235, 232, 241, 0.9);
+}

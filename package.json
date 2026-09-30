@@ -32,8 +32,13 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && node scripts/postbuild.js",
+    "preview": "node scripts/serve.js",
     "test": "react-scripts test",
+    "test:ci": "CI=true react-scripts test --watchAll=false",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint --max-warnings=0 \"src/**/*.{ts,tsx}\"",
+    "generate:cvs": "node scripts/run-cv-generator.js",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {

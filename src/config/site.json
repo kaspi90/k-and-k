@@ -1,0 +1,66 @@
+{
+  "siteUrl": "https://www.k-and-k.codes",
+  "brandName": "k-and-k.codes",
+  "email": "kontakt@k-and-k.codes",
+  "features": {
+    "profilePages": true
+  },
+  "people": {
+    "heike": {
+      "name": "Heike Kasper",
+      "givenName": "Heike",
+      "initials": "HK",
+      "email": "heike@k-and-k.codes",
+      "linkedin": "https://www.linkedin.com/in/heike-kasper-aa8162a9",
+      "github": "https://github.com/heikchen",
+      "instagram": "https://www.instagram.com/fromplanstopixels/",
+      "cv": {
+        "de": "/cv/heike-kasper-cv-de.pdf",
+        "en": "/cv/heike-kasper-cv-en.pdf"
+      },
+      "schema": {
+        "jobTitle": "Software Developer",
+        "knowsAbout": [
+          "React",
+          "TypeScript",
+          "Web applications",
+          "AI-assisted software development",
+          "Software testing",
+          "Software quality",
+          "Architecture",
+          "Energy efficiency of buildings"
+        ],
+        "alumniOf": [
+          "Technische Universität Dortmund",
+          "Bergische Universität Wuppertal"
+        ]
+      }
+    },
+    "erik": {
+      "name": "Erik Kasper",
+      "givenName": "Erik",
+      "initials": "EK",
+      "email": "erik@k-and-k.codes",
+      "linkedin": "https://www.linkedin.com/in/erik-k-210a54a6",
+      "cv": {
+        "de": "/cv/erik-kasper-cv-de.pdf",
+        "en": "/cv/erik-kasper-cv-en.pdf"
+      },
+      "schema": {
+        "jobTitle": "Software Developer",
+        "knowsAbout": [
+          "React",
+          "TypeScript",
+          "Frontend architecture",
+          "Product architecture",
+          "Project management",
+          "Business informatics"
+        ],
+        "alumniOf": [
+          "IU Internationale Hochschule",
+          "Universität Duisburg-Essen"
+        ]
+      }
+    }
+  }
+}

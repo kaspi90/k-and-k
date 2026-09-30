@@ -1,120 +1,315 @@
 {
-   
-  "calltoaction": {
-    "headline": "React freelancer for your project",
-    "description": "As freelance web developers we support agencies and companies in the implementation of unique projects. With us you can look forward to a fast implementation, modern tools and transparency in the development.",
-    "bulletpoint1": "React frontend web development (single page applications, user interfaces, configurators, etc.)",
-    "bulletpoint2": "Support for ongoing projects also for regular support or minor adjustments",
-    "bulletpoint3": "Uncomplicated communication via telephone, zoom video call, WhatsApp or e-mail",
-    "call":"Non-binding initial consultation",
-    "call2":"You are looking for support for your project? Then just call us or send us an e-mail.",
-    "button":"Request availability now"
-
-  },
-  
-  "title": "Welcome to react using react-i18next",
-    "navigation": {
-      "part1": "About Us",
-      "part2": "Projects",
-      "part3": "Contact",
-      "part4": "References"
-
+  "meta": {
+    "home": {
+      "title": "k-and-k.codes — Independent Software Developers",
+      "description": "Heike and Erik Kasper work independently as software developers for modern web applications, software modernization and AI-assisted engineering."
     },
-    "description": {
-      "part1": "To get started, edit <1>src/App.js</1> and save to reload.",
-      "part2": "Switch language between english and german using buttons above."
+    "heike": {
+      "title": "Heike Kasper — Independent Software Developer | k-and-k.codes",
+      "description": "Heike Kasper is an independent software developer for React, TypeScript and AI-assisted development – with a background in architecture and energy efficiency."
     },
-    "aboutme": {
-      "headline": "About me",
-      "e1": "Hi, I'm Erik",
-      "e2": "I am a business information scientist and have over ten years of experience in IT. I work as a software engineer with a focus on React & TypeScript. Additionally, I have a lot of expertise in business management, growth and project management. In all projects, I make sure to always keep the business goal in mind and strive for implementation according to it.",
-      "e3": "I am a fan of sustainable and pragmatic solutions and place great value on good communication between all stakeholders.",
-      "e4": "Personal interests outside of work: cycling, skiing & board games",
-      "title": "Work",
-      "titleStudy": "Studies"
-
+    "erik": {
+      "title": "Erik Kasper — Independent Software Developer | k-and-k.codes",
+      "description": "Erik Kasper is an independent software developer with more than ten years in IT and web development — React, TypeScript and product & frontend architecture."
     },
-    "aboutmeheike": {
-      "headline": "About me",
-      "h1": "Hello, I'm Heike,",
-      "h2": "As a passionate web developer with a focus on the frontend, I have a very strong knowledge of HTML, CSS, and TypeScript, as well as expertise with modern frontend frameworks such as React. I have experience working with cross-functional teams, including designers and backend developers, to ensure seamless integration of frontend and backend components. I also strive to keep up to date with the latest technologies and best practices, and to constantly improve my skills through continuous learning and experimentation.",
-      "h3": "For me, coding combines the challenge of solving problems on the one hand and creativity in design on the other.",
-      "h4": "Away from work, I like: board games, skiing, hiking, reading manga, and drawing."
+    "imprint": {
+      "title": "Legal notice | k-and-k.codes",
+      "description": "Legal notice for k-and-k.codes, the website of independent software developers Heike Kasper and Erik Kasper."
     },
-    "workerik": {
-      "seeders1": "Seeders GmbH",
-      "seeders2": "Foundation of Seeders GmbH as an international SEO agency in joint venture with Seeders Group.",
-      "seeders3": "After rapid growth: Sale of Seeders GmbH to the Seeders Group.",
-      "seeders4": "- Areas of responsibility: Investor, strategic management, employee recruitment",
-      "kasperlino1": "Kasperlino GmbH - Brettspielguru",
-      "kasperlino2": "Foundation of Kasperlino GmbH for the distribution of board games and board game accessories.",
-      "kasperlino3": "- Areas of responsibility: Investor, product development, Amazon management, web development (Javascript, React, MUI, Firebase).",
-      "kadelo1": "Kadelo GmbH",
-      "kadelo2": "Foundation and management of Kadelo GmbH with eight employees as an online marketing agency with a focus on Wordpress, SEO & Amazon SEO. Divisional sale to the Seeders Group.",
-      "kadelo3": "- Areas of responsibility: Business management, project management, customer support, staff management, web development (focus: Wordpress), SEO optimization, Google Ads optimization, Amazon SEO & Ads.",
-      "adesso1": "Working student - Software development",
-      "adesso2": "Web development with HTML, CSS, JavaScript, JQuery, FirstSpirit & Java",
-      "seedersdate": "November 2020 - December 2021",
-      "kasperlinodate": "October 2020 - today",
-      "kadelodate": "February 2015 - today",
-      "webprojaggtdate": "January 2023 - today",
-      "webprojaggt1": "Freelancer - WEBPROJAGGT GmbH & Co. KG ",
-      "webprojaggt2": "Development of an insurance platform",
-      "webprojaggt3": "- Consulting in the selection of technologies",
-      "webprojaggt4": "- Frontend architecture and development of the software with Next.js, Tailwind and i18n",
-      "webprojaggt5": "- Initial setup of the codebase"
-
+    "privacy": {
+      "title": "Privacy policy | k-and-k.codes",
+      "description": "How personal data is processed when you visit k-and-k.codes or contact us."
     },
-    "universityerik": {
-      "iu": "IU International University of Applied Sciences - Master of Science - Business Informatics",
-      "iuthesis": "Master's thesis: Potentials and limitations of generative AI as a decision-support system in real estate valuation: A comparative mixed-methods analysis based on real-world property listings",
-      "semester": "Semester abroad",
-      "uniessen": "University of Duisburg-Essen - Bachelor of Science - Business Informatics",
-      "thesis": "Thesis: End-User Programming for Knowledge Workers"
-    },
-    "workheike": {
-      "kasperlino1": "Brettspielguru",
-      "kasperlino2": "Business management of Kasperlino GmbH for the distribution of board games and board game accessories.",
-      "kasperlino3": "- Areas of responsibility: Executive management, product development, Amazon management",
-      "kadelo1": "Kadelo",
-      "kadelo2": "Management of Kadelo GmbH with eight employees as an online marketing agency with a focus on SEO & Amazon SEO.",
-      "kadelo3": "Divisional sale to the Seeders Group.",
-      "kadelo4": "- Areas of responsibility: Web development with Wordpress, Javascript, CSS and HTML, SEO, Amazon SEO & Ads. Since 2022 Freelancer in the field of web development with focus on frontend.",
-      "sramek1": "Working student - Architecture",
-      "sramek2": "Design and execution planning of various projects with Spirit and SketchUp",
-      "kasperlinodate": "October 2020 - today",
-      "kadelodate": "September 2016 - today"
-  
-    
-    },
-    "universityheike": {
-      "mimo1": "Web development with HTML, CSS, JavaScript, React, Node.js",
-      "semester": "Design and applied arts",
-      "tudortmund1": "Dortmund University of Technology - Master of Science - Architecture",
-      "tudortmund2": "Thesis: Vacuum insulation in building practice",
-      "uniwuppertal1": "Bergische Universität Wuppertal - Bachelor of Science - Architecture",
-      "uniwuppertal2": "Final Project: Building in Existing Contexts - Ehrenfeld Hybrids",
-      "mimodate": "March 2022 - October 2022"
-    },
-
-    "projects": {
-      "brettspielguru1":"Brettspielguru",
-      "brettspielguru2":"The website of Brettspielguru should present the products on the one hand, on the other hand provide a possibility to find the exact fitting card sleeves for different board games. In addition, new games with the matching card sleeves can be added independently in the backend.",
-      "manga-anime1":"Manga-Anime",
-      "manga-anime2":"A manga and anime portal that displays the currently most popular manga and anime including descriptions and ratings from Myanimelist. Additionally, own collections can be created and managed.",
-      "javlis1":"Javlis",
-      "javlis2":"Relaunch and further development of Javlis.com, a portal for Decentralized Finance",
-      "boardgames1":"Boardgames",
-      "boardgames2":"Project for the overview of the currently most sought-after board games on the market. Furthermore, a board game search was implemented, which outputs an exact board game description incl. number of players, age recommendation and playing time."
-    },
-    "contact": {
-      "headline":"Contact",
-      "contactText":"We are looking forward to exciting projects. If you are looking for React developers for your project, feel free to contact us anytime."
-    },
-    "footer": {
-      "imprint":"Imprint",
-      "privacy":"Privacy Notice",
-      "germany": "Germany"
-
+    "notFound": {
+      "title": "Page not found | k-and-k.codes",
+      "description": "The requested page does not exist."
     }
+  },
+  "a11y": {
+    "skip": "Skip to content",
+    "home": "k-and-k.codes – home",
+    "primaryNav": "Main navigation",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "language": "Language",
+    "switchToLight": "Switch to light mode",
+    "switchToDark": "Switch to dark mode",
+    "newTab": "opens in a new tab",
+    "footerNav": "Footer",
+    "portrait": "Portrait of {{name}}",
+    "workflow": "Delivery workflow from idea to production, with AI assistance and human review"
+  },
+  "nav": {
+    "people": "Heike & Erik",
+    "services": "Services",
+    "work": "Work",
+    "process": "Process",
+    "expertise": "Expertise",
+    "contact": "Contact",
+    "cta": "Discuss a project"
+  },
+  "language": {
+    "de": "Deutsch",
+    "en": "English"
+  },
+  "hero": {
+    "eyebrow": "Software development · direct and personal",
+    "title": "We build software",
+    "titleLead": "that",
+    "titleAccent": "works.",
+    "ai": "AI-assisted where it makes sense.",
+    "sub": "Heike and Erik work independently on modern web applications and digital products. Direct, pragmatic and with real technical ownership.",
+    "ctaWork": "View our work",
+    "ctaPeople": "Meet Heike & Erik",
+    "ctaContact": "Discuss a project",
+    "proof": [
+      "Two developers.",
+      "Direct collaboration.",
+      "Modern engineering."
+    ],
+    "mapTitle": "k&k / delivery.system",
+    "mapStatus": "live",
+    "mapSteps": [
+      "Idea",
+      "Architecture",
+      "Build",
+      "AI",
+      "Review",
+      "Test",
+      "Production"
+    ],
+    "mapHuman": "human review"
+  },
+  "people": {
+    "eyebrow": "The people behind k-and-k.codes",
+    "title": "Two profiles. Different strengths.",
+    "body": "Heike and Erik work independently as software developers. Choose the profile that best fits your project and contact the right person directly.",
+    "availability": "Available for project inquiries.",
+    "background": "Background",
+    "viewProfile": "View profile",
+    "workWith": "Work with {{name}}",
+    "mailSubject": "Project inquiry for {{name}} via k-and-k.codes",
+    "profilesOf": "{{name}} on the web",
+    "instagram": "Instagram · @fromplanstopixels",
+    "cv": "Download CV",
+    "cvLink": "CV (PDF)"
+  },
+  "services": {
+    "eyebrow": "What you can hire us for",
+    "title": "Software expertise for your product.",
+    "body": "From key product decisions to long-term development: you work directly with the people who design and build your software.",
+    "items": [
+      {
+        "title": "Product & web development",
+        "text": "We build maintainable web applications and digital products – from focused interfaces to stable technical delivery."
+      },
+      {
+        "title": "Architecture & modernization",
+        "text": "We create clear structures and evolve existing software without throwing away valuable knowledge."
+      },
+      {
+        "title": "AI integration & quality",
+        "text": "We combine useful AI support with testing, code reviews and clear human accountability."
+      }
+    ]
+  },
+  "collaboration": {
+    "eyebrow": "Ways to work together",
+    "title": "Work with the profile that fits your product.",
+    "statement": "Engage Heike or Erik directly – based on the task and your project.",
+    "items": [
+      {
+        "title": "Direct engagement",
+        "text": "You work directly with Heike or Erik on a clearly defined part of your project."
+      },
+      {
+        "title": "Alongside your team",
+        "text": "The selected developer joins your existing product or development team."
+      },
+      {
+        "title": "Defined project or long-term partnership",
+        "text": "Heike or Erik takes on a clearly scoped development package or supports your product over the long term."
+      }
+    ]
+  },
+  "work": {
+    "eyebrow": "Selected work",
+    "title": "Real work, real evidence.",
+    "body": "Selected projects, published with the approval of our clients.",
+    "labels": {
+      "challenge": "Challenge",
+      "situation": "Initial situation",
+      "role": "Our role",
+      "contributors": "Contribution",
+      "solution": "Solution",
+      "technology": "Technology",
+      "result": "Result",
+      "impact": "Impact"
+    }
+  },
+  "testimonials": {
+    "eyebrow": "Client recommendations",
+    "title": "Trusted through direct collaboration.",
+    "body": "Recommendations from clients who worked with us directly. They were written in German – translated here, with the originals on LinkedIn.",
+    "translated": "Translated from German",
+    "original": "Original on LinkedIn",
+    "about": "Recommendation for {{name}}"
+  },
+  "process": {
+    "eyebrow": "Process & AI",
+    "title": "How we build reliable software.",
+    "statement": "AI can speed up development. Experience, careful review and clear ownership are what make it reliable.",
+    "body": "Our process runs from the first conversation to software in production. AI supports us where it genuinely helps – decisions and responsibility stay with us.",
+    "tagAi": "AI-assisted",
+    "tagHuman": "Human-led",
+    "steps": [
+      {
+        "title": "Understand",
+        "text": "Requirements, users and business goals",
+        "tag": ""
+      },
+      {
+        "title": "Architect",
+        "text": "Systems, interfaces and data",
+        "tag": "human"
+      },
+      {
+        "title": "Build",
+        "text": "Modern engineering with AI-assisted tools",
+        "tag": "ai"
+      },
+      {
+        "title": "Review & improve",
+        "text": "Code review, testing, delivery and continuous development",
+        "tag": ""
+      }
+    ],
+    "helpsTag": "Accelerate",
+    "helpsTitle": "Where AI helps",
+    "helps": [
+      "Prototyping",
+      "Understanding existing code",
+      "Boilerplate",
+      "Debugging",
+      "Refactoring",
+      "Code review",
+      "Testing",
+      "Documentation"
+    ],
+    "humanTag": "Accountability",
+    "humanTitle": "What stays with us",
+    "human": [
+      "Architecture",
+      "Product decisions",
+      "Security",
+      "Business logic",
+      "Final review and approval",
+      "Responsibility"
+    ]
+  },
+  "expertise": {
+    "eyebrow": "Expertise",
+    "title": "A focused set of complementary strengths.",
+    "groups": [
+      {
+        "title": "Web engineering",
+        "items": [
+          "React",
+          "TypeScript",
+          "Modern web applications",
+          "Frontend architecture"
+        ]
+      },
+      {
+        "title": "Product & architecture",
+        "items": [
+          "Application architecture",
+          "Product thinking",
+          "Business goals",
+          "Sustainable solutions",
+          "Technical strategy"
+        ]
+      },
+      {
+        "title": "Quality",
+        "items": [
+          "Testing",
+          "Code reviews",
+          "Software quality",
+          "Structured delivery"
+        ]
+      },
+      {
+        "title": "AI-assisted engineering",
+        "items": [
+          "AI in everyday development",
+          "AI integration",
+          "Human review",
+          "Engineering responsibility"
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Get in touch",
+    "title": "Building something",
+    "titleAccent": "complex?",
+    "sub": "Let’s turn it into software that works.",
+    "direct": "Talk directly to Heike or Erik – based on your project and the expertise you need.",
+    "topics": [
+      "Web applications",
+      "Software modernization",
+      "AI-assisted engineering"
+    ],
+    "cta": "Discuss a project",
+    "mailSubject": "Project inquiry via k-and-k.codes"
+  },
+  "footer": {
+    "tagline": "Modern software, built personally.",
+    "names": "Heike Kasper / Erik Kasper",
+    "explore": "Explore",
+    "people": "People",
+    "contact": "Contact",
+    "imprint": "Legal notice",
+    "privacy": "Privacy policy",
+    "linkedin": "LinkedIn {{name}}",
+    "github": "GitHub {{name}}",
+    "cv": "CV {{name}}",
+    "copyright": "© {{year}} k-and-k.codes"
+  },
+  "profile": {
+    "back": "Back to the profiles",
+    "status": "Independent · available for project inquiries",
+    "contact": "Discuss a project",
+    "mailSubject": "Project inquiry for {{name}} via k-and-k.codes",
+    "focus": "Focus",
+    "approach": "How {{name}} works",
+    "experience": "Experience",
+    "education": "Education",
+    "technologies": "Technologies",
+    "links": "Profiles",
+    "collaboration": "Working together",
+    "collaborationItems": [
+      {
+        "title": "Individually",
+        "text": "Work directly with {{name}} on a clearly defined part of your project."
+      },
+      {
+        "title": "Alongside your team",
+        "text": "{{name}} joins your existing product or development team."
+      }
+    ],
+    "otherProfile": "Meet {{name}}"
+  },
+  "legal": {
+    "eyebrow": "Legal / k-and-k.codes",
+    "translationNote": "This is a translation for your convenience. The German version is legally binding:",
+    "germanVersion": "German version"
+  },
+  "notFound": {
+    "eyebrow": "404",
+    "title": "Page not found.",
+    "body": "The page you are looking for does not exist or has moved.",
+    "cta": "Back to the homepage"
   }
+}
