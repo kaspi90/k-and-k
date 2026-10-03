@@ -49,6 +49,21 @@ export const testimonials: Testimonial[] = [
     url: HEIKE_RECOMMENDATIONS,
   },
   {
+    id: "kristina-nettelbeck",
+    about: "heike",
+    name: "Kristina Nettelbeck",
+    role: {
+      de: "User Experience Design & Frontend Development",
+      en: "User Experience Design & Frontend Development",
+    },
+    company: "meetago GmbH",
+    quote: {
+      de: "Von 2023 bis 2026 konnte ich mit Heike als Duo im Frontend-Team der meetago GmbH arbeiten und ich zähle diese Zeit zu den besten Erfahrungen meiner Laufbahn. Gleich zu Beginn hat sie eigenständig ein Mammutprojekt gestemmt: den Umbau eines großen Teils unserer Anwendung von Handlebars und Laravel Blade auf modernes React. Ins kalte Wasser geworfen, hat sie das souverän gemeistert, sich selbst organisiert und alles vorbildlich dokumentiert. Später hat sie außerdem die Testautomatisierung bei uns von Grund auf eingeführt, ein weiteres großes Projekt, das sie mit viel Engagement vorangetrieben und ebenso selbstständig organisiert hat. Heike beherrscht TypeScript, React und Next.js auf höchstem Niveau, hat ein herausragendes Auge für Design, setzt Mockups pixelgenau um und treibt das Frontend mit eigenen Ideen aktiv voran. Sie ist absolut verlässlich, geht immer die Extrameile und denkt mit, wo andere einfach abarbeiten würden. Menschlich ist sie genauso stark: Sie begegnet allen mit Wertschätzung, ob im Austausch mit dem PO oder im Code Review. Ihre Reviews waren voller kluger Impulse, und man konnte offen über alles diskutieren. Ihre Kolleginnen und Kollegen unterstützt sie mit viel Geduld und Hilfsbereitschaft, denn ihr Wissen hat sie nicht nur, sie gibt es auch großartig weiter. Falls das alles nach zu viel Lob klingt: Ich habe eher noch untertrieben. Ich würde jederzeit wieder sehr gerne mit ihr zusammenarbeiten.",
+      en: "From 2023 to 2026, I had the opportunity to work with Heike as a two-person frontend team at meetago GmbH, and I count that time among the best experiences of my career. Right from the start, she independently tackled a mammoth project: migrating a large part of our application from Handlebars and Laravel Blade to modern React. Thrown in at the deep end, she handled it with confidence, organized herself and documented everything in an exemplary manner. Later, she also introduced test automation from the ground up—another major project that she drove forward with tremendous dedication and organized just as independently. Heike has an exceptional command of TypeScript, React and Next.js, has an outstanding eye for design, implements mockups with pixel-perfect precision and actively advances the frontend with her own ideas. She is absolutely reliable, always goes the extra mile and thinks ahead where others would simply work through tasks. She is just as strong on a personal level: she treats everyone with appreciation, whether in discussions with the PO or in code reviews. Her reviews were full of thoughtful insights, and everything could be discussed openly. She supports her colleagues with great patience and helpfulness; she not only possesses knowledge, but is also excellent at sharing it. If all of this sounds like too much praise: if anything, I have understated it. I would be very happy to work with her again at any time.",
+    },
+    url: "https://www.linkedin.com/in/kristina-net/details/recommendations/?detailScreenTabIndex=0",
+  },
+  {
     id: "michael-zsilla",
     about: "erik",
     name: "Michael Zsilla",
