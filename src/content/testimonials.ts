@@ -1,7 +1,7 @@
 import type { Lang, PersonId } from "../config/site";
 
 /**
- * Empfehlungen von LinkedIn – Originaltexte unverändert (Deutsch),
+ * Manuell gepflegte Empfehlungen von LinkedIn – Originaltexte unverändert (Deutsch),
  * englische Fassung als sorgfältige Übersetzung. Namen, Rollen und Unternehmen
  * wie auf der bisherigen Website. Freigabe zur Wiederveröffentlichung:
  * siehe docs/CONTENT-TODO.md.
