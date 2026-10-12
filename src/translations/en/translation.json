@@ -262,7 +262,12 @@
       "AI-assisted engineering"
     ],
     "cta": "Discuss a project",
-    "mailSubject": "Project inquiry via k-and-k.codes"
+    "mailSubject": "Project inquiry via k-and-k.codes",
+    "optionsTitle": "How would you like to get in touch?",
+    "openMail": "Open email app",
+    "copyMail": "Copy email address",
+    "copied": "Email address copied",
+    "copyFailed": "Copying was not available – please select the email address below."
   },
   "footer": {
     "tagline": "Modern software, built personally.",

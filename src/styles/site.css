@@ -298,6 +298,15 @@ section[id], [id="main"] { scroll-margin-top: calc(var(--header-h) + 16px); }
 .contact-topics { display: flex; justify-content: center; flex-wrap: wrap; gap: 8px; margin: 0 0 30px; padding: 0; list-style: none; }
 .contact-topics li { padding: 7px 11px; border: 1px solid var(--color-border); color: var(--color-text-secondary); font: 12px var(--font-mono); background: var(--color-bg); }
 .contact-inner .button { min-width: 220px; }
+.contact-options { width: min(100%, 520px); margin-top: 14px; padding: 16px; border: 1px solid var(--color-border); background: var(--color-bg-card); }
+.contact-options > p { margin: 0; color: var(--color-text-secondary); font-size: 14px; }
+.contact-option-buttons { display: flex; justify-content: center; flex-wrap: wrap; gap: 10px; margin-top: 12px; }
+.contact-option {
+  display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 10px 14px; border: 1px solid var(--color-border-strong);
+  color: var(--color-text); background: var(--color-bg); font: 13px var(--font-mono); cursor: pointer;
+}
+.contact-option:hover, .contact-option:focus-visible { border-color: var(--color-accent); color: var(--link-hover); }
+.contact-copy-status { margin-top: 10px !important; color: var(--color-text) !important; }
 .contact-mail { display: inline-flex; align-items: center; min-height: 44px; margin-top: 10px; color: var(--color-text-secondary); font-size: 15px; }
 .contact-mail:hover { color: var(--link-hover); }
 

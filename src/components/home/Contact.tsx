@@ -1,10 +1,24 @@
+import { useState } from "react";
+
 import { CONTACT_EMAIL, mailto } from "../../config/site";
 import { useLocale } from "../../i18n/LocaleContext";
-import { Button } from "../ui/Button";
+import { Icon } from "../ui/Icon";
 import { Eyebrow } from "../ui/SectionHead";
 
 export function Contact() {
   const { t, list } = useLocale();
+  const [optionsOpen, setOptionsOpen] = useState(false);
+  const [copyState, setCopyState] = useState<"idle" | "copied" | "failed">("idle");
+
+  const copyEmail = async () => {
+    try {
+      await navigator.clipboard.writeText(CONTACT_EMAIL);
+      setCopyState("copied");
+    } catch {
+      setCopyState("failed");
+    }
+  };
+
   return (
     <section className="contact-section" id="contact" aria-labelledby="contact-title">
       <div className="contact-glow" aria-hidden="true" />
@@ -21,9 +35,37 @@ export function Contact() {
             <li key={topic}>{topic}</li>
           ))}
         </ul>
-        <Button href={mailto(t("contact.mailSubject"))} icon="mail">
-          {t("contact.cta")}
-        </Button>
+        <button
+          type="button"
+          className="button"
+          aria-expanded={optionsOpen}
+          aria-controls="contact-options"
+          onClick={() => {
+            setOptionsOpen((open) => !open);
+            setCopyState("idle");
+          }}
+        >
+          <span>{t("contact.cta")}</span>
+          <Icon name="mail" />
+        </button>
+        {optionsOpen && (
+          <div className="contact-options" id="contact-options">
+            <p>{t("contact.optionsTitle")}</p>
+            <div className="contact-option-buttons">
+              <a className="contact-option" href={mailto(t("contact.mailSubject"))}>
+                {t("contact.openMail")}
+              </a>
+              <button type="button" className="contact-option" onClick={copyEmail}>
+                {copyState === "copied" ? t("contact.copied") : t("contact.copyMail")}
+              </button>
+            </div>
+            {copyState === "failed" && (
+              <p className="contact-copy-status" role="status">
+                {t("contact.copyFailed")}
+              </p>
+            )}
+          </div>
+        )}
         <a className="contact-mail" href={`mailto:${CONTACT_EMAIL}`}>
           {CONTACT_EMAIL}
         </a>

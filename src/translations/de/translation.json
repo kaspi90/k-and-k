@@ -262,7 +262,12 @@
       "KI-gestützte Entwicklung"
     ],
     "cta": "Projekt besprechen",
-    "mailSubject": "Projektanfrage über k-and-k.codes"
+    "mailSubject": "Projektanfrage über k-and-k.codes",
+    "optionsTitle": "Wie möchten Sie Kontakt aufnehmen?",
+    "openMail": "E-Mail-Programm öffnen",
+    "copyMail": "E-Mail-Adresse kopieren",
+    "copied": "E-Mail-Adresse kopiert",
+    "copyFailed": "Kopieren nicht möglich – bitte markieren Sie die E-Mail-Adresse unten."
   },
   "footer": {
     "tagline": "Moderne Software, persönlich entwickelt.",

@@ -146,6 +146,23 @@ describe("SEO zur Laufzeit", () => {
 });
 
 describe("Startseite", () => {
+  test("Kontakt-CTA bietet in Chrome eine sichtbare Kopier-Alternative zum Mailprogramm", async () => {
+    const writeText = jest.fn().mockResolvedValue(undefined);
+    Object.defineProperty(navigator, "clipboard", { configurable: true, value: { writeText } });
+    renderAt("/");
+
+    fireEvent.click(screen.getByRole("button", { name: "Projekt besprechen" }));
+    expect(screen.getByText("Wie möchten Sie Kontakt aufnehmen?")).toBeInTheDocument();
+    expect(screen.getByRole("link", { name: "E-Mail-Programm öffnen" })).toHaveAttribute(
+      "href",
+      expect.stringContaining("mailto:kontakt@k-and-k.codes")
+    );
+
+    fireEvent.click(screen.getByRole("button", { name: "E-Mail-Adresse kopieren" }));
+    expect(await screen.findByRole("button", { name: "E-Mail-Adresse kopiert" })).toBeInTheDocument();
+    expect(writeText).toHaveBeenCalledWith("kontakt@k-and-k.codes");
+  });
+
   test("Projekt-CTA scrollt auch dann erneut zum Kontakt, wenn #contact bereits aktiv ist", () => {
     renderAt("/#contact");
     const target = document.getElementById("contact")!;
