@@ -1,5 +1,5 @@
-import type { ReactNode } from "react";
-import { Link, To } from "react-router-dom";
+import type { MouseEvent, ReactNode } from "react";
+import { Link, To, useLocation, useResolvedPath } from "react-router-dom";
 
 import { Icon, IconName } from "./Icon";
 
@@ -19,6 +19,8 @@ interface ButtonProps {
 }
 
 export function Button({ children, to, href, variant = "primary", icon, external, className, newTabLabel, download }: ButtonProps) {
+  const location = useLocation();
+  const resolvedTo = useResolvedPath(to ?? ".");
   const classes = ["button", variant === "secondary" ? "button-secondary" : "", className ?? ""].filter(Boolean).join(" ");
   const content = (
     <>
@@ -29,8 +31,22 @@ export function Button({ children, to, href, variant = "primary", icon, external
   );
 
   if (to !== undefined) {
+    const handleClick = (event: MouseEvent<HTMLAnchorElement>) => {
+      const isPlainLeftClick = event.button === 0 && !event.metaKey && !event.ctrlKey && !event.shiftKey && !event.altKey;
+      const repeatsCurrentHash =
+        resolvedTo.hash && resolvedTo.pathname === location.pathname && resolvedTo.search === location.search && resolvedTo.hash === location.hash;
+      if (!isPlainLeftClick || !repeatsCurrentHash) return;
+
+      const target = document.getElementById(decodeURIComponent(resolvedTo.hash.slice(1)));
+      if (!target) return;
+
+      event.preventDefault();
+      const reducedMotion = typeof window.matchMedia === "function" && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      target.scrollIntoView?.({ behavior: reducedMotion ? "auto" : "smooth", block: "start" });
+    };
+
     return (
-      <Link to={to} className={classes}>
+      <Link to={to} className={classes} onClick={handleClick}>
         {content}
       </Link>
     );

@@ -146,6 +146,18 @@ describe("SEO zur Laufzeit", () => {
 });
 
 describe("Startseite", () => {
+  test("Projekt-CTA scrollt auch dann erneut zum Kontakt, wenn #contact bereits aktiv ist", () => {
+    renderAt("/#contact");
+    const target = document.getElementById("contact")!;
+    target.scrollIntoView = jest.fn();
+
+    const hero = document.querySelector(".hero")!;
+    fireEvent.click(within(hero as HTMLElement).getByRole("link", { name: "Projekt besprechen" }));
+
+    expect(target.scrollIntoView).toHaveBeenCalledWith({ behavior: "smooth", block: "start" });
+    expect(screen.getByTestId("location")).toHaveTextContent("/#contact");
+  });
+
   test("blendet Case Studies samt Navigation und Hero-CTA aus, solange keine freigegeben sind", () => {
     renderAt("/");
     expect(screen.queryByRole("link", { name: /Projekte ansehen/ })).not.toBeInTheDocument();
@@ -177,12 +189,12 @@ describe("Startseite", () => {
   test("Kundenstimmen: Deutsch im Original, Englisch als gekennzeichnete Übersetzung, Zuordnung sichtbar", () => {
     const { unmount } = renderAt("/");
     expect(screen.getByText(/„Erik hat sehr gute Kenntnisse in verschiedenen Webtechnologien/)).toBeInTheDocument();
-    expect(screen.getByText("Empfehlung für Heike")).toBeInTheDocument();
+    expect(screen.getAllByText("Empfehlung für Heike")).toHaveLength(3);
     expect(screen.getAllByText("Empfehlung für Erik")).toHaveLength(3);
     expect(Array.from(document.querySelectorAll(".testimonial details")).every((item) => item.hasAttribute("open"))).toBe(true);
     unmount();
     renderAt("/en");
-    expect(screen.getAllByText("Translated from German")).toHaveLength(4);
+    expect(screen.getAllByText("Translated from German")).toHaveLength(6);
   });
 });
 
