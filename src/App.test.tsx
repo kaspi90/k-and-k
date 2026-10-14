@@ -123,7 +123,7 @@ describe("Sprachumschalter", () => {
 describe("SEO zur Laufzeit", () => {
   test("deutsche Seite: Canonical, hreflang und x-default", () => {
     renderAt("/heike");
-    expect(document.title).toBe("Heike Kasper — Selbstständige Softwareentwicklerin | k-and-k.codes");
+    expect(document.title).toBe("Heike Kasper — Technical Delivery Owner & Softwareentwicklerin | k-and-k.codes");
     expect(document.head.querySelector('link[rel="canonical"]')).toHaveAttribute("href", "https://www.k-and-k.codes/heike");
     expect(document.head.querySelector('link[hreflang="de"]')).toHaveAttribute("href", "https://www.k-and-k.codes/heike");
     expect(document.head.querySelector('link[hreflang="en"]')).toHaveAttribute("href", "https://www.k-and-k.codes/en/heike");
@@ -273,11 +273,13 @@ describe("Energie- und Gebäudebezug bei Heike", () => {
     expect(erik.queryByText(/Energie|Gebäude/)).not.toBeInTheDocument();
   });
 
-  test("Heikes Profil nennt den neuen Schwerpunkt und die belegte Masterarbeit", () => {
+  test("Heikes Profil verbindet Delivery Ownership, Entwicklung, Architektur und Energie", () => {
     renderAt("/heike");
+    expect(screen.getByText("Technical Delivery Ownership")).toBeInTheDocument();
+    expect(screen.getByText("Softwarearchitektur und technische Konzeption")).toBeInTheDocument();
     expect(screen.getByText("Digitale Lösungen für Gebäude und Energie")).toBeInTheDocument();
     expect(screen.queryByText("Strukturierte Entwicklung komplexer Systeme")).not.toBeInTheDocument();
-    expect(screen.getByText(/Werdegang verbindet Softwareentwicklung mit Architektur und Energieeffizienz/)).toBeInTheDocument();
+    expect(screen.getByText(/hands-on Softwareentwicklung/)).toBeInTheDocument();
     expect(screen.getByText(/Lehrstuhl Bauphysik und Technische Gebäudeausrüstung/)).toBeInTheDocument();
   });
 });
